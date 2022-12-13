@@ -47,6 +47,12 @@
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
   </head>
+  <style>
+    .selected
+    {
+      background-colour: blue !important;
+    }
+  </style>
   <body>
     <div id="base" class="">
 
@@ -101,7 +107,7 @@
 
             <!-- Unnamed (Ellipse) -->
             <div id="u8" class="ax_default button_-_icon_bg">
-              <img id="u8_img" class="img " src="images/overview/u8.svg"/>
+              <!-- <img id="u8_img" class="img " src="images/overview/u8.svg"/> -->
               <div id="u8_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
@@ -189,7 +195,7 @@
 
             <!-- Unnamed (Ellipse) -->
             <div id="u21" class="ax_default button_-_icon_bg">
-              <img id="u21_img" class="img " src="images/overview/u8.svg"/>
+              <!-- <img id="u21_img" class="img " src="images/overview/u8.svg"/> -->
               <div id="u21_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
@@ -239,7 +245,7 @@
           <!-- Documents (Rectangle) -->
           <div id="u28" class="ax_default sidenav_-_nav_item_w__left_icon" data-label="Documents">
             <img id="u28_img" class="img " src="images/overview/audit_enquiries_u25.svg"/>
-            <div id="u28_text" class="text ">
+            <div id="u28_text" class="text "  style="margin-top: 10px;">
               <p><span>Submit documents</span></p>
             </div>
           </div>
@@ -248,12 +254,12 @@
           <div id="u29" class="ax_default" data-label="description icon" data-left="36" data-top="756" data-width="20" data-height="20">
 
             <!-- Unnamed (Shape) -->
-            <div id="u30" class="ax_default shape">
-              <!-- <img id="u30_img" class="img " src="images/overview/u30.svg"/> -->
+            <!-- <div id="u30" class="ax_default shape">
+              <img id="u30_img" class="img " src="images/overview/u30.svg"/>
               <div id="u30_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
-            </div>
+            </div> -->
 
             <!-- Unnamed (Shape) -->
             <div id="u31" class="ax_default shape">
@@ -271,7 +277,7 @@
           <!-- Mail (Rectangle) -->
           <div id="u33" class="ax_default sidenav_-_nav_item_w__left_icon" data-label="Mail">
             <img id="u33_img" class="img " src="images/overview/audit_enquiries_u25.svg"/>
-            <div id="u33_text" class="text ">
+            <div id="u33_text" class="text "  style="margin-top: 10px;">
               <p><span>Mail</span></p>
             </div>
           </div>
@@ -281,7 +287,7 @@
 
             <!-- Unnamed (Shape) -->
             <div id="u35" class="ax_default shape">
-              <img id="u35_img" class="img " src="images/overview/u30.svg"/>
+              <!-- <img id="u35_img" class="img " src="images/overview/u30.svg"/> -->
               <div id="u35_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
@@ -299,7 +305,7 @@
 
         <!-- CORRESPONDENCE (Rectangle) -->
         <div id="u37" class="ax_default sidenav_-_subheading" data-label="CORRESPONDENCE">
-          <img id="u37_img" class="img " src="images/overview/correspondence_u37.svg"/>
+          <!-- <img id="u37_img" class="img " src="images/overview/correspondence_u37.svg"/> -->
           <div id="u37_text" class="text ">
             <p><span>CORRESPONDENCE</span></p>
           </div>
@@ -334,7 +340,7 @@
 
                   <!-- Unnamed (Shape) -->
                   <div id="u43" class="ax_default icon">
-                    <img id="u43_img" class="img " src="images/overview/u43.svg"/>
+                    <!-- <img id="u43_img" class="img " src="images/overview/u43.svg"/> -->
                     <div id="u43_text" class="text " style="display:none; visibility: hidden">
                       <p></p>
                     </div>
@@ -370,7 +376,7 @@
 
                   <!-- Unnamed (Shape) -->
                   <div id="u48" class="ax_default icon">
-                    <img id="u48_img" class="img " src="images/overview/u43.svg"/>
+                    <!-- <img id="u48_img" class="img " src="images/overview/u43.svg"/> -->
                     <div id="u48_text" class="text " style="display:none; visibility: hidden">
                       <p></p>
                     </div>
@@ -483,7 +489,7 @@
           <!-- Profile (Rectangle) -->
           <div id="u63" class="ax_default sidenav_-_nav_item_w__left_icon" data-label="Profile" selectiongroup="sidenav">
             <img id="u63_img" class="img " src="images/overview/audit_enquiries_u25.svg"/>
-            <div id="u63_text" class="text ">
+            <div id="u63_text" class="text " style="margin-top: 10px;">
               <p><span>Profile</span></p>
             </div>
           </div>
@@ -493,7 +499,7 @@
 
             <!-- Unnamed (Shape) -->
             <div id="u65" class="ax_default icon">
-              <img id="u65_img" class="img " src="images/overview/u30.svg"/>
+              <!-- <img id="u65_img" class="img " src="images/overview/u30.svg"/> -->
               <div id="u65_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
@@ -513,9 +519,9 @@
         <div id="u67" class="ax_default" data-label="Overview" selectiongroup="sidenav" data-left="20" data-top="222" data-width="240" data-height="48">
 
           <!-- Overview (Rectangle) -->
-          <div id="u68" class="ax_default sidenav_-_nav_item_w__left_icon selected" data-label="Overview" selectiongroup="sidenav">
-            <img id="u68_img" class="img " src="images/overview/audit_enquiries_u25_selected.svg"/>
-            <div id="u68_text" class="text ">
+          <div id="u68" class="ax_default sidenav_-_nav_item_w__left_icon selected" style="background-color: rgba(38, 55, 74, 1); border-radius: 5px;" data-label="Overview" selectiongroup="sidenav">
+            <!-- <img id="u68_img" class="img " src="images/overview/audit_enquiries_u25_selected.svg"/> -->
+            <div id="u68_text" class="text" style="color: white; font-weight: bold; margin-top: 10px;">
               <p><span>Overview</span></p>
             </div>
           </div>
@@ -525,7 +531,7 @@
 
             <!-- Unnamed (Shape) -->
             <div id="u70" class="ax_default icon selected">
-              <img id="u70_img" class="img " src="images/overview/u43.svg"/>
+              <img id="u70_img" class="img " style="width:17px; height: 17px;" src="images/overview.png"/>
               <div id="u70_text" class="text " style="display:none; visibility: hidden">
                 <p></p>
               </div>
@@ -543,7 +549,7 @@
 
         <!-- Unnamed (Rectangle) -->
         <div id="u72" class="ax_default sidenav_-_subheading">
-          <img id="u72_img" class="img " src="images/overview/correspondence_u37.svg"/>
+          <!-- <img id="u72_img" class="img " src="images/overview/correspondence_u37.svg"/> -->
           <div id="u72_text" class="text ">
             <p><span>NAVIGATION</span></p>
           </div>
@@ -908,7 +914,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u120" class="ax_default image1">
-        <img id="u120_img" class="img " src="images/overview/u120.png"/>
+        <img id="u120_img" class="img " src="images/landscape.png"/>
         <div id="u120_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
@@ -964,7 +970,7 @@
 
       <!-- Unnamed (Image) -->
       <div id="u127" class="ax_default image1">
-        <img id="u127_img" class="img " src="images/overview/u127.png"/>
+        <img id="u127_img" class="img " src="images/wmms-blk.svg"/>
         <div id="u127_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
@@ -1078,7 +1084,7 @@
 
           <!-- Unnamed (Shape) -->
           <div id="u143" class="ax_default icon">
-            <img id="u143_img" class="img " src="images/overview/u143.svg"/>
+            <!-- <img id="u143_img" class="img " src="images/overview/u143.svg"/> -->
             <div id="u143_text" class="text " style="display:none; visibility: hidden">
               <p></p>
             </div>
@@ -1126,7 +1132,7 @@
 
           <!-- Unnamed (Shape) -->
           <div id="u150" class="ax_default icon">
-            <img id="u150_img" class="img " src="images/overview/u143.svg"/>
+            <!-- <img id="u150_img" class="img " src="images/overview/u143.svg"/> -->
             <div id="u150_text" class="text " style="display:none; visibility: hidden">
               <p></p>
             </div>
@@ -1230,7 +1236,7 @@
 
           <!-- Unnamed (Rectangle) -->
           <div id="u165" class="ax_default table_-_header_row_text">
-            <img id="u165_img" class="img " src="images/overview/u165.svg"/>
+            <!-- <img id="u165_img" class="img " src="images/overview/u165.svg"/> -->
             <div id="u165_text" class="text ">
               <p><span>Date</span></p>
             </div>
@@ -1258,7 +1264,7 @@
 
           <!-- Unnamed (Rectangle) -->
           <div id="u169" class="ax_default table_-_header_row_text">
-            <img id="u169_img" class="img " src="images/overview/u169.svg"/>
+            <!-- <img id="u169_img" class="img " src="images/overview/u169.svg"/> -->
             <div id="u169_text" class="text ">
               <p><span>$ Amount</span></p>
             </div>
@@ -1286,7 +1292,7 @@
 
           <!-- Unnamed (Rectangle) -->
           <div id="u173" class="ax_default table_-_header_row_text">
-            <img id="u173_img" class="img " src="images/overview/u173.svg"/>
+            <!-- <img id="u173_img" class="img " src="images/overview/u173.svg"/> -->
             <div id="u173_text" class="text ">
               <p><span>Benefit or credit</span></p>
             </div>
@@ -1311,7 +1317,7 @@
 
         <!-- Unnamed (Rectangle) -->
         <div id="u176" class="ax_default table_-_heading">
-          <img id="u176_img" class="img " src="images/overview/u176.svg"/>
+          <!-- <img id="u176_img" class="img " src="images/overview/u176.svg"/> -->
           <div id="u176_text" class="text ">
             <p><span>Recently submitted applications</span></p>
           </div>
@@ -1502,7 +1508,7 @@
 
           <!-- Unnamed (Ellipse) -->
           <div id="u206" class="ax_default button_-_icon_bg">
-            <img id="u206_img" class="img " src="images/overview/u8.svg"/>
+            <!-- <img id="u206_img" class="img " src="images/overview/u8.svg"/> -->
             <div id="u206_text" class="text " style="display:none; visibility: hidden">
               <p></p>
             </div>
