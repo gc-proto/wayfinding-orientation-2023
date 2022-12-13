@@ -48,10 +48,18 @@
     </script>
   </head>
   <style>
-    .selected
-    {
-      background-colour: blue !important;
-    }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
   </style>
   <body>
     <div id="base" class="">
@@ -785,6 +793,7 @@
       </div>
 
       <!-- Unnamed (Rectangle) -->
+    <div class="menustick" id="mySticky"> <!-- not working -->
       <div id="u102" class="ax_default box_11">
         <div id="u102_div" class=""></div>
         <div id="u102_text" class="text " style="display:none; visibility: hidden">
@@ -807,7 +816,7 @@
           <p><span>My Account</span></p>
         </div>
       </div>
-
+    </div>
       <!-- Unnamed (Group) -->
       <div id="u105" class="ax_default" data-left="1263" data-top="98" data-width="207" data-height="40">
 
@@ -1639,5 +1648,24 @@
       </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
+    <script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () { myFunction() };
+
+  // Get the header
+  var menustick = document.getElementById("mySticky");
+
+  // Get the offset position of the navbar
+  var sticky = menustick.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      menustick.classList.add("sticky");
+    } else {
+      menustick.classList.remove("sticky");
+    }
+  }
+    </script>
   </body>
 </html>
