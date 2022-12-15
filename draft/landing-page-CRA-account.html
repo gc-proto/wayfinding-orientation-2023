@@ -1664,5 +1664,44 @@
     }
   }
     </script>
+  <!-- <script>
+    // Get the element that you want to be sticky
+      const menu = document.querySelector('#mySticky');
+      // Listen for the scroll event on the window
+      window.addEventListener('scroll', function () {
+        // Calculate the distance from the top of the page
+        // to the top of the element
+        const offset = window.scrollY - menu.offsetTop;
+        // If the user has scrolled down far enough
+        // to reach the top of the element, add the sticky class
+        if (offset > 80) {
+          menu.classList.add('sticky');
+        } else {
+          // Otherwise, remove the sticky class
+          menu.classList.remove('sticky');
+        }
+      });
+    </script> -->
+    <!-- <script>
+  // Get the element that you want to be sticky
+  const menu = document.querySelector('#mySticky');
+  // Listen for the scroll event on the window
+  window.addEventListener('scroll', function () {
+    // Calculate the distance from the top of the page
+    // to the top of the element
+    const offset = window.scrollY - menu.offsetTop;
+    // If the user has scrolled down far enough
+    // to reach the top of the element, add the sticky class
+    if (offset > 80) {
+      menu.classList.add('sticky');
+    }
+    // If the user has scrolled back up to the top of the page,
+    // remove the sticky class
+    if (window.scrollY <= offset) {
+      menu.classList.remove('sticky');
+    }
+  });
+      </script> -->
+
   </body>
 </html>
