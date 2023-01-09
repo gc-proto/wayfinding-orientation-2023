@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Sliding navigation demo - Canada.ca mandatory template - Canada.ca</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css">
+  <link rel="stylesheet" href="./layered-theme-menu-mr-tp.css">
+  <link rel="stylesheet" href="./alpha-layered-theme-menu-mr-tp.css">
+  <link rel="stylesheet" href="./sliding-nav.js">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="http://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+  <!--[if lte IE 9]>
+		<![endif]-->
+  <noscript>
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/wet-boew/css/noscript.min.css" /></noscript>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105628416-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-105628416-2');
+  </script>
+<!-- 
+  <style>
+
+
+
+ @media screen and (max-width: 991px) {
+
+  .alpha .test-gcweb-menu [role=menuitem][aria-expanded=false] {
+    display: none;
+  }
+ }
+  </style>
+  -->
+</head>
+
+<body class="" vocab="http://schema.org/" typeof="WebPage"> <!-- max width ch on a list causes problems with the -->
+  <ul id="wb-tphp">
+    <li class="wb-slc">
+      <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+    </li>
+    <li class="wb-slc">
+      <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+    </li>
+  </ul>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline margin-bottom-none">
+              <li><a lang="fr" href="https://conception.canada.ca/mise-en-page/accueil-institution-directives.html">Français</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4">
+          <a href="https://www.canada.ca/en.html"><img src="http://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+        </div>
+        <section id="wb-srch" class="col-lg-8 text-right">
+          <h2>Search</h2>
+          <form action="https://recherche-search.gc.ca/rGs/s_r?#wb-land" method="get" role="search" class="form-inline">
+            <div class="form-group">
+              <label for="wb-srch-q" class="wb-inv">Search website</label>
+              <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search Canada.ca">
+              <input name="st" value="s" type="hidden" />
+              <input name="num" value="10" type="hidden" />
+              <input name="langs" value="eng" type="hidden" />
+              <input name="st1rt" value="0" type="hidden">
+              <input name="s5bm3ts21rch" value="x" type="hidden" />
+              <datalist id="wb-srch-q-ac">
+                <!--[if lte IE 9]><select><![endif]-->
+                <!--[if lte IE 9]></select><![endif]-->
+              </datalist>
+            </div>
+            <div class="form-group submit">
+              <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <nav class="gweb-v2 gcweb-menu" typeof="SiteNavigationElement">
+       
+    </nav>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href='https://www.canada.ca/en.html'>Canada.ca</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+  <!--/* Hide Nav; Hide Right Rail /*-->
+  <main property="mainContentOfPage" typeof="WebPageElement">
+<div class="alpha">
+  <div class="gc-nav gcweb-v2 test-gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container">
+      <ul aria-orientation="vertical" class="parent-list" role="menu">
+        <li role="presentation">
+          <a aria-controls="gc-mnu-jobs" aria-expanded="false" aria-haspopup="true" href="./themes/jobs.html" id="jobs"
+            role="menuitem" tabindex="-1" data-ajax-after="themes/jobs.html #gc-mnu-jobs">Jobs</a>
+
+  <div class="mwstext section" id="gc-mnu-jobs">
+    <div class="provisional profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mrgn-bttm-md">
+            <h3>Jobs</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- remove 'mrgn-tp-0' class if you are not using an image -->
+    <section class="most-requested well well-sm brdr-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="mrgn-tp-md">Most requested</h2>
+            <ul class="wb-eqht mrgn-tp-md mrgn-bttm-sm lst-spcd-2 list-responsive-2">
+              <!-- can use 'list-responsive' to get 4 column option -->
+              <li><a href="/en/employment-social-development/services/my-account.html">View your Records of Employment
+                </a></li>
+              <li><a href="/en/employment-social-development/services/sin.html">Apply for a Social Insurance Number
+                  (SIN)</a></li>
+              <li><a href="/en/employment-social-development/services/foreign-workers.html">Hire a temporary foreign
+                  worker</a></li>
+              <li><a href="/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html">Immigrate as
+                  a skilled
+                  worker</a></li>
+              <!--<li><a href="/content/canadasite/en/revenue-agency/services/subsidy/recovery-hiring-program.html">Canada Recovery Hiring Program (CRHP)</a></li>-->
+              <!--li><a href="/content/canadasite/en/revenue-agency/services/payments-cra.html">Payments to the Canada Revenue Agency</a></li-->
+  
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <!-- showing the basic doormat pattern - refer to the Services and information documentation for options -->
+        <section class="gc-srvinfo col-md-12">
+          <h3 class="wb-inv">Services and information</h3>
+          <div class="wb-eqht row">
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/jobs/opportunities/government.html">Government of Canada jobs </a></h3>
+              <p>Search federal government jobs and hiring programs</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="https://www.jobbank.gc.ca/findajob">Job Bank </a></h3>
+              <p>Search jobs posted by employers across Canada, get matched with a job</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/jobs/opportunities/student.html">Student employment </a></h3>
+              <p>Job opportunities and hiring programs for students</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/defence/jobs.html">Jobs in national security and defence </a></h3>
+              <p>Jobs with the Canadian Armed Forces, RCMP, Security Intelligence, Border services, Defence and Public
+                Safety</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/immigration-refugees-citizenship/services/immigrate-canada.html">Immigrate to
+                  work and
+                  live in Canada </a></h3>
+              <p>Includes workplace eligibility, steps to apply, processing times, and what you need to do before you work
+                in Canada
+              </p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/jobs/training.html">Training</a></h3>
+              <p>Information on education, training, financial assistance, support for apprentices, and the skills needed
+                to find
+                and keep a job.</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/jobs/opportunities/student.html">Contracts with government</a></h3>
+              <p>Sell your goods or services to the government.</p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a
+                  href="https://www.canada.ca/en/employment-social-development/programs/labour-mobility/job.html">Moving
+                  between provinces</a></h3>
+              <p>Find out if your occupation is regulated by the province or territory where you want to work. </p>
+            </section>
+            <section class="col-md-6">
+              <h3 class="h5"><a href="/en/services/jobs/workplace.html">Workplace standards</a></h3>
+              <p>Federal and provincial labour laws, workplace standards, federal health and safety standards and labour
+                relations
+                programs.</p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-cit" aria-expanded="false" aria-haspopup="true" href="./themes/immigration.html"
+            id="immigration" role="menuitem" data-ajax-after="themes/immigration.html #gc-mnu-cit"
+            tabindex="-1">Immigration and citizenship</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-travel" aria-expanded="false" aria-haspopup="true" href="./themes/travel.html"
+            id="travel" role="menuitem" data-ajax-after="themes/travel.html #gc-mnu-travel" tabindex="-1">Travel and
+            tourism</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-biz" aria-expanded="false" aria-haspopup="true" href="./themes/business.html"
+            id="business" role="menuitem" data-ajax-after="themes/business.html #gc-mnu-biz" tabindex="-1">Business</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-benny" aria-expanded="false" aria-haspopup="true" href="./themes/benefits.html"
+            id="benefits" role="menuitem" data-ajax-after="themes/benefits.html #gc-mnu-benny"
+            tabindex="-1">Benefits</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-health" aria-expanded="false" aria-haspopup="true" href="./themes/health.html"
+            id="health" role="menuitem" data-ajax-after="themes/health.html #gc-mnu-health" tabindex="-1">Health</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-taxes" aria-expanded="false" aria-haspopup="true" href="./themes/taxes.html"
+            id="taxes" role="menuitem" data-ajax-after="themes/taxes.html #gc-mnu-taxes" tabindex="-1">Taxes</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-enviro" aria-expanded="false" aria-haspopup="true" href="./themes/environment.html"
+            role="menuitem" data-ajax-after="themes/environment.html #gc-mnu-enviro" tabindex="-1">Environment and
+            natural resources</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-defence" aria-expanded="false" aria-haspopup="true" href="./themes/defence.html"
+            role="menuitem" data-ajax-after="themes/defence.html #gc-mnu-defence" tabindex="-1">National security and
+            defence</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-culture" aria-expanded="false" aria-haspopup="true" href="./themes/culture.html"
+            role="menuitem" data-ajax-after="themes/culture.html #gc-mnu-culture" tabindex="-1">Culture, history and
+            sport</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-policing" aria-expanded="false" aria-haspopup="true" href="./themes/policing.html"
+            role="menuitem" data-ajax-after="themes/policing.html #gc-mnu-policing" tabindex="-1">Policing, justice and
+            emergencies</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-trans" aria-expanded="false" aria-haspopup="true" href="./themes/transport.html"
+            role="menuitem" data-ajax-after="themes/transport.html #gc-mnu-trans" tabindex="-1">Transport and
+            infrastructure</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-canworld" aria-expanded="false" aria-haspopup="true"
+            href="./themes/canada-world.html" role="menuitem"
+            data-ajax-after="themes/canada-world.html #gc-mnu-canworld" tabindex="-1">Canada and the world</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-money" aria-expanded="false" aria-haspopup="true" href="./themes/money.html"
+            role="menuitem" data-ajax-after="themes/money.html #gc-mnu-money" tabindex="-1">Money and finances</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-science" aria-expanded="false" aria-haspopup="true" href="./themes/science.html"
+            role="menuitem" data-ajax-after="themes/science.html #gc-mu-science" tabindex="-1">Science and
+            innovation</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-indigenous" aria-expanded="false" aria-haspopup="true"
+            href="./themes/indigenous.html" role="menuitem" data-ajax-after="themes/indigenous.html #gc-mnu-indigenous"
+            tabindex="-1">Indigenous peoples</a>
+        </li>
+        <li role="presentation">
+          <a aria-controls="gc-mnu-veterans" aria-expanded="false" aria-haspopup="true" href="./themes/veterans.html"
+            id="veterans" role="menuitem" data-ajax-after="themes/veterans.html #gc-mnu-veterans" tabindex="-1">Veterans
+            and military</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
