@@ -2,7 +2,7 @@
 defaults:
   -
     scope:
-      path: working-on/sliding-nav/
+      path: /sliding-nav/
     values:
       css:
         - /working-on/sliding-nav/layered-theme-menu-mr-tp.css
