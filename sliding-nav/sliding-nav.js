@@ -192,6 +192,8 @@
   
   // Open right away the popup
   $document.on( "click", selector + " [aria-haspopup]", function( event ) {
+    event.stopImmediatePropagation();
+    event.preventDefault();
   
     var elm = event.currentTarget,
       elmToGiveFocus;
@@ -223,8 +225,6 @@
     }
   
     // Stop default behaviour
-    event.stopImmediatePropagation();
-    event.preventDefault();
   } );
   
   // This is for the "most requested" menu item
