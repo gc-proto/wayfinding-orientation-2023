@@ -1,0 +1,172 @@
+/* #gc-mnu * {
+    outline: 1px solid green;
+} */
+
+/* #gc-mnu-jobs {  DELISMA: I think that was required for debugging purposes on desktop. It breaks the mobile view
+    position: relative;  DELISMA: for mobile this needs to be overriden 
+    padding: 0 0 0 28px;
+    border-left: 5px solid #26374a;
+    border-top: 0;
+    display: block; DELISMA: for mobile this needs to be overriden
+} */
+
+
+
+body {
+    margin-top: 30px; /* JM fixing the spacing above the FIP */
+}
+
+.breadcrumb { /* JM fixing the BC alignment */
+    position: relative;
+    top: -50px;
+}
+
+/* JM: need button when selected to turn dark blue - this isn't working */
+
+.alpha .test-gcweb-menu .visible-md.visible-lg button[role=menuitem]:hover {
+    background-color: #f5f5f5;
+}
+
+.alpha .test-gcweb-menu .visible-md.visible-lg button[role=menuitem][aria-expanded=true]:focus,
+.alpha .test-gcweb-menu .visible-md.visible-lg button[role=menuitem][aria-expanded=true]:active { 
+    background-color: #26374a;
+    color: white;
+}
+
+#gc-mnu,
+#gc-mnu-jobs, 
+#gc-mnu-cit, 
+#gc-mnu-travel, 
+#gc-mnu-biz, 
+#gc-mnu-benny, 
+#gc-mnu-health, 
+#gc-mnu-taxes, 
+#gc-mnu-enviro, 
+#gc-mnu-defence, 
+#gc-mnu-culture,
+#gc-mnu-policing, 
+#gc-mnu-trans, 
+#gc-mnu-canworld, 
+#gc-mnu-money,
+#gc-mnu-science, /* JM: this had a typo and was mn-science */
+#gc-mnu-indigenous,
+#gc-mnu-veterans {  
+    padding: 0 0 20px 28px;
+    border-bottom: 5px solid #f5f5f5;
+    border-left: 5px solid #26374a;
+    border-top: 0;
+    margin-bottom: 15px;
+}
+
+/* for desktop  - but it's fine if it can toggle too */
+/* #jobs:focus + #gc-mnu-jobs,
+#jobs:hover + #gc-mnu-jobs {
+    display: block; /* DELISMA: for mobile this needs to be overriden
+} */
+.alpha .test-gcweb-menu .visible-md.visible-lg button[role=menuitem] {
+    background-color: transparent;
+    border: none;
+    color: #284162;
+    font-size: 15px;
+    line-height: 1.1em;
+    padding: 14px 30px;
+    text-align: left;
+    text-transform: initial;
+}
+
+.alpha .test-gcweb-menu [role=menuitem] {
+    width: 100%;
+}
+/* mobile needs to toggle it on click  - cant work though because I have to use the href field being used by the ajax ? ...  */
+/* #jobs:target ~ div a[href="#gc-mnu-jobs"],
+#jobs-2:target ~ div a[href="#gc-mnu-jobs"] {
+  display: none;
+}
+#showdiv1:target ~ div a[href="#hidediv1"],
+#showdiv2:target ~ div a[href="#hidediv2"] {
+  display: inline-block;
+} */
+
+/* other methods for the toggle CSS involve using a label / input */
+
+
+.most-requested li {
+    font-family: Lato,sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    list-style-type: disc;
+}
+
+.lst-spcd-1 li {
+    margin-bottom: 8px;
+}
+
+.most-requested .well-sm {
+    margin-left: -25px;
+}
+
+.lst-responsive-2 li {
+    width: 50%;
+}
+
+@media (min-width: 990px) {
+    #gc-mnu,
+    #gc-mnu-jobs,
+    #gc-mnu-cit,
+    #gc-mnu-travel,
+    #gc-mnu-biz,
+    #gc-mnu-benny,
+    #gc-mnu-health,
+    #gc-mnu-taxes,
+    #gc-mnu-enviro,
+    #gc-mnu-defence,
+    #gc-mnu-culture,
+    #gc-mnu-policing,
+    #gc-mnu-trans,
+    #gc-mnu-canworld,
+    #gc-mnu-money,
+    #gc-mnu-science, /* JM: this had a typo and was mn-science */
+    #gc-mnu-indigenous,
+    #gc-mnu-veterans {
+        left: -90px;
+        top: -40px;
+        position: relative;
+        padding: 0 0 0 28px;
+        border-bottom: none;
+        border-left: 5px solid #26374a;
+        border-top: 0;
+        display: block;
+    }
+}
+
+
+
+
+
+/*  not needed because container with classes col- works already fairly well
+@media screen and (min-width: 1201px) and (max-width: 1440px)  {
+    #gc-mnu-jobs {
+        width: 816px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px)  {
+    #gc-mnu-jobs {
+        width: 700px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px){
+    #gc-mnu-jobs {
+        width: 676px;
+    }
+}
+/* @media (min-width: 768px) {
+    #gc-mnu-jobs {
+        width: 750px;
+    }
+} */
+
+/* DEBUG CSS */
+.gc-mnu * {
+    out_line: 1px solid limegreen;
+}
