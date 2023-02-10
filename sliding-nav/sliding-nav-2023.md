@@ -1,4 +1,22 @@
 ---
+auth:
+  type: contextual
+  link: https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html
+  label: Sign in
+  labelExtended: Sign in to CRA
+css:
+  - ./layered-theme-menu-mr-tp.css
+  - https://use.fontawesome.com/releases/v5.6.3/css/all.css
+  - ./alpha-layered-theme-menu-mr-tp.css
+contextualFooter:
+  title: Canada.ca
+  links: 
+    - url: someUrl.html
+      text: Contextual link 1
+feedbackPath: "ajax/report-problem-en.html"
+script:
+  - ./sliding-nav.js
+  - ./sliding-context.js
 title: Sliding navigation demo - Canada.ca mandatory template - Canada.ca
 ---
 
