@@ -11,7 +11,6 @@ defaults:
       lang: en
       nomenu: true
       pageclass: cnt-wdth-lmtd
-
 plugins:
   - jekyll-remote-theme
 
