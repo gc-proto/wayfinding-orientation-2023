@@ -1,0 +1,31 @@
+{%- capture footerIncludeVersion -%}
+	{%- if page.includes.footer -%}
+		{{ page.includes.footer }}
+	{%- else -%}
+		{{ site.includes.footer }}
+	{%- endif -%}
+{%- endcapture -%}
+
+<footer id="wb-info">
+	<h2 class="wb-inv">{{ i18nText-footerSite }}</h2>
+	<div class="brand">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">{{ i18nText-supportLinks }}</h3>
+				<h4><span class="wb-inv">{{ i18nText-transparency }}</span></h4>
+				<ul>
+					{%- if i18nText-lang == "fr" -%}
+					<li><a href="https://www.canada.ca/fr/transparence/avis.html">Avis</a></li>
+					<li><a href="https://www.canada.ca/fr/transparence/confidentialite.html">Confidentialité</a></li>
+					{%- elsif i18nText-lang == "en" -%}
+					<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					{%- endif -%}
+				</ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="{{ setting-resourcesBasePathTheme }}/{{ i18nText-wmmsImg }}" alt="{{ i18nText-wmms }}" />
+			</div>
+		</div>
+	</div>
+</footer>
