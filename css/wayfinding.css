@@ -10,10 +10,6 @@
       			  margin-top: 0px !important;
       			}
       
-      			#wb-so .btn {
-      			  margin-top: 0 !important;
-      			}
-      
       			main {
       			  top: -44px !important;
       			}
@@ -22,14 +18,15 @@
       			  position: relative;
       			  top: -50px;
       			}
+            #wb-so .btn {
+              margin-top: 0px !important;
+              position: relative;
+              z-index: 999999;
+            }
       
-      			@media (min-width: 990px) {
-      			  #wb-so .btn {
-      			    margin-top: 0px !important;
-      			    position: relative;
-      			    z-index: 999999;
-      			  }
-      			}
+      			/* @media (min-width: 990px) {
+      			 
+      			} */
 
 
 /* byline */
