@@ -27,26 +27,33 @@
 
 
 <style>
-#wb-bnr+hr {
-    border-top: 1px solid #ddd !important;
-    margin-bottom: 0;
-    margin-top: 5px;
-}
- #wb-so .btn {
-			margin-top: 0px !important;
-			position: relative;
-			z-index: 999999;
+			#wb-bnr+hr {
+					border-top: 1px solid #ddd !important;
+					margin-bottom: 0;
+					margin-top: 5px;
+			}
+		
+		#wb-bnr+hr+.container .col-xs-5, #wb-bnr+hr+.container .col-xs-6 {
+				margin-top: 0px !important;
+			}
+			#wb-so .btn {
+    		margin-top: 0 !important;
+			}
+			main {
+				top: -44px !important;
+			}
+			.breadcrumb {
+				position: relative;
+				top: -50px;
+			}
+		@media (min-width: 990px) {
+			#wb-so .btn {
+				margin-top: 0px !important;
+				position: relative;
+				z-index: 999999;
+			}
 		}
-
-.breadcrumb {
-	  position: relative;
-    top: -50px;
-}
-main {
-	top: -50px !important;
-}
-
-</style>
+	</style>
 
 
 
@@ -157,7 +164,7 @@ main {
 
 
 									<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q"
-										type="search" value="" size="34" maxlength="170" placeholder="Search " />
+										type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca " />
 
 
 									<datalist id="wb-srch-q-ac">
@@ -186,8 +193,7 @@ main {
 						<div class="col-xs-5 col-xs-offset-7 col-md-offset-0 col-md-4">
 							<section id="wb-so">
 								<h2 class="wb-inv">Sign in</h2>
-								<a class="btn btn-primary" href="./ircc-accounts-en.html"><span class="visible-xs">IRCC
-										Sign in</span><span class="hidden-xs">IRCC Sign in</span></a>
+								<a class="btn btn-primary" href="./ircc-accounts-en.html"><span class="visible-xs">Sign in</span><span class="hidden-xs">IRCC Sign in</span></a>
 							</section>
 						</div>
 
