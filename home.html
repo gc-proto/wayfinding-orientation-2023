@@ -17,14 +17,23 @@
 	
         <link rel="alternate" hreflang="fr" href="https://www.canada.ca/fr.html"/>
 	<style>
-		.home #wb-so .btn {
-			margin-top: 0px !important;
-			position: relative;
-			z-index: 999999;
+		
+		#wb-bnr+hr+.container .col-xs-5, #wb-bnr+hr+.container .col-xs-6 {
+				margin-top: 0px !important;
+			}
+			#wb-so .btn {
+    		margin-top: 0 !important;
+			}
+			main {
+				top: -44px !important;
+			}
+		@media (min-width: 990px) {
+			#wb-so .btn {
+				margin-top: 0px !important;
+				position: relative;
+				z-index: 999999;
+			}
 		}
-	main {
-		top: -50px !important;
-	}
 	</style>
 	
 		<meta name="description" content="Get quick, easy access to all Government of Canada services and information."/>
