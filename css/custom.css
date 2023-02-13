@@ -1,5 +1,35 @@
-/* take out table lines for phone lines */
-/* removed the in details condition, since it's better without lines elsewhere too... */
+/* JM: positioning of sign in and breadcrumb */
+      			#wb-bnr+hr {
+      			  border-top: 1px solid #ddd !important;
+      			  margin-bottom: 0;
+      			  margin-top: 5px;
+      			}
+      
+      			#wb-bnr+hr+.container .col-xs-5,
+      			#wb-bnr+hr+.container .col-xs-6 {
+      			  margin-top: 0px !important;
+      			}
+      
+      			#wb-so .btn {
+      			  margin-top: 0 !important;
+      			}
+      
+      			main {
+      			  top: -44px !important;
+      			}
+      
+      			.breadcrumb {
+      			  position: relative;
+      			  top: -50px;
+      			}
+      
+      			@media (min-width: 990px) {
+      			  #wb-so .btn {
+      			    margin-top: 0px !important;
+      			    position: relative;
+      			    z-index: 999999;
+      			  }
+      			}
 
 
 /* byline */
