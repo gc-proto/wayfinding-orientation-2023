@@ -1,0 +1,59 @@
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar > :first-child {
+    flex-grow: 1;
+}
+
+.sidebar > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 508px;
+}
+#gc-menu button {
+    line-height: 1.1em;
+    text-align: left;
+    width: 100%;
+}
+#gc-menu button:hover,
+#gc-menu button:focus,
+#gc-menu button:active {
+    background-color: #f5f5f5;
+    color: #295376;
+    text-decoration: none;
+}
+#gc-menu button[aria-expanded=true] {
+    background-color: #26374a;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+#gc-mnu {
+    border-bottom: 5px solid #f5f5f5;
+    border-left: 5px solid #26374a;
+    border-top: 0;
+    margin-bottom: 15px;
+    padding: 0 0 20px 28px;
+}
+@media screen and (max-width: 991px) {
+    #gc-menu button {
+        border-bottom: #f5f5f5 solid 1px;
+    }
+    #gc-menu button:after {
+        float: right;
+        content: "\203A";
+        font-size: 1.5em;
+    }
+    .toggle-nav-sm {
+        background-color: #26374a;
+    }
+    
+    .toggle-nav-sm button {
+        color: #ffffff;
+    }
+}
+/* For debugging only 
+#gc-mnu-container * {
+    outline: 1px solid greenyellow;
+}*/
