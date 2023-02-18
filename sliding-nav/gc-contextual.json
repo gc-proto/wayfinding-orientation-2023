@@ -1,0 +1,258 @@
+{
+    "jobs": {
+        "auth": {
+            "link": "/landing/sign-in-jobs-online-account", 
+            "labelExtended": "Sign in to jobs" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "jobs/someUrl.html",
+              "text": "Contact jobs"
+            }
+          ] 
+        }
+    },
+    "immigration": {
+        "auth": {
+            "link": "/landing/sign-in-immigration-online-account", 
+            "labelExtended": "Sign in to immigration" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "immigration/someUrl.html",
+              "text": "Contact immigration"
+            }
+          ] 
+        }
+    },
+    "travel": {
+        "auth": {
+            "link": "/landing/sign-in-travel-online-account", 
+            "labelExtended": "Sign in to travel" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "travel/someUrl.html",
+              "text": "Contact travel"
+            }
+          ] 
+        }
+    },
+    "business": {
+        "auth": {
+            "link": "/landing/sign-in-business-online-account", 
+            "labelExtended": "Sign in to business" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "business/someUrl.html",
+              "text": "Contact business"
+            }
+          ] 
+        }
+    },
+    "benefits": {
+        "auth": {
+            "link": "/landing/sign-in-benefits-online-account", 
+            "labelExtended": "Sign in to benefits" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "benefits/someUrl.html",
+              "text": "Contact benefits"
+            }
+          ] 
+        }
+    },
+    "health": {
+        "auth": {
+            "link": "/landing/sign-in-health-online-account", 
+            "labelExtended": "Sign in to health" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "health/someUrl.html",
+              "text": "Contact health"
+            }
+          ] 
+        }
+    },
+    "taxes": {
+        "auth": {
+            "link": "/landing/sign-in-taxes-online-account", 
+            "labelExtended": "Sign in to taxes" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "taxes/someUrl.html",
+              "text": "Contact taxes"
+            }
+          ] 
+        }
+    },
+    "environment": {
+        "auth": {
+            "link": "/landing/sign-in-environment-online-account", 
+            "labelExtended": "Sign in to environment" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "environment/someUrl.html",
+              "text": "Contact environment"
+            }
+          ] 
+        }
+    },
+    "defence": {
+        "auth": {
+            "link": "/landing/sign-in-defence-online-account", 
+            "labelExtended": "Sign in to defence" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "defence/someUrl.html",
+              "text": "Contact defence"
+            }
+          ] 
+        }
+    },
+    "culture": {
+        "auth": {
+            "link": "/landing/sign-in-culture-online-account", 
+            "labelExtended": "Sign in to culture" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "culture/someUrl.html",
+              "text": "Contact culture"
+            }
+          ] 
+        }       
+    },
+    "policing": {
+        "auth": {
+            "link": "/landing/sign-in-policing-online-account", 
+            "labelExtended": "Sign in to policing" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "policing/someUrl.html",
+              "text": "Contact policing"
+            }
+          ] 
+        }
+    },
+    "transport": {
+        "auth": {
+            "link": "/landing/sign-in-transport-online-account", 
+            "labelExtended": "Sign in to transport" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "transport/someUrl.html",
+              "text": "Contact transport"
+            }
+          ] 
+        }
+    },
+    "world": {
+        "auth": {
+            "link": "/landing/sign-in-world-online-account", 
+            "labelExtended": "Sign in to world" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "world/someUrl.html",
+              "text": "Contact world"
+            }
+          ] 
+        }
+    },
+    "money": {
+        "auth": {
+            "link": "/landing/sign-in-money-online-account", 
+            "labelExtended": "Sign in to money" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "money/someUrl.html",
+              "text": "Contact money"
+            }
+          ] 
+        }
+    },
+    "science": {
+        "auth": {
+            "link": "/landing/sign-in-science-online-account", 
+            "labelExtended": "Sign in to science" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+            { 
+              "url": "science/someUrl.html",
+              "text": "Contact science"
+            }
+          ] 
+        }
+    },
+    "indigenous": {
+        "auth": {
+            "link": "/landing/sign-in-indigenous-online-account", 
+            "labelExtended": "Sign in to indigenous" 
+        }, 
+        "contextualFooter": { 
+          "links": [ 
+              { 
+              "url": "indigenous/someUrl.html",
+              "text": "Contact indigenous"
+              }
+          ] 
+        }
+    },
+    "veterans": {
+        "auth": {
+            "link": "/landing/sign-in-veterans-online-account", 
+            "labelExtended": "Sign in to veterans" 
+        }, 
+        "contextualFooter": { 
+          "links": [
+            {
+              "url": "veterans/dnd/someUrl.html",
+              "text": "Contact veterans"
+          },
+          {
+              "url": "veterans/rcmp/someUrl.html",
+              "text": "Contact veterans"
+          },
+          {
+              "url": "veterans/army/someUrl.html",
+              "text": "Contact veterans"
+          }
+            ] 
+        }
+    },
+    "debug": {
+      "contextualFooter": {
+        "links": [
+          {
+            "url": "",
+            "text": ""
+          }
+        ]
+      }
+    }
+}
