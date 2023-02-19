@@ -30,15 +30,10 @@
     text-decoration: none;
 }
 #gc-mnu {
-    border-left: 5px solid #26374a;
     border-top: 0;
     padding: 0 0 20px 28px;
 }
 @media screen and (max-width: 991px) {
-    #gc-mnu {
-        border-bottom: 5px solid #f5f5f5;
-        margin-bottom: 15px;
-    }
     #gc-menu button {
         border-bottom: #f5f5f5 solid 1px;
     }
