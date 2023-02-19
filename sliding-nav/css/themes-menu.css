@@ -37,8 +37,12 @@
     padding: 0 0 20px 28px;
 }
 @media screen and (max-width: 991px) {
-    #gc-menu button {
+    #gc-mnu {
         border-bottom: none;
+        margin-bottom; 0;
+    }
+    #gc-menu button {
+        border-bottom: #f5f5f5 solid 1px;
     }
     #gc-menu button:after {
         float: right;
