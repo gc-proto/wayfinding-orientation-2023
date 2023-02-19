@@ -85,7 +85,7 @@
     },
     "taxes": {
         "auth": {
-            "link": "/landing/sign-in-taxes-online-account", 
+            "link": "../cra/cra-login-services.html", 
             "labelExtended": "CRA Sign in" 
         }, 
         "contextualFooter": { 
