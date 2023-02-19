@@ -1,8 +1,8 @@
 {
     "jobs": {
         "auth": {
-            "link": "/landing/sign-in-jobs-online-account", 
-            "labelExtended": "Sign in to jobs" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -16,7 +16,7 @@
     "immigration": {
         "auth": {
             "link": "/landing/sign-in-immigration-online-account", 
-            "labelExtended": "Sign in to immigration" 
+            "labelExtended": "IRCC Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -29,8 +29,8 @@
     },
     "travel": {
         "auth": {
-            "link": "/landing/sign-in-travel-online-account", 
-            "labelExtended": "Sign in to travel" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -43,8 +43,8 @@
     },
     "business": {
         "auth": {
-            "link": "/landing/sign-in-business-online-account", 
-            "labelExtended": "Sign in to business" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -57,8 +57,8 @@
     },
     "benefits": {
         "auth": {
-            "link": "/landing/sign-in-benefits-online-account", 
-            "labelExtended": "Sign in to benefits" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -71,8 +71,8 @@
     },
     "health": {
         "auth": {
-            "link": "/landing/sign-in-health-online-account", 
-            "labelExtended": "Sign in to health" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -86,21 +86,29 @@
     "taxes": {
         "auth": {
             "link": "/landing/sign-in-taxes-online-account", 
-            "labelExtended": "Sign in to taxes" 
+            "labelExtended": "CRA Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
             { 
-              "url": "taxes/someUrl.html",
-              "text": "Contact taxes"
+              "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html",
+              "text": "Contact the CRA"
+            },
+            {
+              "url": "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra.html",
+              "text": "About the CRA"
+            },
+            {
+              "url": "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance.html",
+              "text": "Compliance and enforcement"
             }
           ] 
         }
     },
     "environment": {
         "auth": {
-            "link": "/landing/sign-in-environment-online-account", 
-            "labelExtended": "Sign in to environment" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -113,8 +121,8 @@
     },
     "defence": {
         "auth": {
-            "link": "/landing/sign-in-defence-online-account", 
-            "labelExtended": "Sign in to defence" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -127,8 +135,8 @@
     },
     "culture": {
         "auth": {
-            "link": "/landing/sign-in-culture-online-account", 
-            "labelExtended": "Sign in to culture" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -141,8 +149,8 @@
     },
     "policing": {
         "auth": {
-            "link": "/landing/sign-in-policing-online-account", 
-            "labelExtended": "Sign in to policing" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -155,8 +163,8 @@
     },
     "transport": {
         "auth": {
-            "link": "/landing/sign-in-transport-online-account", 
-            "labelExtended": "Sign in to transport" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -169,8 +177,8 @@
     },
     "world": {
         "auth": {
-            "link": "/landing/sign-in-world-online-account", 
-            "labelExtended": "Sign in to world" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -183,8 +191,8 @@
     },
     "money": {
         "auth": {
-            "link": "/landing/sign-in-money-online-account", 
-            "labelExtended": "Sign in to money" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -197,8 +205,8 @@
     },
     "science": {
         "auth": {
-            "link": "/landing/sign-in-science-online-account", 
-            "labelExtended": "Sign in to science" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -211,8 +219,8 @@
     },
     "indigenous": {
         "auth": {
-            "link": "/landing/sign-in-indigenous-online-account", 
-            "labelExtended": "Sign in to indigenous" 
+            "link": "../government/sign-in-online-account.html", 
+            "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
@@ -225,22 +233,22 @@
     },
     "veterans": {
         "auth": {
-            "link": "/landing/sign-in-veterans-online-account", 
-            "labelExtended": "Sign in to veterans" 
+            "link": "https://www.veterans.gc.ca/eng/e_services?utm_source=header&utm_medium=button&utm_campaign=MVA", 
+            "labelExtended": "My VAC account" 
         }, 
         "contextualFooter": { 
           "links": [
             {
-              "url": "veterans/dnd/someUrl.html",
-              "text": "Contact veterans"
+              "url": "https://www.veterans.gc.ca/eng/contact",
+              "text": "Veterans contacts"
           },
           {
-              "url": "veterans/rcmp/someUrl.html",
-              "text": "Contact veterans"
+              "url": "https://www.canada.ca/en/department-national-defence/services/contact-us.html",
+              "text": "Military contacts"
           },
           {
-              "url": "veterans/army/someUrl.html",
-              "text": "Contact veterans"
+              "url": "https://www.rcmp-grc.gc.ca/cont/index-eng.htm",
+              "text": "Contact the RCMP"
           }
             ] 
         }
