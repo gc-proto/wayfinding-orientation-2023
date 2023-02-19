@@ -15,14 +15,18 @@
     },
     "immigration": {
         "auth": {
-            "link": "/landing/sign-in-immigration-online-account", 
+            "link": "../ircc/services/application/ircc-sign-in-demo.html", 
             "labelExtended": "IRCC Sign in" 
         }, 
         "contextualFooter": { 
           "links": [ 
             { 
-              "url": "immigration/someUrl.html",
-              "text": "Contact immigration"
+              "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html",
+              "text": "Contact IRCC"
+            },
+            {
+              "url": "https://ircc.canada.ca/english/helpcentre/index-featured-can.asp",
+              "text": "Help centre"
             }
           ] 
         }
