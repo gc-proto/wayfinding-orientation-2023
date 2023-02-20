@@ -39,7 +39,7 @@
 #gc-mnu {
     border-left: 5px solid #26374a;
     border-top: 0;
-    /* padding: 0 0 20px 28px; */
+    padding: 0 0 10px 20px;
 }
 .btn-menu:focus,
 .btn-menu:hover {
