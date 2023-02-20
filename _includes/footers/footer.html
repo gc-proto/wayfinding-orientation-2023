@@ -46,10 +46,10 @@
 	<h2 class="wb-inv">{{ i18nText-footerSite }}</h2>
 {% unless page.noFooterContextual %}
 {%- if contextualFooterTitle != "" and site.global.contextualFooter.links[i18nText-lang] or page.contextualFooter.links -%}
-	<div class="gc-contextual">
+	<div class="gc-contextual hidden">
 		<div class="container">
 			<nav>
-				<h3>{{ contextualFooterTitle }}</h3>
+				<h3 data-json-replace="#[contextual]/current/contextualFooter/title">{{ contextualFooterTitle }}</h3>
                 {%- if page.contextualFooter.links == empty -%}<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3" data-wb-json='{
                     "url": "#[contextual]/current/contextualFooter/links",
                     "mapping": [
