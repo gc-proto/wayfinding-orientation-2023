@@ -109,6 +109,8 @@
 
 #wb-so .btn {
     margin-top: 0px !important;
+    position: relative;
+    z-index: 999999 !important;
 }
 
 main {
