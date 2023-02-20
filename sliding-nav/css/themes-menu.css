@@ -1,3 +1,14 @@
+ /* JM fixing the spacing above the FIP */
+body {
+    margin-top: 30px;
+}
+
+/* JM fixing the BC alignment */
+.breadcrumb {
+    position: relative;
+    top: -50px;
+}
+
 .sidebar {
     display: flex;
     flex-wrap: wrap;
