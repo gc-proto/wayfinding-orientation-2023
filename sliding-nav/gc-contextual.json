@@ -92,8 +92,9 @@
             "link": "../cra/cra-login-services.html", 
             "labelExtended": "CRA Sign in" 
         }, 
-        "contextualFooter": { 
-          "links": [ 
+        "contextualFooter": {
+          "title": "Canada Revenue Agency (CRA)",
+          "links": [
             { 
               "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html",
               "text": "Contact the CRA"
@@ -240,7 +241,8 @@
             "link": "https://www.veterans.gc.ca/eng/e_services?utm_source=header&utm_medium=button&utm_campaign=MVA", 
             "labelExtended": "My VAC account" 
         }, 
-        "contextualFooter": { 
+        "contextualFooter": {
+          "title": "Veterans and military",
           "links": [
             {
               "url": "https://www.veterans.gc.ca/eng/contact",
