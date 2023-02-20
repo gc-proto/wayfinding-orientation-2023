@@ -31,9 +31,11 @@
 }
 #gc-mnu li a {
     font-size: 17px;
-    line-height: 1.2em;
 }
-
+#gc-mnu li {
+    line-height: 1.2em;
+    padding-bottom: 6px;
+}
 #gc-mnu h3 {
     margin-top: 10px;
 }
