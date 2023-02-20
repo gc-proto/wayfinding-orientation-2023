@@ -13,7 +13,7 @@
     min-inline-size: 508px;
 }
 #gc-menu button {
-    line-height: 1.1em;
+    line-height: 1.65em;
     text-align: left;
     width: 100%;
 }
@@ -28,6 +28,9 @@
     background-color: #26374a;
     color: #f5f5f5;
     text-decoration: none;
+}
+#gc-menu li {
+    font-size: 17px;
 }
 #gc-mnu {
     border-left: 5px solid #26374a;
@@ -73,3 +76,11 @@
      margin-bottom: 0;
      margin-top: 5px;
  }
+
+#wb-so .btn {
+    margin-top: 0px !important;
+}
+
+main {
+    margin-top: -30px;
+}
