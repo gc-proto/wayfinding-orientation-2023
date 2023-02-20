@@ -32,6 +32,9 @@
 #gc-menu li a {
     font-size: 17px;
 }
+#gc-mnu h3 {
+    margin-top: 0px;
+}
 #gc-mnu {
     border-left: 5px solid #26374a;
     border-top: 0;
