@@ -10,7 +10,7 @@
 .sidebar > :last-child {
     flex-basis: 0;
     flex-grow: 999;
-    /* min-inline-size: 508px; JM: this is causing overflow problems */ 
+    min-inline-size: 508px;
 }
 #gc-menu button {
     line-height: 1.65em;
@@ -73,6 +73,9 @@
     }
     #gc-menu p {
         font-size: 19px;
+    }
+    .sidebar> :last-child {
+        min-inline-size: 0;
     }
 }
 /* For debugging only 
