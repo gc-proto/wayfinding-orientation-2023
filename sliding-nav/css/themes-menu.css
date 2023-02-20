@@ -78,6 +78,9 @@
     .sidebar> :last-child {
         min-inline-size: 0;
     }
+    .sidebar {
+        display: block;
+    }
 }
 /* For debugging only 
 #gc-mnu-container * {
