@@ -31,14 +31,15 @@
 }
 #gc-mnu li a {
     font-size: 17px;
+    line-height: 1.2em;
 }
 #gc-mnu h3 {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 #gc-mnu {
     border-left: 5px solid #26374a;
     border-top: 0;
-    padding: 0 0 20px 28px;
+    /* padding: 0 0 20px 28px; */
 }
 .btn-menu:focus,
 .btn-menu:hover {
