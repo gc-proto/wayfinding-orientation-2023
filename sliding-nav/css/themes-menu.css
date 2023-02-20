@@ -2,11 +2,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .sidebar > :first-child {
     flex-grow: 1;
 }
-
 .sidebar > :last-child {
     flex-basis: 0;
     flex-grow: 999;
@@ -36,7 +34,9 @@
     line-height: 1.2em;
     padding-bottom: 8px;
 }
-
+#gc-mnu h3 {
+    margin-top: 10px;
+}
 #gc-mnu {
     border-left: 5px solid #26374a;
     border-top: 0;
@@ -56,9 +56,6 @@
     #gc-menu button {
         border-bottom: #f5f5f5 solid 1px;
     }
-    #gc-mnu h3 {
-        margin-top: 10px;
-    }
     #gc-menu button:after {
         float: right;
         content: "\203A";
@@ -67,7 +64,9 @@
     .toggle-nav-sm {
         background-color: #26374a;
     }
-    
+    #gc-mnu h3 {
+        margin-top: 32px;
+    }
     .toggle-nav-sm button {
         color: #ffffff;
     }
