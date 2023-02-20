@@ -53,6 +53,9 @@
     .toggle-nav-sm button {
         color: #ffffff;
     }
+    #gc-menu p {
+        font-size: 19px;
+    }
 }
 /* For debugging only 
 #gc-mnu-container * {
