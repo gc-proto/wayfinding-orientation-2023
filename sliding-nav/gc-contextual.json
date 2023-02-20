@@ -5,6 +5,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "jobs/someUrl.html",
@@ -37,6 +38,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "travel/someUrl.html",
@@ -51,6 +53,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "business/someUrl.html",
@@ -65,6 +68,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "benefits/someUrl.html",
@@ -79,7 +83,8 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
-          "links": [ 
+          "title": "Canada.ca",
+          "links": [
             { 
               "url": "health/someUrl.html",
               "text": "Contact health"
@@ -116,7 +121,8 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
-          "links": [ 
+          "title": "Canada.ca",
+          "links": [
             { 
               "url": "environment/someUrl.html",
               "text": "Contact environment"
@@ -130,6 +136,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "defence/someUrl.html",
@@ -144,6 +151,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "culture/someUrl.html",
@@ -158,6 +166,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "policing/someUrl.html",
@@ -172,6 +181,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "transport/someUrl.html",
@@ -186,6 +196,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "world/someUrl.html",
@@ -200,7 +211,8 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
-          "links": [ 
+          "title": "Canada.ca",
+          "links": [
             { 
               "url": "money/someUrl.html",
               "text": "Contact money"
@@ -214,6 +226,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
             { 
               "url": "science/someUrl.html",
@@ -228,6 +241,7 @@
             "labelExtended": "Sign in" 
         }, 
         "contextualFooter": { 
+          "title": "Canada.ca",
           "links": [ 
               { 
               "url": "indigenous/someUrl.html",
