@@ -31,6 +31,8 @@
 }
 #gc-mnu li a {
     font-size: 17px;
+}
+#gc-mnu li {
     line-height: 1.2em;
 }
 #gc-mnu h3 {
