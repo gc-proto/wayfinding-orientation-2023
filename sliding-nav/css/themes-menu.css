@@ -1,22 +1,3 @@
- /* JM fixing the spacing above the FIP */
-body {
-    margin-top: 32px;
-}
-
-/* JM fixing the BC alignment */
-.breadcrumb {
-    position: relative;
-    top: -50px;
-}
-
-/* JM: positioning of sign in and breadcrumb */
-#wb-bnr+hr {
-    border-top: 1px solid #ddd !important;
-    margin-bottom: 0;
-    margin-top: 5px;
-}
-
-/* themes menu css */
 .sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -74,3 +55,21 @@ body {
 #gc-mnu-container * {
     outline: 1px solid greenyellow;
 }*/
+
+ /* JM fixing the spacing above the FIP */
+ body {
+     margin-top: 32px;
+ }
+
+ /* JM fixing the BC alignment */
+ .breadcrumb {
+     position: relative;
+     top: -50px;
+ }
+
+ /* JM: positioning of sign in and breadcrumb */
+ #wb-bnr+hr {
+     border-top: 1px solid #ddd !important;
+     margin-bottom: 0;
+     margin-top: 5px;
+ }
