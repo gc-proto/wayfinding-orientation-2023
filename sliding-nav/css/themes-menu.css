@@ -80,6 +80,9 @@
     .sidebar {
         display: block;
     }
+    #gc-mnu .well-sm {
+        overflow: hidden; /* JM: temporary fix for scrolling into well on mobile */
+    }
 }
 /* For debugging only 
 #gc-mnu-container * {
