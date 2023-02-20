@@ -34,7 +34,7 @@
 }
 #gc-mnu li {
     line-height: 1.2em;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
 }
 #gc-mnu h3 {
     margin-top: 10px;
@@ -43,6 +43,7 @@
     border-left: 5px solid #26374a;
     border-top: 0;
     padding: 0 0 10px 20px;
+    min-height: 823px;
 }
 .btn-menu:focus,
 .btn-menu:hover {
