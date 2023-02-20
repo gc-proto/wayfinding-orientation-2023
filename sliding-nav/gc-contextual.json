@@ -18,9 +18,10 @@
             "link": "../ircc/services/application/ircc-sign-in-demo.html", 
             "labelExtended": "IRCC Sign in" 
         }, 
-        "contextualFooter": { 
-          "links": [ 
-            { 
+        "contextualFooter": {
+          "title": "Immigration, Refugees and Citizenship Canada (IRCC)",
+          "links": [
+            {
               "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html",
               "text": "Contact IRCC"
             },
@@ -28,9 +29,8 @@
               "url": "https://ircc.canada.ca/english/helpcentre/index-featured-can.asp",
               "text": "Help centre"
             }
-          ] 
-        }
-    },
+          ]
+        },
     "travel": {
         "auth": {
             "link": "../government/sign-in-online-account.html", 
