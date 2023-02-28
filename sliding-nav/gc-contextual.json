@@ -1,24 +1,24 @@
 {
     "jobs": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "jobs/someUrl.html",
-              "text": "Contact jobs"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "jobs/someUrl.html",
+            "text": "Contact jobs"
+          }
+        ]
+      }
     },
     "immigration": {
       "auth": {
-          "link": "../ircc/services/application/ircc-sign-in-demo.html", 
-          "labelExtended": "IRCC Sign in" 
-      }, 
+        "link": "../ircc/services/application/ircc-sign-in-demo.html",
+        "labelExtended": "IRCC Sign in"
+      },
       "contextualFooter": {
         "title": "Immigration, Refugees and Citizenship Canada (IRCC)",
         "links": [
@@ -31,248 +31,263 @@
             "text": "Help centre"
           }
         ]
-        }
+      }
     },
     "travel": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "travel/someUrl.html",
-              "text": "Contact travel"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "travel/someUrl.html",
+            "text": "Contact travel"
+          }
+        ]
+      }
     },
     "business": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "business/someUrl.html",
-              "text": "Contact business"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "business/someUrl.html",
+            "text": "Contact business"
+          }
+        ]
+      }
     },
     "benefits": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "benefits/someUrl.html",
-              "text": "Contact benefits"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "benefits/someUrl.html",
+            "text": "Contact benefits"
+          }
+        ]
+      }
     },
     "health": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [
-            { 
-              "url": "health/someUrl.html",
-              "text": "Contact health"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "health/someUrl.html",
+            "text": "Contact health"
+          }
+        ]
+      }
     },
     "taxes": {
-        "auth": {
-            "link": "../cra/cra-login-services.html", 
-            "labelExtended": "CRA Sign in" 
-        }, 
-        "contextualFooter": {
-          "title": "Canada Revenue Agency (CRA)",
-          "links": [
-            { 
-              "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html",
-              "text": "Contact the CRA"
-            },
-            {
-              "url": "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra.html",
-              "text": "About the CRA"
-            },
-            {
-              "url": "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance.html",
-              "text": "Compliance and enforcement"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../cra/cra-login-services.html",
+        "labelExtended": "CRA Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada Revenue Agency (CRA)",
+        "links": [
+          {
+            "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html",
+            "text": "Contact the CRA"
+          },
+          {
+            "url": "https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra.html",
+            "text": "About the CRA"
+          },
+          {
+            "url": "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance.html",
+            "text": "Compliance and enforcement"
+          }
+        ]
+      }
     },
     "environment": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [
-            { 
-              "url": "environment/someUrl.html",
-              "text": "Contact environment"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "environment/someUrl.html",
+            "text": "Contact environment"
+          }
+        ]
+      }
     },
     "defence": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "defence/someUrl.html",
-              "text": "Contact defence"
-            }
-          ] 
-        }
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "defence/someUrl.html",
+            "text": "Contact defence"
+          }
+        ]
+      }
     },
     "culture": {
-        "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
-          "title": "Canada.ca",
-          "links": [ 
-            { 
-              "url": "culture/someUrl.html",
-              "text": "Contact culture"
-            }
-          ] 
-        }       
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+            "url": "culture/someUrl.html",
+            "text": "Contact culture"
+          }
+        ]
+      }
     },
     "policing": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
-          "links": [ 
-            { 
+          "links": [
+            {
               "url": "policing/someUrl.html",
               "text": "Contact policing"
             }
-          ] 
+          ]
         }
     },
     "transport": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
-          "links": [ 
-            { 
+          "links": [
+            {
               "url": "transport/someUrl.html",
               "text": "Contact transport"
             }
-          ] 
+          ]
         }
     },
     "world": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
-          "links": [ 
-            { 
+          "links": [
+            {
               "url": "world/someUrl.html",
               "text": "Contact world"
             }
-          ] 
+          ]
         }
     },
     "money": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
           "links": [
-            { 
+            {
               "url": "money/someUrl.html",
               "text": "Contact money"
             }
-          ] 
+          ]
         }
     },
     "science": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
-          "links": [ 
-            { 
+          "links": [
+            {
               "url": "science/someUrl.html",
               "text": "Contact science"
             }
-          ] 
+          ]
         }
     },
     "indigenous": {
         "auth": {
-            "link": "../government/sign-in-online-account.html", 
-            "labelExtended": "Sign in" 
-        }, 
-        "contextualFooter": { 
+          "link": "../government/sign-in-online-account.html",
+          "labelExtended": "Sign in"
+        },
+        "contextualFooter": {
           "title": "Canada.ca",
-          "links": [ 
-              { 
+          "links": [
+            {
               "url": "indigenous/someUrl.html",
               "text": "Contact indigenous"
-              }
-          ] 
+            }
+          ]
         }
     },
     "veterans": {
         "auth": {
-            "link": "https://www.veterans.gc.ca/eng/e_services?utm_source=header&utm_medium=button&utm_campaign=MVA", 
-            "labelExtended": "My VAC account" 
-        }, 
+          "link": "https://www.veterans.gc.ca/eng/e_services?utm_source=header&utm_medium=button&utm_campaign=MVA",
+          "labelExtended": "My VAC account"
+        },
         "contextualFooter": {
           "title": "Veterans and military contacts",
           "links": [
             {
               "url": "https://www.veterans.gc.ca/eng/contact",
               "text": "Veterans contacts"
-          },
-          {
+            },
+            {
               "url": "https://www.canada.ca/en/department-national-defence/services/contact-us.html",
               "text": "Military contacts"
-          },
-          {
+            },
+            {
               "url": "https://www.rcmp-grc.gc.ca/cont/index-eng.htm",
               "text": "Contact the RCMP"
-          }
-            ] 
+            }
+          ]
         }
+    },
+    "youth": {
+      "auth": {
+        "link": "../government/sign-in-online-account.html",
+        "labelExtended": "Sign in"
+      },
+      "contextualFooter": {
+        "title": "Canada.ca",
+        "links": [
+          {
+          "url": "indigenous/someUrl.html",
+          "text": "Contact youth"
+          }
+        ]
+      }
     },
     "debug": {
       "contextualFooter": {

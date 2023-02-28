@@ -982,6 +982,61 @@ title: Themes menu
                         ]'
                         >Veterans and military</button>
                     </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/youth.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches":
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/youth"
+                                    }
+                            }
+                        ]'
+                        >Youth</button>
+                    </li>
                 </ul>
                 <div id="gc-mnu-container">
 					<div id="target"></div>
