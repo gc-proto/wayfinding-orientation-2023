@@ -3,6 +3,13 @@
 	border-left: solid #26374a 5px;
 }
 
+#wb-bc li:before {
+	color: #333;
+	content: "\f054";
+	font-family: "Font Awesome 5 Free";
+	font-size: .7em;
+}
+
 /* JM: positioning of sign in and breadcrumb */
       			#wb-bnr+hr {
       			  border-top: 1px solid #ddd !important;
