@@ -9,7 +9,7 @@
 {%- if page.auth.type == "contextual" -%}
 	{% assign label = page.auth.label | truncate: 12, "" %}
 	{% assign labelExtended = page.auth.labelExtended | truncate: 25, "" %}
-	{%- if page.auth.json -%}
+	{%- if page.auth.wb-json -%}
 	<a class="btn btn-primary custom" href="{{ page.auth.link }}" data-wb-json='{ "url": "#[contextual]/current/auth/link", "type": "attr", "attr": "href" }'>
 		<span class="visible-xs">{{ label }}</span>
 		<span class="hidden-xs" data-json-replace="#[contextual]/current/auth/labelExtended">{{ labelExtended }}</span>

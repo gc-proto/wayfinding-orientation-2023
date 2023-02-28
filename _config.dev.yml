@@ -1,0 +1,3 @@
+# jekyll serve --config _config_dev.yml
+baseurl: ""
+url: https://localhost:4000

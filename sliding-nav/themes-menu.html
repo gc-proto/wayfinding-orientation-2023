@@ -3,17 +3,12 @@ auth:
   type: contextual
   label: "Sign in"
   labelExtended: "Sign in"
-  json: true
+  wb-json: true
 contextualFooter:
   title: Canada.ca
   links: ""
-css:
-  - https://use.fontawesome.com/releases/v5.6.3/css/all.css
-  - css/themes-menu.css
+  wb-json: true
 lang: en
-layout: without-h1
-nomenu: true
-noReportProblem: true
 script: themes-menu.js
 title: Themes menu
 ---
@@ -999,4 +994,17 @@ title: Themes menu
 	"url": "gc-contextual.json",
 	"name": "contextual",
 	"wait": true
+}'></div>
+<div data-wb-urlmapping='{
+    "example1a":
+    {
+        "action": "patch",
+        "source": "#gc-menu",
+        "patches":
+        {
+            "op": "add",
+            "path": "/city",
+            "value": "Gatineau"
+        }
+    }
 }'></div>

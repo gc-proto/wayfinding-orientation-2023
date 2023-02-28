@@ -1,3 +1,4 @@
+{%- assign i18nText-lang = page.lang -%}
 {%- capture footerIncludeVersion -%}
 	{%- if page.includes.footer -%}
 		{{ page.includes.footer }}
@@ -50,7 +51,7 @@
 		<div class="container">
 			<nav>
 				<h3 data-json-replace="#[contextual]/current/contextualFooter/title">{{ contextualFooterTitle }}</h3>
-                {%- if page.contextualFooter.links == empty -%}<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3" data-wb-json='{
+                {%- if page.contextualFooter.wb-json -%}<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3" data-wb-json='{
                     "url": "#[contextual]/current/contextualFooter/links",
                     "mapping": [
                         { "selector": "a", "value": "/text" },
@@ -127,23 +128,23 @@
 					<li><a href="https://www.canada.ca/fr/services/veterans.html">Vétérans et militaires</a></li>
 					<li><a href="https://www.canada.ca/fr/services/jeunesse.html">Jeunesse</a></li>
 					{%- elsif i18nText-lang == "en" -%}
-					<li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
-					<li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-					<li><a href="https://travel.gc.ca/">Travel and tourism</a></li>
-					<li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
-					<li><a href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
-					<li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
-					<li><a href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-					<li><a href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
-					<li><a href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
-					<li><a href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
-					<li><a href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
-					<li><a href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
-					<li><a href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
-					<li><a href="https://www.canada.ca/en/services/finance.html">Money and finance</a></li>
-					<li><a href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
-					<li><a href="https://www.canada.ca/en/services/indigenous-peoples.html">Indigenous peoples</a></li>
-					<li><a href="https://www.canada.ca/en/services/veterans.html">Veterans and military</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Jobs' | prepend: site.baseurl }}">Jobs</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Immigration' | prepend: site.baseurl }}">Immigration and citizenship</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Travel' | prepend: site.baseurl }}">Travel and tourism</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Business' | prepend: site.baseurl }}">Business</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Benefits' | prepend: site.baseurl }}">Benefits</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Health' | prepend: site.baseurl }}">Health</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Taxes' | prepend: site.baseurl }}">Taxes</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Environment' | prepend: site.baseurl }}">Environment and natural resources</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Security' | prepend: site.baseurl }}">National security and defence</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Culture' | prepend: site.baseurl }}">Culture, history and sport</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Policing' | prepend: site.baseurl }}">Policing, justice and emergencies</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Transport' | prepend: site.baseurl }}">Transport and infrastructure</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Canada' | prepend: site.baseurl }}">Canada and the world</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Money' | prepend: site.baseurl }}">Money and finance</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Science' | prepend: site.baseurl }}">Science and innovation</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Indigenous' | prepend: site.baseurl }}">Indigenous peoples</a></li>
+					<li><a href="{{ '/sliding-nav/themes-menu.html?t=Veterans' | prepend: site.baseurl }}">Veterans and military</a></li>
 					<li><a href="https://www.canada.ca/en/services/youth.html">Youth</a></li>
 					{%- endif -%}
 				</ul>

@@ -1,1 +1,21 @@
+baseurl: /wayfinding-orientation-2023
+url: https://test.canada.ca
+
+# Override include to use
+includes:
+  footer: v4
+
+defaults:
+  - scope:
+      path: "sliding-nav"
+    values:
+      css:
+        - https://use.fontawesome.com/releases/v5.6.3/css/all.css
+        - css/themes-menu.css
+      lang: en
+      layout: without-h1
+      nomenu: true
+      noReportProblem: true
+      pageclass: cnt-wdth-lmtd
+
 remote_theme: wet-boew/gcweb-jekyll
