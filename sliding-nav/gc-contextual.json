@@ -69,11 +69,11 @@
         "labelExtended": "Sign in"
       },
       "contextualFooter": {
-        "title": "Canada.ca",
+        "title": "Service Canada",
         "links": [
           {
-            "url": "benefits/someUrl.html",
-            "text": "Contact benefits"
+            "url": "https://www.canada.ca/en/employment-social-development/corporate/contact.html",
+            "text": "Contact us"
           }
         ]
       }
@@ -280,11 +280,19 @@
         "labelExtended": "Sign in"
       },
       "contextualFooter": {
-        "title": "Canada.ca",
+        "title": "Youth Secretariat",
         "links": [
           {
-          "url": "indigenous/someUrl.html",
-          "text": "Contact youth"
+          "url": "https://www.canada.ca/en/youth.html",
+          "text": "About us"
+          },
+          {
+            "url": "https://www.canada.ca/en/youth/services/subscribe.html",
+            "text": "Stay updated"
+          },
+          {
+            "url": "https://www.youth.service.canada.ca/en",
+            "text": "Youth Digital Gateway"
           }
         ]
       }
