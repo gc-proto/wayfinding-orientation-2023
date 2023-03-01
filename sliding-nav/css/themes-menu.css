@@ -1,7 +1,13 @@
-.pagedetails {
-    padding-bottom: 1em !important;
-    padding-top: 0em !important;
-}
+
+/* tighten space for cont footer */
+        .pagedetails {
+            padding-bottom: 1em !important;
+            padding-top: 0em !important;
+        }
+
+        #wb-dtmd {
+            margin: 0.5em 0 0 !important;
+        }
 
 #wb-bc li:first-child a {
     padding-left: 8px;
