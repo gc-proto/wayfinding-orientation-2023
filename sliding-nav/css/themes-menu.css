@@ -1,3 +1,8 @@
+.pagedetails {
+    padding-bottom: 1em !important;
+    padding-top: 0em !important;
+}
+
 #wb-bc li:first-child a {
     padding-left: 8px;
     border-left: solid #26374a 5px;
