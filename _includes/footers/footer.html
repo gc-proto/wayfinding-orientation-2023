@@ -1,4 +1,7 @@
 {%- assign i18nText-lang = page.lang -%}
+{%- if page.layout == null -%}
+	{%- assign i18nText-goc = page.i18nText-goc -%}
+{%- endif -%}
 {%- capture footerIncludeVersion -%}
 	{%- if page.includes.footer -%}
 		{{ page.includes.footer }}

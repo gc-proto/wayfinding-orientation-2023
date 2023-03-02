@@ -9,9 +9,11 @@ defaults:
   - scope:
       path: "sliding-nav"
     values:
+      altLangPage: ""
       css:
         - https://use.fontawesome.com/releases/v5.6.3/css/all.css
         - css/themes-menu.css
+      dateModified: 2023-03-01
       lang: en
       layout: without-h1
       nomenu: true
