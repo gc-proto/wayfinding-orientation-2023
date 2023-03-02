@@ -69,11 +69,19 @@
         "labelExtended": "Sign in"
       },
       "contextualFooter": {
-        "title": "Service Canada",
+        "title": "Benefits Contacts",
         "links": [
           {
             "url": "https://www.canada.ca/en/employment-social-development/corporate/contact.html",
-            "text": "Contact us"
+            "text": "Contact Service Canada"
+          },
+          {
+            "url": "https://www.canada.ca/en/revenue-agency/corporate/contact-information.html",
+            "text": "Contact the CRA"
+          },
+          {
+            "url": "https://www.canada.ca/en/employment-social-development/corporate/contact/ei-individual.html",
+            "text": "Contact EI"
           }
         ]
       }
