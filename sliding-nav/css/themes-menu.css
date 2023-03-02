@@ -1,8 +1,8 @@
 
 /* tighten space for cont footer */
         .pagedetails {
-            padding-bottom: 1em !important;
-            padding-top: 0em !important;
+            padding-bottom: 1.2em !important;
+            padding-top: 0.5em !important;
         }
 
         #wb-dtmd {

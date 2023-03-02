@@ -1,6 +1,6 @@
 .pagedetails {
-	padding-bottom: 1em !important;
-	padding-top: 0em !important;
+	padding-bottom: 1.2em !important;
+	padding-top: .5em !important;
 }
 
 .pagedetails details {
@@ -96,6 +96,11 @@
       			main.signin {
       			  top: -44px !important;
       			}
+						
+						.global-footer.signin {
+							top: -44px !important;
+							position: relative !important;
+						}
       
       			.signin.breadcrumb {
       			  position: relative;
