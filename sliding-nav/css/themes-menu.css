@@ -121,10 +121,10 @@
     outline: 1px solid greenyellow;
 }*/
 
- /* JM fixing the spacing above the FIP */
+ /* JM fixing the spacing above the FIP
  body {
      margin-top: 28px;
- }
+ } */
 
  /* JM fixing the BC alignment */
  .breadcrumb {
