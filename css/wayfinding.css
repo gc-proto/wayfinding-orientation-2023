@@ -199,4 +199,7 @@
 	.provisional.most-requested-bullets li {
 		font-size: 19px;
 	}
+		.signin.breadcrumb {
+			max-width: 300px;
+		}
 }
