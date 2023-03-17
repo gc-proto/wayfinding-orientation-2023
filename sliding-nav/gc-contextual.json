@@ -20,11 +20,11 @@
         "labelExtended": "IRCC Sign in"
       },
       "contextualFooter": {
-        "title": "Immigration, Refugees and Citizenship Canada (IRCC)",
+        "title": "Immigration and Citizenship",
         "links": [
           {
             "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc.html",
-            "text": "Contact IRCC"
+            "text": "Contact us"
           },
           {
             "url": "https://ircc.canada.ca/english/helpcentre/index-featured-can.asp",
