@@ -53,24 +53,17 @@
 		<section class="container">
 			<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>[name of account]</span>: <span>Sign
 						in</span></span></h1>
-			<p>[MANDATORY description of the unique tasks that people can do from this account - in user's language,
-				just a
-				sentence or two. If there are a lot, add an expand-collapse with a bulleted list.]</p>
-			<p>[If there is another account that is often confused with this one, add a line here to redirect users, or
-				add an anchor link down <]< /p>
-
-					<h2 class="wb-inv">Temporary alerts and notices</h2>
-					<div class="alert alert-warning">
+			<p>[MANDATORY description of the unique tasks for THIS account - in user's language,
+				keep it short. If more than 2 lines, add expand-collapse with list inside.]</p>
+			<!--
+			<h2 class="wb-inv">Temporary alerts and notices</h2>
+				<div class="alert alert-warning">
 						<h3>Alert for temporary situation that will impact sign-in of many users</h3>
-						<p>Explain what they should do to solve the temporary situation. <strong>Don't put more than one
-								alert
-							</strong> because it pushes the sign-in box down and they'll think it's the wrong page. </p>
-						<p>alerts that aren't temporary are likely to be overlooked</p>
-					</div>
-
+						<p>Explain what they should do to solve the temporary situation. <strong>One short alert only
+							</strong> so it doesn't push down the sign-in box </p>
+				</div>
+-->
 		</section>
-
-
 		<section class="container">
 			<div class="well well-sm brdr-rds-0">
 				<div class="panel panel-default mrgn-bttm-0 brdr-rds-0">
@@ -81,7 +74,6 @@
 								<h3 class="mrgn-tp-sm">[MANDATORY block] Sign in to [name of account]</h3>
 								<div class="row mrgn-tp-md">
 									<div class="col-sm-10 col-sm-offset-1">
-										<p>Use the same sign-in option every time you sign in. </p>
 										<ul class="list-unstyled lst-spcd-2">
 											<li><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
 														class="h4"><span class="fa-solid fa-key fa-lg fa-pull-left"
@@ -98,7 +90,7 @@
 											<li><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
 														class="h4"><span class="fa-solid fa-id-card fa-lg fa-pull-left"
 															style="margin-top: 10px;"></span>Through
-														some provinces<span class="wb-inv"> province
+														a province<span class="wb-inv"> province
 															sign-in</span></span></a></li>
 											<!--<li><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
 														class="h4"><span class="fas fa-fingerprint fa-lg fa-pull-left"
@@ -113,7 +105,7 @@
 									<p>Sign in the same way every time you use your account.</p>
 									<ul>
 										<li>when you first registered for an account, you chose a sign-in option such
-											as GCKey, your banking Sign-in Partner or your province </li>
+											as a GCKey username and password, your banking Sign-in Partner or your province </li>
 										<li> the sign-in option you chose was tied to your
 											account and user profile. Use that same option every time you sign in
 										</li>
@@ -127,12 +119,11 @@
 									<p><a href=#help>More help with your account</a></p>
 								</details>
 								<details class="max-content mrgn-bttm-md">
-									<summary><span class="far fa-clock fa-lg"></span> Hours of service for online system
-										access
+									<summary><span class="far fa-clock fa-lg"></span> [Optional Upcoming outages or hours of service
 									</summary>
 									<p>You can access your account 24 hours a day, 7 days a week, because it's 2022.</p>
 									<ul>
-										<li>There are no currently scheduled maintenance dates</li>
+										<li>There are no currently scheduled maintenance outages</li>
 									</ul>
 								</details>
 								<p><a href="#help">Help with your account</a></p>
@@ -161,24 +152,14 @@
 			</div>
 		</section>
 		<section class="container">
-			<h3>Security steps to protect your account</h3>
+			<h3>[Optional] Security steps to protect your account</h3>
 			<ul class="lst-spcd list-unstyled">
 				<li>
 					<details>
-						<summary>You need to have an email address on file</summary>
+						<summary>Email and phone numbers for authentication</summary>
 						<p>All [account name] users will need to have an email address on file to help protect their
 							online accounts from fraudulent activity. If you do not currently have an email address
 							on file, you will be prompted to provide one when you sign in.</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>More authentication while you sign in</summary>
-						<p>To protect your account from access by someone else, you'll be asked for another personal
-							identification step (like a number that is sent to your phone) after you enter your
-							username and password &nbsp;<a
-								href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">Multi-factor
-								authentication to access CRA sign-in services</a>.</p>
 					</details>
 				</li>
 			</ul>
@@ -197,9 +178,8 @@
 				<h2 id="help" class="mrgn-tp-0">[MANDATORY] Help with your account</h2>
 				<div class="row wb-eqht-grd">
 					<div class="col-sm-6 ">
-						<h3 id="code" class="mrgn-tp-0"><a href="">Get a [security code/registration code]</a></h3>
-						<p>If there are codes/applications/approvals/whatever to get an account, add concise
-							instructions and links to the application process/email/ here. </p>
+						<h3 id="code" class="mrgn-tp-0"><a href="./register-pattern.html#h-1">[optional]Get a [security code/registration code]</a></h3>
+						<p>[If there are codes/approvals needed to register, add a link that step on the Register page] </p>
 					</div>
 					<div class="col-sm-6">
 						<h3 class="mrgn-tp-0" id="forgot">Forgot your GCKey password or username</h3>
@@ -214,7 +194,7 @@
 								<li>if you've forgotten both, select
 									<strong>Forgot your
 										username</strong> on the
-										<a href="">Sign-in with GCkey</a> page to have it emailed, then use
+									<a href="">Sign-in with GCkey</a> page to have it emailed, then use
 									<strong>Forgot
 										your password</strong>
 								</li>
