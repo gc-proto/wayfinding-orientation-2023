@@ -55,14 +55,16 @@
 						in</span></span></h1>
 			<p>[MANDATORY description of the unique tasks for THIS account - in user's language,
 				keep it short. If more than 2 lines, add expand-collapse with list inside.]</p>
-			<!--
-			<h2 class="wb-inv">Temporary alerts and notices</h2>
-				<div class="alert alert-warning">
-						<h3>Alert for temporary situation that will impact sign-in of many users</h3>
-						<p>Explain what they should do to solve the temporary situation. <strong>One short alert only
-							</strong> so it doesn't push down the sign-in box </p>
-				</div>
--->
+
+			<div class="alert alert-warning">
+
+			</div>
+			<details class="max-content mrgn-bttm-md">
+				<summary><span class="far fa-clock fa-lg"></span> [Optional] Upcoming outage or temporary issue
+				</summary>
+				<p>[put this on the page only when there IS an upcoming outage or an issue - cannot be permanent]</p>
+			</details>
+			</div>
 		</section>
 		<section class="container">
 			<div class="well well-sm brdr-rds-0">
@@ -101,17 +103,16 @@
 									</div>
 								</div>
 								<details class="mrgn-bttm-md max-content">
-									<summary>Don't remember which option you registered with?</summary>
-									<p>Sign in the same way every time you use your account.</p>
+									<summary>Use the same option you registered with</summary>
+									<p>Sign in the same way every time you use your account:</p>
 									<ul>
-										<li>when you first registered for an account, you chose a sign-in option such
-											as a GCKey username and password, your banking Sign-in Partner or your province </li>
+										<li>when you first registered for this account, you chose a sign-in option such
+											as a GCKey username and password, your banking Sign-in Partner or your
+											province </li>
 										<li> the sign-in option you chose was tied to your
-											account and user profile. Use that same option every time you sign in
+											account and user profile - if you choose a different one, you may be asked
+											to register again
 										</li>
-										<li>If you can't remember, try the option that you think you used - if the pages
-											that appear are for registering a new account, return to this page and try
-											the next most likely option </li>
 									</ul>
 									<p> If you haven't already registered for an account, <a
 											href="./register-pattern.html">
@@ -129,15 +130,6 @@
 												for an account</span></a>
 									</div>
 								</div>
-								<details class="max-content mrgn-bttm-md">
-									<summary><span class="far fa-clock fa-lg"></span> [Optional] Upcoming outages or hours of service
-									</summary>
-									<p>You can access your account 24 hours a day, 7 days a week, because it's 2022.</p>
-									<ul>
-										<li>There are no currently scheduled maintenance outages</li>
-									</ul>
-								</details>
-								<p><a href="#help">Help with your account</a></p>
 							</div>
 						</div>
 					</div>
@@ -171,8 +163,10 @@
 				<h2 id="help" class="mrgn-tp-0">[MANDATORY] Help with your account</h2>
 				<div class="row wb-eqht-grd">
 					<div class="col-sm-6 ">
-						<h3 id="code" class="mrgn-tp-0"><a href="./register-pattern.html#h-1">[optional]Get a [security code/registration code]</a></h3>
-						<p>[If there are codes/approvals needed to register, add a link that step on the Register page] </p>
+						<h3 id="code" class="mrgn-tp-0"><a href="./register-pattern.html#h-1">[optional]Get a [security
+								code/registration code]</a></h3>
+						<p>[If there are codes/approvals needed to register, add a link that step on the Register page]
+						</p>
 					</div>
 					<div class="col-sm-6">
 						<h3 class="mrgn-tp-0" id="forgot">Forgot your GCKey password or username</h3>
