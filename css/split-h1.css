@@ -1,0 +1,33 @@
+	h1 span.stacked {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-left: -9999px
+	}
+
+	h1 span.stacked span:nth-child(1) {
+		margin-top: -1.1em
+	}
+
+	h1 span.stacked span:nth-child(1),
+	h1 span.stacked span:nth-child(2) {
+		margin-left: 9999px
+	}
+
+	h1 span.stacked span:nth-child(2) {
+		font-size: 26px;
+		color: #555;
+		font-weight: 500;
+		margin-bottom: .17em
+	}
+
+	h1 {
+		border-bottom: none !important;
+	}
+
+	h1#wb-cont::after {
+		content: "";
+		display: block;
+		width: 70px;
+		padding-bottom: 8px;
+		border-bottom: .18em solid #af3c43
+	}
