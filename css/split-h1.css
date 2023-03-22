@@ -31,3 +31,12 @@
 		padding-bottom: 8px;
 		border-bottom: .18em solid #af3c43
 	}
+
+
+	
+		@media screen and (max-width: 991px) {
+			[class*=cnjnctn-type-] [class*=cnjnctn-col]:not(:first-child):after {
+				background-image: none !important;
+				background-size: 0px;
+			}
+		}
