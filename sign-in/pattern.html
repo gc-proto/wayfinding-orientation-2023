@@ -125,7 +125,8 @@
 									<div class="col-sm-10 col-sm-offset-1">
 										<a href="./register-pattern.html"
 											class="btn btn-default btn-lg btn-block p-sm-3"><span class="h4"><span
-													class="fas fa-user-edit fa-lg mrgn-rght-sm fa-pull-left" style="line-height: .75em !important"></span>Register
+													class="fas fa-user-edit fa-lg mrgn-rght-sm fa-pull-left"
+													style="line-height: .75em !important"></span>Register
 												for an account</span></a>
 									</div>
 								</div>
@@ -135,28 +136,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="container">
-			<h3>[Optional] Security steps to protect your account</h3>
-			<ul class="lst-spcd list-unstyled">
-				<li>
-					<details>
-						<summary>Email and phone numbers for authentication</summary>
-						<p>All [account name] users will need to have an email address on file to help protect their
-							online accounts from fraudulent activity. If you do not currently have an email address
-							on file, you will be prompted to provide one when you sign in.</p>
-					</details>
-				</li>
-			</ul>
-		</section>
-		<!--	<section class="container gc-srvinfo">
-			<h2 class="wb-inv">[About this account - only for BIG accounts]</h2>
-			<div class="row wb-eqht-grd">
-				<div class="col-sm-6 ">
-					<h3 class="mrgn-tp-0"><a href="#">About this account</a></h3>
-					<p>What's new in the account.</p>
-				</div>
-			</div>
-		</section>-->
+
 		<div class="well brdr-0 brdr-rds-0 mrgn-tp-lg">
 			<section class="container gc-srvinfo">
 				<h2 id="help" class="mrgn-tp-0">[MANDATORY] Help with your account</h2>
@@ -169,9 +149,11 @@
 								<li><a href="#revoked">Your GCKey username and password have been revoked</a></li>
 								<li>
 									<details>
-										<summary><span id="questions">[optional]Failed security questions</span></summary>
+										<summary><span id="questions">[optional]Failed security questions</span>
+										</summary>
 										<!-- must be provided for this particular account -->
-										<p>[explain what to do if user failed to answer security questions if this account requires them]</p>
+										<p>[explain what to do if user failed to answer security questions if this
+											account requires them]</p>
 									</details>
 								</li>
 								<li>[other reasons to lock out? add instructions]</li>
@@ -307,7 +289,36 @@
 				</div>
 			</div>
 		</section>
-
+		<div class="well brdr-0 brdr-rds-0 mrgn-tp-lg">
+			<section class="container gc-srvinfo">
+				<h2 class="mrgn-tp-0">[Optional] About this account</h2>
+				<div class="row wb-eqht-grd">
+					<div class="col-sm-6 ">
+						<details>
+							<summary><span id="security">Security steps to protect your account</span></summary>
+							<p>[You will need to have an email address on file to help protect your
+								online accounts from fraudulent activity. If you do not currently have an email address
+								on file, you will be prompted to provide one when you sign in.]</p>
+						</details>
+						<div class="col-sm-6 ">
+							<details>
+								<summary><span id="new">New actions you can take in your account</span></summary>
+								<p>[New feature descriptions]</p>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container gc-srvinfo">
+				<h2 class="wb-inv">[Optional] About this account</h2>
+				<div class="row wb-eqht-grd">
+					<div class="col-sm-6 ">
+						<h3 class="mrgn-tp-0"><a href="#">About this account</a></h3>
+						<p>What's new in the account.</p>
+					</div>
+				</div>
+			</section>
+		</div>
 		<div class="container">
 			<div id="def-preFooter"> </div>
 		</div>
