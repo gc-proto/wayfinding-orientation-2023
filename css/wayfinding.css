@@ -3,6 +3,10 @@
 	padding-top: .5em !important;
 }
 
+#wb-bc a {
+	padding: 5px 5px;
+}
+
 .pagedetails details {
 	padding-top: 2em;
 	padding-bottom: 2em;
