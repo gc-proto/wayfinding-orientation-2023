@@ -34,9 +34,10 @@
 
 
 	
-		@media screen and (max-width: 991px) {
+/*! Commented out by Lisa Sept 13 replaced by mount revelstoke css file			@media screen and (max-width: 991px) {
 			[class*=cnjnctn-type-] [class*=cnjnctn-col]:not(:first-child):after {
 				background-image: none !important;
 				background-size: 0px;
 			}
 		}
+*/
