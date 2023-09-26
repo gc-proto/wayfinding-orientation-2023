@@ -115,6 +115,9 @@
     #gc-mnu .well-sm {
         overflow: hidden; /* JM: temporary fix for scrolling into well on mobile */
     }
+    #gc-mnu {
+        border-left: 0px;
+    }
 }
 /* For debugging only 
 #gc-mnu-container * {
