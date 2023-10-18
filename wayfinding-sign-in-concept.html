@@ -15,13 +15,41 @@
     
     <link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon-mobile.png"><link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
     <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
-    <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" /></noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"><link rel="stylesheet" href="sliding-nav/css/themes-menu.css">
+    <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" /></noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"><link rel="stylesheet" href="sliding-nav/sliding-nav-updated/css/themes-menu.css">
     </head>
     <body class="cnt-wdth-lmtd" vocab="http://schema.org/" typeof="WebPage"><nav>
         <ul id="wb-tphp" class="wb-init wb-disable-inited">
             <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
             <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to About this site</a></li><li class="wb-slc"><a class="wb-sl" href="?wbdisable=true" rel="alternate">Switch to basic HTML version</a></li></ul>
     </nav>
+
+    <style>
+
+        .most-requested {
+            margin-top: -45px;
+        }
+        /*just to fix space created by sign in button div*/
+
+        .sign-in-positioning {
+            position: relative;
+            top: -118px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sign-in-positioning {
+                top: -186px;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .sign-in-positioning {
+                top: -174px;
+            }
+        }
+
+                /*just to demonstrate the idea that we want the button to be part of the theme for screenreaders, but positioned like a regular sign in button - talk to accessibility working group */
+
+    </style>
     
     <header>
         <div id="wb-bnr" class="container">
@@ -1049,6 +1077,7 @@
                         </li>
                     </ul>
                     <div id="gc-mnu-container"><div class="section" role="menu" id="gc-mnu">
+                        
         <div class="provisional profile">
             <div class="container">
                 <div class="row">
@@ -1058,6 +1087,14 @@
                 </div>
             </div>
         </div>
+        <!-- poisition sign in so it's under the theme h3 for screenreaders-->
+        <section id="wb-so" class="sign-in-positioning">
+            <h3 class="wb-inv">Sign in</h3>
+            <a class="btn btn-primary custom wb-init wb-data-json-inited" href="benefits.html" data-wb-json="{ &quot;url&quot;: &quot;#[contextual]/current/auth/link&quot;, &quot;type&quot;: &quot;attr&quot;, &quot;attr&quot;: &quot;href&quot; }" id="wb-auto-2">
+                <span class="visible-xs">Sign in</span>
+                <span class="hidden-xs wb-init wb-data-json-inited" data-json-replace="#[contextual]/current/auth/labelExtended" id="wb-auto-3">Sign in</span>
+            </a></section>
+        <!-- poisition sign in so it's under the theme h3 for screenreaders-->
         <section class="most-requested">
             <div class="container">
                 <div class="row well well-sm brdr-0">
