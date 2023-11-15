@@ -100,6 +100,62 @@
               <p>Choose which username and password process to use now
                 to register, and in the future when you sign in.
               </p>
+              <details>
+                <summary><span id="wizard"><strong>Not sure? Find the best options for your situation</strong>
+                  </span></summary>
+                <p>Check all of the options below that apply to your situation:</p>
+                <fieldset id="checkboxForm" class="gc-chckbxrdio">
+                  <ul class="list-unstyled lst-spcd-2">
+                    <li class="checkbox">
+                      <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
+                      <label for="bankOnline">I bank online at a major Canadian bank or credit union</label>
+                    </li>
+                    <li class="checkbox">
+                      <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
+                      <label for="pacLetter">I received a Personal Access Code letter in the mail</label>
+                    </li>
+                    <li class="checkbox">
+                      <input type="checkbox" id="gckey" name="options" value="gckey">
+                      <label for="gckey">I already made a GCKey username and password</label>
+                    </li>
+                    <li class="checkbox">
+                      <input type="checkbox" id="provinceAccount" name="options" value="provinceAccount">
+                      <label for="provinceAccount">I have an online account with Alberta.ca or BC Service
+                        Card</label>
+                    </li>
+                    <li class="checkbox">
+                      <input type="checkbox" id="noneAbove" name="options" value="noneAbove">
+                      <label for="noneAbove">None of the above</label>
+                    </li>
+                  </ul>
+                  <button type="submit" id="submitButton" class="btn-default btn-primary">Done</button>
+                </fieldset>
+
+                <div id="answers">
+                  <p id="answerBank" style="display:none;">ANSWER FOR BANK ONLINE ONLY: ask 2nd question to see if
+                    can
+                    verify through their particular bank (list
+                    is BMO, CIBC,Desjardin,RBC, Scotiabank, TD), if yes, verify with bank, if no, they should apply
+                    for a
+                    PAC before they start</p>
+                  <p id="answerPac" style="display:none;">ANSWER FOR PAC ONLY: advise them to sign up for a GCKey
+                    username
+                    and password</p>
+                  <p id="answerProvince" style="display:none;">ANSWER FOR PROVINCE ONLY: use the province</p>
+                  <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and
+                    enter
+                    PAC at verify step</p>
+                  <p id="answerBankProvince" style="display:none;">ANSWER FOR BANK AND PROVINCE: advise them to use
+                    their province not their bank - no verification
+                    needed</p>
+                  <p id="answerPacProvince" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't
+                    need
+                    PAC?</p>
+                  <p id="none" style="display:none;">ANSWER FOR NONE: give link to apply for a PAC and tell how to
+                    sign up
+                    for a GCkey username and password</p>
+                </div>
+              </details>
               <!-- single vertical column so buttons same on phone/desk across register and sign-in-->
               <ul class="cnjnctn-type-or brdr-0">
                 <li class="cnjnctn-col">
@@ -165,62 +221,7 @@
                   </details>
                 </li>
               </ul>
-              <details>
-                <summary><span id="wizard"><strong>Not sure? Find the best options for your situation</strong>
-                  </span></summary>
-                <p>Check all of the options below that apply to your situation:</p>
-                <fieldset id="checkboxForm" class="gc-chckbxrdio">
-                  <ul class="list-unstyled lst-spcd-2">
-                    <li class="checkbox">
-                      <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
-                      <label for="bankOnline">I bank online at a major Canadian bank or credit union</label>
-                    </li>
-                    <li class="checkbox">
-                      <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
-                      <label for="pacLetter">I received a Personal Access Code letter in the mail</label>
-                    </li>
-                    <li class="checkbox">
-                      <input type="checkbox" id="gckey" name="options" value="gckey">
-                      <label for="gckey">I already made a GCKey username and password</label>
-                    </li>
-                    <li class="checkbox">
-                      <input type="checkbox" id="provinceAccount" name="options" value="provinceAccount">
-                      <label for="provinceAccount">I have an online account with Alberta.ca or BC Service
-                        Card</label>
-                    </li>
-                    <li class="checkbox">
-                      <input type="checkbox" id="noneAbove" name="options" value="noneAbove">
-                      <label for="noneAbove">None of the above</label>
-                    </li>
-                  </ul>
-                  <button type="submit" id="submitButton" class="btn-default btn-primary">Done</button>
-                </fieldset>
 
-                <div id="answers">
-                  <p id="answerBank" style="display:none;">ANSWER FOR BANK ONLINE ONLY: ask 2nd question to see if
-                    can
-                    verify through their particular bank (list
-                    is BMO, CIBC,Desjardin,RBC, Scotiabank, TD), if yes, verify with bank, if no, they should apply
-                    for a
-                    PAC before they start</p>
-                  <p id="answerPac" style="display:none;">ANSWER FOR PAC ONLY: advise them to sign up for a GCKey
-                    username
-                    and password</p>
-                  <p id="answerProvince" style="display:none;">ANSWER FOR PROVINCE ONLY: use the province</p>
-                  <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and
-                    enter
-                    PAC at verify step</p>
-                  <p id="answerBankProvince" style="display:none;">ANSWER FOR BANK AND PROVINCE: advise them to use
-                    their province not their bank - no verification
-                    needed</p>
-                  <p id="answerPacProvince" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't
-                    need
-                    PAC?</p>
-                  <p id="none" style="display:none;">ANSWER FOR NONE: give link to apply for a PAC and tell how to
-                    sign up
-                    for a GCkey username and password</p>
-                </div>
-              </details>
             <li class="lst-item">
               <h2 class="h3" id="h-3">[Only add more if there's a step AFTER they complete the registration, like
                 waiting for a code to be mailed]</h2>
