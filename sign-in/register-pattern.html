@@ -105,8 +105,8 @@
         <div class="col-md-8"> <!-- want single column so look same on phone and desk-->
           <ul class="cnjnctn-type-or">
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
-                      class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian <em>Interac</em>&reg;
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+                    class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian <em>Interac</em>&reg;
                     Sign-in Partner</span></a>
               </div>
               <p>Great option if you already bank online with an <em>Interac</em>&reg; Sign-in Partner
@@ -137,8 +137,9 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
-                      class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial partner (AB, BC) </span></a>
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+                    class="h3"><span class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial partner (AB, BC)
+                  </span></a>
               </div>
               <details>
                 <summary>Best option if you have an online account with: </summary>
@@ -150,8 +151,8 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
-                      class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+                    class="h3"><span class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
                     password</span></a>
               </div>
               <details>
@@ -198,17 +199,20 @@
               </fieldset>
 
               <div id="answers">
-                <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and enter
-                  PAC at verify step</p>
                 <p id="answerBank" style="display:none;">ANSWER FOR BANK ONLINE ONLY: ask 2nd question to see if can
                   verify through their particular bank (list
                   is BMO, CIBC,Desjardin,RBC, Scotiabank, TD), if yes, verify with bank, if no, they should apply for a
                   PAC before they start</p>
-                <p id="answerBankProvince" style="display:none;">ANSWER FOR BANK ONLINE AND PROVINCE: advise them to use
-                  their province not their bank - no verification
-                  needed</p>
                 <p id="answerPac" style="display:none;">ANSWER FOR PAC ONLY: advise them to sign up for a GCKey username
                   and password</p>
+                <p id="answerProvince" style="display:none;">ANSWER FOR PROVINCE ONLY: use the province</p>
+                <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and enter
+                  PAC at verify step</p>
+                <p id="answerBankProvince" style="display:none;">ANSWER FOR BANK AND PROVINCE: advise them to use
+                  their province not their bank - no verification
+                  needed</p>
+                <p id="answerPacProvince" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't need
+                  PAC?</p>
                 <p id="none" style="display:none;">ANSWER FOR NONE: give link to apply for a PAC and tell how to sign up
                   for a GCkey username and password</p>
               </div>
@@ -262,6 +266,24 @@
       // Logic to determine which answer to show
       if (bankOnline && pacLetter) {
         document.getElementById('answerBankPac').style.display = 'block';
+      }
+      if (bankOnline && provinceAccount) {
+        document.getElementById('answerBankProvince').style.display = 'block';
+      }
+      if (bankOnline) {
+        document.getElementById('answerBank').style.display = 'block';
+      }
+      if (pacletter) {
+        document.getElementById('answerPac').style.display = 'block';
+      }
+      if (pacletter && provinceAccount) {
+        document.getElementById('answerPacProvince').style.display = 'block';
+      }
+      if (provinceAccount) {
+        document.getElementById('answerProvince').style.display = 'block';
+      }
+      if (none) {
+        document.getElementById('noneAbove').style.display = 'block';
       }
       // Add more conditions here for other combinations of checkboxes
     });
