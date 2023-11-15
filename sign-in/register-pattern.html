@@ -105,7 +105,7 @@
         <div class="col-md-8"> <!-- want single column so look same on phone and desk-->
           <ul class="cnjnctn-type-or">
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+              <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg btn-block p-sm-3" href=""><span
                     class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian <em>Interac</em>&reg;
                     Sign-in Partner</span></a>
               </div>
@@ -137,7 +137,7 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+              <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg btn-block p-sm-3" href=""><span
                     class="h3"><span class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial partner (AB, BC)
                   </span></a>
               </div>
@@ -151,7 +151,7 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span
+              <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg btn-block p-sm-3" href=""><span
                     class="h3"><span class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
                     password</span></a>
               </div>
@@ -196,6 +196,7 @@
                     <label for="noneAbove">None of the above</label>
                   </li>
                 </ul>
+                <button type="button" id="submitButton">Done</button>
               </fieldset>
 
               <div id="answers">
@@ -251,7 +252,7 @@
     </script>
   </main>
   <script type="text/javascript">
-    document.getElementById('checkboxForm').addEventListener('change', function () {
+    document.getElementById('submitButton').addEventListener('click', function () {
       var bankOnline = document.getElementById('bankOnline').checked;
       var pacLetter = document.getElementById('pacLetter').checked;
       var gckey = document.getElementById('gckey').checked;
@@ -263,21 +264,12 @@
         p.style.display = 'none';
       });
 
-      // Logic to determine which answer to show
-      if (bankOnline && pacLetter) {
-        document.getElementById('answerBankPac').style.display = 'block';
-      }
-      if (bankOnline && provinceAccount) {
-        document.getElementById('answerBankProvince').style.display = 'block';
-      }
+      // Logic to determine which answer to show - ignore combos with none
       if (bankOnline) {
         document.getElementById('answerBank').style.display = 'block';
       }
       if (pacletter) {
         document.getElementById('answerPac').style.display = 'block';
-      }
-      if (pacletter && provinceAccount) {
-        document.getElementById('answerPacProvince').style.display = 'block';
       }
       if (provinceAccount) {
         document.getElementById('answerProvince').style.display = 'block';
@@ -285,7 +277,15 @@
       if (none) {
         document.getElementById('noneAbove').style.display = 'block';
       }
-      // Add more conditions here for other combinations of checkboxes
+      if (bankOnline && pacLetter) {
+        document.getElementById('answerBankPac').style.display = 'block';
+      }
+      if (bankOnline && provinceAccount) {
+        document.getElementById('answerBankProvince').style.display = 'block';
+      }
+      if (pacletter && provinceAccount) {
+        document.getElementById('answerPacProvince').style.display = 'block';
+      }
     });
   </script>
   <div id="def-footer"> </div>
