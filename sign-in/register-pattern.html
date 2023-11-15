@@ -105,7 +105,7 @@
         <div class="col-md-8"> <!-- want single column so look same on phone and desk-->
           <ul class="cnjnctn-type-or">
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
                       class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian <em>Interac</em>&reg;
                     Sign-in Partner</span></a>
               </div>
@@ -137,7 +137,7 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
                       class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial partner (AB, BC) </span></a>
               </div>
               <details>
@@ -150,7 +150,7 @@
               </details>
             </li>
             <li class="cnjnctn-col">
-              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span
+              <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block p-sm-3" href=""><span class="h3"><span
                       class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
                     password</span></a>
               </div>
@@ -171,45 +171,31 @@
             <details>
               <summary><span id="wizard"><strong>Not sure? Find the best options for your situation</strong>
                 </span></summary>
-              <!--FIELDFLOW VERSION <div class="wb-frmvld fieldflow-lg" id="services">
-                <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
-                               "noForm":false,
-                               "renderas":"checkbox",
-                               "gcChkbxrdio": true,
-                               "isoptional":true,
-                               "base": { "live": false }
-                             }'>
-                  <p>Check all of the options below that apply to your situation:</p>
-                  <ul>
-                    <li id="bankOnline">I bank online at a major Canadian bank or credit
-                      union</a></li>
-                    <li id="pacLetter"><a href="">I received a Personal Access Code letter in the mail
-                      </a></li>
-                    <li id="gckey"><a href="">I already made a GCKey username and password </a></li>
-                    <li id="provinceAccount"><a href="">I have an online account with Alberta.ca or BC Service Card</a>
-                    </li>
-                    <li id="noneAbove"><a href="">None of the above </a></li>
-                  </ul>
-                </div>
-                </form>-->
-              <!--PLAIN HTML VERSION-->
               <p>Check all of the options below that apply to your situation:</p>
-              <form id="checkboxForm">
-                <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
-                <label for="bankOnline">I bank online at a major Canadian bank or credit union</label><br>
-
-                <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
-                <label for="pacLetter">I received a Personal Access Code letter in the mail</label><br>
-
-                <input type="checkbox" id="gckey" name="options" value="gckey">
-                <label for="gckey">I already made a GCKey username and password</label><br>
-
-                <input type="checkbox" id="provinceAccount" name="options" value="provinceAccount">
-                <label for="provinceAccount">I have an online account with Alberta.ca or BC Service Card</label><br>
-
-                <input type="checkbox" id="noneAbove" name="options" value="noneAbove">
-                <label for="noneAbove">None of the above</label><br>
-              </form>
+              <fieldset id="checkboxForm" class="gc-chckbxrdio">
+                <ul class="list-unstyled lst-spcd-2">
+                  <li class="checkbox">
+                    <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
+                    <label for="bankOnline">I bank online at a major Canadian bank or credit union</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
+                    <label for="pacLetter">I received a Personal Access Code letter in the mail</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="gckey" name="options" value="gckey">
+                    <label for="gckey">I already made a GCKey username and password</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="provinceAccount" name="options" value="provinceAccount">
+                    <label for="provinceAccount">I have an online account with Alberta.ca or BC Service Card</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="noneAbove" name="options" value="noneAbove">
+                    <label for="noneAbove">None of the above</label>
+                  </li>
+                </ul>
+              </fieldset>
 
               <div id="answers">
                 <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and enter
