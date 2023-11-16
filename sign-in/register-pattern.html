@@ -146,19 +146,19 @@
                   <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and
                     enter
                     PAC at verify step</p>
-                    <p id="answerBankGCKey" style="display:none;">ANSWER FOR BANK AND GCKey: advise them to use
-                      their bank </p>
+                  <p id="answerBankGCKey" style="display:none;">ANSWER FOR BANK AND GCKey: advise them to use
+                    their bank </p>
                   <p id="answerBankProvince" style="display:none;">ANSWER FOR BANK AND PROVINCE: advise them to use
                     their province not their bank - no verification
                     needed</p>
 
-                    <p id="answerGCKeyProvince" style="display:none;">ANSWER GCKEY & PROVINCE: use Province</p>
+                  <p id="answerGCKeyProvince" style="display:none;">ANSWER GCKEY & PROVINCE: use Province</p>
                   <p id="answerPacProvince" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't
                     need
                     PAC?</p>
-                    <p id="answerPacGCKey" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't
-                      need
-                      PAC?</p>
+                  <p id="answerPacGCKey" style="display:none;">ANSWER FOR PAC and PROVINCE : use Province, don't
+                    need
+                    PAC?</p>
                   <p id="none" style="display:none;">ANSWER FOR NONE: give link to apply for a PAC and tell how to
                     sign up
                     for a GCkey username and password</p>
@@ -167,8 +167,8 @@
               <!-- single vertical column so buttons same on phone/desk across register and sign-in-->
               <ul class="cnjnctn-type-or brdr-0">
                 <li class="cnjnctn-col">
-                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span
-                        class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian
+                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span class="h3"><span
+                          class="fas fa-university fa-lg mrgn-rght-sm"></span>Canadian
                         <em>Interac</em>&reg;
                         Sign-in Partner</span></a>
                   </div>
@@ -199,8 +199,8 @@
                   </details>
                 </li>
                 <li class="cnjnctn-col">
-                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span
-                        class="h3"><span class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial ID (AB, BC)
+                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span class="h3"><span
+                          class="fas fa-id-card  fa-lg mrgn-rght-sm"></span>Provincial ID (AB, BC)
                       </span></a>
                   </div>
                   <details>
@@ -213,8 +213,8 @@
                   </details>
                 </li>
                 <li class="cnjnctn-col">
-                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span
-                        class="h3"><span class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
+                  <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg" href=""><span class="h3"><span
+                          class="fa-solid fa-key fa-lg mrgn-rght-sm"></span>GCKey username and
                         password</span></a>
                   </div>
                   <details>
@@ -268,26 +268,36 @@
       });
 
       // Logic to determine which answer to show - ignore combos with none
-      if (bankOnline) {
-        document.getElementById('answerBank').style.display = 'block';
-      }
-      if (pacletter) {
-        document.getElementById('answerPac').style.display = 'block';
-      }
-      if (provinceAccount) {
-        document.getElementById('answerProvince').style.display = 'block';
-      }
-      if (none) {
-        document.getElementById('noneAbove').style.display = 'block';
-      }
+
       if (bankOnline && pacLetter) {
         document.getElementById('answerBankPac').style.display = 'block';
       }
-      if (bankOnline && provinceAccount) {
+      else if (bankOnline && gckey) {
+        document.getElementById('answerBankGckey').style.display = 'block';
+      }
+      else if (bankOnline && provinceAccount) {
         document.getElementById('answerBankProvince').style.display = 'block';
       }
-      if (pacletter && provinceAccount) {
+      else if (pacletter && gckey) {
+        document.getElementById('answerPacGckey').style.display = 'block';
+      }
+      else if (gckey && provinceAccount) {
+        document.getElementById('answerGckeyProvince').style.display = 'block';
+      }
+      else if (pacletter && provinceAccount) {
         document.getElementById('answerPacProvince').style.display = 'block';
+      }
+      else if (provinceAccount) {
+        document.getElementById('answerProvince').style.display = 'block';
+      }
+      else if (bankOnline) {
+        document.getElementById('answerBank').style.display = 'block';
+      }
+      else if (pacletter) {
+        document.getElementById('answerPac').style.display = 'block';
+      }
+      else if (none) {
+        document.getElementById('noneAbove').style.display = 'block';
       }
     });
   </script>
