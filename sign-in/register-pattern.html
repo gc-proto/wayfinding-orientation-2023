@@ -119,57 +119,56 @@
               <details>
                 <summary><span id="wizard"><strong>Not sure? Find the best options for your situation</strong>
                   </span></summary>
+                  <p>Registering for an account requires that you both select a sign-in method and proving or verifying your identity. Answer the question below to find the best option for both signing and verifying your identity. </p>
                 <p>Check all of the options below that apply to your situation:</p>
                 <fieldset id="checkboxForm" class="gc-chckbxrdio">
                   <ul class="list-unstyled lst-spcd-2">
                     <li class="checkbox">
                       <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
-                      <label for="bankOnline">I bank online at a major Canadian bank or credit union</label>
+                      <label for="bankOnline">1. I bank online at a major Canadian bank or credit union</label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
-                      <label for="pacLetter">I received a Personal Access Code letter in the mail</label>
+                      <label for="pacLetter">2. I received a Personal Access Code letter in the mail</label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="gckey" name="options" value="gckey">
-                      <label for="gckey">I already made a GCKey username and password</label>
+                      <label for="gckey">3. I already made a GCKey username and password</label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="provinceAccount" name="options" value="provinceAccount">
-                      <label for="provinceAccount">I have an online account with Alberta.ca or BC Service
+                      <label for="provinceAccount">4. I have an online account with Alberta.ca or BC Service
                         Card</label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="noneAbove" name="options" value="noneAbove">
-                      <label for="noneAbove">None of the above</label>
+                      <label for="noneAbove">5. None of the above</label>
                     </li>
                   </ul>
                   <button type="submit" id="submitButton" class="btn-default btn-primary">Done</button>
                 </fieldset>
 
                 <div id="answers">
-                  <p id="answerBank" style="display:none;">ANSWER FOR BANK ONLINE ONLY: ask 2nd question to see if
+                  <p id="answerBank" style="display:none;">1: show list and ask if their bank is on this list. If no, tell to use GCKey. If yes, ask 3rd question to see if
                     can
                     verify through their particular bank (list
-                    is BMO, CIBC,Desjardin,RBC, Scotiabank, TD), if yes, verify with bank, if no, they should apply
+                    is BMO, CIBC,Desjardin,RBC, Scotiabank, TD), if yes, check against verify list for banks which is shorter, if not on verify, they should apply
                     for a
                     PAC before they start</p>
-                  <p id="answerPac" style="display:none;">Select the GCKey username and password option. On the Welcome page, select the <strong>Sign up button</strong> to create your username and password. You will be asked to provide your Personal Access Code later in the process.</p>
-                  <p id="answerProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
-                  <p id="answerGCKey" style="display:none;">You'll need a Personal Access Code after you sign in through your GCKey username and password. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
-                  <p id="answerBankPac" style="display:none;">ANSWER FOR BANK and PAC: Advise them to use bank and
+                  <p id="answerPac" style="display:none;">2: Select the GCKey username and password option. On the Welcome page, select the <strong>Sign up button</strong> to create a GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
+                  <p id="answerProvince" style="display:none;">4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
+                  <p id="answerGCKey" style="display:none;">3: You'll need a Personal Access Code after you sign in through your GCKey username and password. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
+                  <p id="answerBankPac" style="display:none;">1 & 2: Advise them to use bank (hmm, show bank list?) and
                     enter
                     PAC at verify step</p>
-                  <p id="answerBankGCKey" style="display:none;">ANSWER FOR BANK AND GCKey: advise them to use
-                    their bank </p>
-                  <p id="answerBankProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code. </p>
+                  <p id="answerBankGCKey" style="display:none;">1 & 3: advise them to use
+                    their bank (if on list) </p>
+                  <p id="answerBankProvince" style="display:none;">1 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code. </p>
 
-                  <p id="answerGCKeyProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
-                  <p id="answerPacProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to use your Personal Access Code.</p>
-                  <p id="answerPacGCKey" style="display:none;">Select the GCKey username and password button. You will be asked to provide your Personal Access Code later in the process. </p>
-                  <p id="none" style="display:none;">ANSWER FOR NONE: give link to apply for a PAC and tell how to
-                    sign up
-                    for a GCkey username and password</p>
+                  <p id="answerGCKeyProvince" style="display:none;">4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
+                  <p id="answerPacProvince" style="display:none;">2 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to use your Personal Access Code.</p>
+                  <p id="answerPacGCKey" style="display:none;">2 & 3: Select the GCKey username and password button. You will be asked to provide your Personal Access Code later in the process. </p>
+                  <p id="none" style="display:none;">5: Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
                 </div>
               </details>
               <hr></hr>
