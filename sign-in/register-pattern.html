@@ -119,17 +119,17 @@
               <details>
                 <summary><span id="wizard"><strong>Not sure? Find the best options for your situation</strong>
                   </span></summary>
-                  <p>Registering for an account requires that you both select a sign-in method and proving or verifying your identity. Answer the question below to find the best option for both signing and verifying your identity. </p>
+                  <p>When you register for an account, you'll choose how to sign-in and then choose how to verify your identity. Answer the question below to find your best options for both steps. </p>
                 <p>Check all of the options below that apply to your situation:</p>
                 <fieldset id="checkboxForm" class="gc-chckbxrdio">
                   <ul class="list-unstyled lst-spcd-2">
                     <li class="checkbox">
                       <input type="checkbox" id="verifyBanks" name="options" value="verifyBanks">
-                      <label for="bankOnline">1. I bank online through BMO, CIBC, Desjardins, RBC, ScotiaBank or TD </label>
+                      <label for="verifyBanks">1. I bank online through BMO, CIBC, Desjardins, RBC, ScotiaBank or TD </label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="bankOnline" name="options" value="bankOnline">
-                      <label for="bankOnline">2. I bank or credit union online through Affinity, Alberta Treasury, Coast Capital Savings, Conexus, Libro, National Bank of Canada, Servus, Simplii Financial, Tangerine or Vancity</label>
+                      <label for="bankOnline">2. I bank or credit union online through Affinity, Alberta Treasury Branch, Coast Capital Savings, Conexus, Libro, Meridian, National Bank of Canada, Servus, Simplii Financial, Tangerine or Vancity</label>
                     </li>
                     <li class="checkbox">
                       <input type="checkbox" id="pacLetter" name="options" value="pacLetter">
@@ -153,7 +153,7 @@
                 </fieldset>
 
                 <div id="answers">
-                  <p id="answerVerifyBank" style="display:none;">1: Your best option is to sign in through your Interac Sign-in partner bank and to verify your identity through that same bank. As you register, you'll sign in through your bank two times - once to set up the sign-in option and once to verify your identity. Once your identity has been verified, it will be saved in your account profile. You won't need to verify again next time you sign in. You won't need a Personal Access Code. </p>
+                  <p id="answerVerifyBank" style="display:none;">1: Your best option is to sign in through your Interac Sign-in partner bank and to verify your identity through that same bank. You'll sign in through your bank two times - once to set up the sign-in option and again to verify your identity. Once your identity has been verified, it will be saved in your account profile. You won't need to verify again next time you sign in. You won't need a Personal Access Code. </p>
                   <p id="answerPac" style="display:none;">2: Select the GCKey username and password option. On the Welcome page, select the <strong>Sign up button</strong> to create a GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
                   <p id="answerProvince" style="display:none;">4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
                   <p id="answerGCKey" style="display:none;">3: You'll need a Personal Access Code after you sign in through your GCKey username and password. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
@@ -268,6 +268,7 @@
   </main>
   <script type="text/javascript">
     document.getElementById('submitButton').addEventListener('click', function () {
+      var verifyBanks = document.getElementById('verifyBanks').checked;
       var bankOnline = document.getElementById('bankOnline').checked;
       var pacLetter = document.getElementById('pacLetter').checked;
       var gckey = document.getElementById('gckey').checked;
@@ -281,13 +282,13 @@
 
       // Logic to determine which answer to show - ignore combos with none
 
-      if (bankOnline && pacLetter) {
+      if ((bankOnline && pacLetter) || (verifyBanks && pacLetter)) {
         document.getElementById('answerBankPac').style.display = 'block';
       }
       else if (bankOnline && gckey) {
         document.getElementById('answerBankGckey').style.display = 'block';
       }
-      else if (bankOnline && provinceAccount) {
+      else if ((bankOnline && provinceAccount) || (verifyBanks && provinceAccount)) {
         document.getElementById('answerBankProvince').style.display = 'block';
       }
       else if (pacletter && gckey) {
@@ -299,7 +300,7 @@
       else if (pacletter && provinceAccount) {
         document.getElementById('answerPacProvince').style.display = 'block';
       }      
-      else if (verifyBank) {
+      else if (verifyBanks) {
         document.getElementById('answerVerifyBank').style.display = 'block';
       }
       else if (provinceAccount) {
