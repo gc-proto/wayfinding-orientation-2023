@@ -158,12 +158,11 @@
                   <p id="answerProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code.</p>
                   <p id="answerGCKey" style="display:none;">You'll need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a> After you receive it, sign in through your GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
                   <p id="answerBankPac" style="display:none;"> Your best option is to sign in through your Interac Sign-in partner bank. You will be asked to provide your Personal Access Code later in the process.</p>
-                  <p id="answerBankGCKey" style="display:none;">Your best option is to sign in through your Interac Sign-in partner bank. </p>
-                  <p id="answerBankProvince" style="display:none;">1 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code. </p>
-
+                  <p id="answerBank" style="display:none;">You'll need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a> After you receive it, sign in through your Interac Sign-in partner bank. You will be asked to provide your Personal Access Code later in the process. </p>
+                  <p id="answerBankProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code. </p>
                   <p id="answerPacProvince" style="display:none;">2 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to use your Personal Access Code.</p>
                   <p id="answerPacGCKey" style="display:none;">2 & 3: Select the GCKey username and password button. You will be asked to provide your Personal Access Code later in the process. </p>
-                  <p id="none" style="display:none;">5: Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
+                  <p id="none" style="display:none;">Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
                 </div>
               </details>
               <hr></hr>
@@ -282,7 +281,7 @@
         document.getElementById('answerBankPac').style.display = 'block';
       }
       else if (bankOnline && gckey)  {
-        document.getElementById('answerBankGckey').style.display = 'block';
+        document.getElementById('answerBank').style.display = 'block';
       }
       else if ((bankOnline && provinceAccount) || (verifyBanks && provinceAccount)) {
         document.getElementById('answerBankProvince').style.display = 'block';
@@ -299,14 +298,14 @@
       else if (verifyBanks) {
         document.getElementById('answerVerifyBanks').style.display = 'block';
       }
-      else if (provinceAccount) {
-        document.getElementById('answerProvince').style.display = 'block';
-      }
       else if (bankOnline) {
         document.getElementById('answerBank').style.display = 'block';
       }
       else if (pacLetter) {
         document.getElementById('answerPac').style.display = 'block';
+      }
+      else if (provinceAccount) {
+        document.getElementById('answerProvince').style.display = 'block';
       }
       else if (none) {
         document.getElementById('noneAbove').style.display = 'block';
