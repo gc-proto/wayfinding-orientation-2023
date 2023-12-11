@@ -153,18 +153,14 @@
                 </fieldset>
 
                 <div id="answers">
-                  <p id="answerVerifyBank" style="display:none;">1: Your best option is to sign in through your Interac Sign-in partner bank and to verify your identity through that same bank. You'll sign in through your bank two times - once to set up the sign-in option and again to verify your identity. Once your identity has been verified, it will be saved in your account profile. You won't need to verify again next time you sign in. You won't need a Personal Access Code. </p>
-                  <p id="answerPac" style="display:none;">2: Select the GCKey username and password option. On the Welcome page, select the <strong>Sign up button</strong> to create a GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
-                  <p id="answerProvince" style="display:none;">4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
-                  <p id="answerGCKey" style="display:none;">3: You'll need a Personal Access Code after you sign in through your GCKey username and password. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
-                  <p id="answerBankPac" style="display:none;">1 & 2: Advise them to use bank (hmm, show bank list?) and
-                    enter
-                    PAC at verify step</p>
-                  <p id="answerBankGCKey" style="display:none;">1 & 3: advise them to use
-                    their bank (if on list) </p>
-                  <p id="answerBankProvince" style="display:none;">1 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code. </p>
+                  <p id="answerVerifyBanks" style="display:none;">Your best option is to sign in through your Interac Sign-in partner bank and to verify your identity through that same bank. You'll sign in through your bank two times - once to set up the sign-in option and again to verify your identity. Once your identity has been verified, it will be saved in your account profile. You won't need to verify again next time you sign in. You won't need a Personal Access Code. </p>
+                  <p id="answerPac" style="display:none;">Select the GCKey username and password option. On the Welcome page, select the <strong>Sign up button</strong> to create a GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
+                  <p id="answerProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code.</p>
+                  <p id="answerGCKey" style="display:none;">You'll need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a> After you receive it, sign in through your GCKey username and password. You will be asked to provide your Personal Access Code later in the process.</p>
+                  <p id="answerBankPac" style="display:none;"> Your best option is to sign in through your Interac Sign-in partner bank. You will be asked to provide your Personal Access Code later in the process.</p>
+                  <p id="answerBankGCKey" style="display:none;">Your best option is to sign in through your Interac Sign-in partner bank. </p>
+                  <p id="answerBankProvince" style="display:none;">1 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code. </p>
 
-                  <p id="answerGCKeyProvince" style="display:none;">4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to apply for a Personal Access Code.</p>
                   <p id="answerPacProvince" style="display:none;">2 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to use your Personal Access Code.</p>
                   <p id="answerPacGCKey" style="display:none;">2 & 3: Select the GCKey username and password button. You will be asked to provide your Personal Access Code later in the process. </p>
                   <p id="none" style="display:none;">5: Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
@@ -285,7 +281,7 @@
       if ((bankOnline && pacLetter) || (verifyBanks && pacLetter)) {
         document.getElementById('answerBankPac').style.display = 'block';
       }
-      else if (bankOnline && gckey) {
+      else if ((bankOnline && gckey) || (verifyBanks && gckey)) {
         document.getElementById('answerBankGckey').style.display = 'block';
       }
       else if ((bankOnline && provinceAccount) || (verifyBanks && provinceAccount)) {
@@ -301,7 +297,7 @@
         document.getElementById('answerPacProvince').style.display = 'block';
       }      
       else if (verifyBanks) {
-        document.getElementById('answerVerifyBank').style.display = 'block';
+        document.getElementById('answerVerifyBanks').style.display = 'block';
       }
       else if (provinceAccount) {
         document.getElementById('answerProvince').style.display = 'block';
