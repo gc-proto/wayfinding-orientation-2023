@@ -162,7 +162,7 @@
                   <p id="answerBankProvince" style="display:none;">Your fastest option is to sign in through your province. The province will also verify your identity. You won't need a Personal Access Code. </p>
                   <p id="answerPacProvince" style="display:none;">2 & 4: Your fastest option is to sign in through your province. The province will also verify your identity. You do not need to use your Personal Access Code.</p>
                   <p id="answerPacGCKey" style="display:none;">2 & 3: Select the GCKey username and password button. You will be asked to provide your Personal Access Code later in the process. </p>
-                  <p id="none" style="display:none;">Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
+                  <p id="answerNoneAbove" style="display:none;">Before you register, you will need a Personal Access Code. <a href="https://www.canada.ca/en/employment-social-development/services/my-account/find-pac.html"> Find or request a Personal Access Code</a></p>
                 </div>
               </details>
               <hr></hr>
@@ -307,8 +307,8 @@
       else if (provinceAccount) {
         document.getElementById('answerProvince').style.display = 'block';
       }
-      else if (none) {
-        document.getElementById('noneAbove').style.display = 'block';
+      else if (noneAbove) {
+        document.getElementById('answerNoneAbove').style.display = 'block';
       }
     });
   </script>
