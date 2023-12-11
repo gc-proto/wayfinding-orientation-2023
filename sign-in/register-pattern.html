@@ -281,7 +281,7 @@
       if ((bankOnline && pacLetter) || (verifyBanks && pacLetter)) {
         document.getElementById('answerBankPac').style.display = 'block';
       }
-      else if ((bankOnline && gckey) || (verifyBanks && gckey)) {
+      else if (bankOnline && gckey)  {
         document.getElementById('answerBankGckey').style.display = 'block';
       }
       else if ((bankOnline && provinceAccount) || (verifyBanks && provinceAccount)) {
