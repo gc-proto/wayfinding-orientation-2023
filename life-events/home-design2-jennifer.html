@@ -238,7 +238,11 @@
                                 position:relative;
                                 right: 36px;
 							}
-							
+							@media (min-width: 768px) and (max-width : 2400px){
+								.home .header-rwd {
+                                    margin:1em 0em 1em 0em !important;
+								}
+							}
 							@media (min-width: 320px) and (max-width : 768px){
 								.home .header-rwd {
 									margin:0em !important;
@@ -411,10 +415,7 @@
             </div> -->
 
             <style>
-                    
-                 .home .header-rwd {
-                    margin:1em 0em 1em 0em !important;
-                }
+
                 .life-events a, .life-events h2 {
                     color: white;
                 }
