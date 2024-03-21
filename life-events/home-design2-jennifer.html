@@ -138,6 +138,37 @@
                 })();
             })(window);
         </script>
+
+						<style>
+							.sign-in-right {
+								margin-top: -3px;
+								z-index:1;
+							}
+                            .sign-in-right-lg {
+								margin-top: -3px;
+								z-index:1;
+                                position:relative;
+                                right: 36px;
+							}
+							/* @media (min-width: 768px) and (max-width : 2400px){
+								.home .header-rwd {
+                                    margin:1em 0em 1em 0em !important;
+								}
+							} */
+							@media (min-width: 320px) and (max-width : 768px){
+								.home .header-rwd {
+									margin:0em !important;
+								}
+								.sign-in-right .btn-primary {
+								border: 1px white solid;
+								margin-top: -4px;
+								/* border: 3px #1d2837 solid; /* same colour as parliament silhouette test, but isn't visible enough IMO */
+								}
+								.opct-90 {
+									opacity:0.88; /* allows the image to be seen just a tad bit more... */
+								}
+							}
+						</style>
     </head>
 
     <body vocab="http://schema.org/" typeof="WebPage" resource="#wb-webpage" class="home page-type-nav undefined">
@@ -200,63 +231,6 @@
                     </div>
                 </div>
                 <hr />
-<!-- 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <nav class="gcweb-menu" typeof="SiteNavigationElement">
-                                <h2 class="wb-inv">Menu</h2>
-                                <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-                                <ul role="menu" aria-orientation="vertical" data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-en.html">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
-                                </ul>
-                            </nav>
-                        </div> -->
-
-						<style>
-							.sign-in-right {
-								margin-top: -3px;
-								z-index:1;
-							}
-                            .sign-in-right-lg {
-								margin-top: -3px;
-								z-index:1;
-                                position:relative;
-                                right: 36px;
-							}
-							/* @media (min-width: 768px) and (max-width : 2400px){
-								.home .header-rwd {
-                                    margin:1em 0em 1em 0em !important;
-								}
-							} */
-							@media (min-width: 320px) and (max-width : 768px){
-								.home .header-rwd {
-									margin:0em !important;
-								}
-								.sign-in-right .btn-primary {
-								border: 1px white solid;
-								margin-top: -4px;
-								/* border: 3px #1d2837 solid; /* same colour as parliament silhouette test, but isn't visible enough IMO */
-								}
-								.opct-90 {
-									opacity:0.88; /* allows the image to be seen just a tad bit more... */
-								}
-							}
-						</style>
 
                         <div class="col-xs-offset-6 col-xs-6 col-md-offset-0 col-md-11 hidden-sm hidden-xs sign-in-right-lg"> <!-- position in desktop views is wrong, but this test is for mobile -->
                             <section id="wb-so">
@@ -270,8 +244,6 @@
                                 <a class="btn btn-primary" href="/en/government/sign-in-online-account.html"><span class="visible-xs">Sign in</span><span class="hidden-xs">Sign in</span></a>
                             </section>
                         </div>
-                    </div>
-                </div>
             </header>
         </div>
 
@@ -342,10 +314,6 @@
                             <p><abbr title="Employment Insurance">EI</abbr>, family and sickness leave, child benefit,
                                 pensions, housing, student aid, disabilities, after a death</p>
                         </div>
-                <!--	<div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/health.html">Health</a></h3>
-                            <p>Food, nutrition, diseases, vaccines, drugs, product safety and recalls</p>
-                        </div>-->	
                         <div class="col-lg-4 col-md-6">
                             <h3><a href="/en/services/taxes.html">Taxes</a></h3>
                             <p>Income tax, payroll, <abbr title="Goods and services tax">GST</abbr>/<abbr
@@ -357,62 +325,10 @@
                         <div class="col-sm-3 hidden-lg hidden-md mrgn-bttm-lg mrgn-top-sm" style="max-width: 150px;">
                             <p style="font-weight: bold; margin-top:24px; border: 2px solid #26374a; padding: .75em; border-radius: 5px;"><a style="text-decoration: none !important;" href="#wb-info">All topics</a></p>
                         </div>
-                    <!--	<div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/environment.html">Environment and natural resources</a></h3>
-                            <p>Weather, climate, agriculture, wildlife, pollution, conservation, fisheries</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/defence.html">National security and defence</a></h3>
-                            <p>Military, transportation and cyber security, securing the border, counter-terrorism</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/culture.html">Culture, history and sport</a></h3>
-                            <p>Arts, media, heritage, official languages, national identity and funding</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/policing.html">Policing, justice and emergencies</a></h3>
-                            <p>Safety, justice system, prepare for emergencies, services for victims of crime</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/transport.html">Transport and infrastructure</a></h3>
-                            <p>Aviation, marine, road and rail, car seat and vehicle recalls</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the
-                                    world</a></h3>
-                            <p>Foreign policy, trade agreements, development work, global issues</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/finance.html">Money and finances</a></h3>
-                            <p>Personal finance, credit reports, fraud protection, paying for education, housing</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/science.html">Science and innovation</a></h3>
-                            <p>Scientific research on health, environment and space, grants and funding</p>
-                        </div>
-                    -->
                     </div>
                 </section>
             </div>
-            <!-- <div class="mwsgeneric-base-html parbase section">
-                <section class="gc-srvinfo container mrgn-bttm-lg">
-                    <h2>Focus on</h2>
-                    <div class="wb-eqht row">
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/indigenous-peoples.html">Indigenous peoples</a></h3>
-                            <p>Programs and services for First Nations, Inuit and Métis</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/veterans-military.html">Veterans and military</a></h3>
-                            <p>Services for current and former military, <abbr title="Royal Canadian Mounted Police">RCMP</abbr> and their families</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="/en/services/youth.html">Youth</a></h3>
-                            <p>Programs and services for teenagers and young adults</p>
-                        </div>
-                    </div>
-                </section>
-            </div> -->
+ 
 
             <style>
 
@@ -436,6 +352,7 @@
                     }
                  }
             </style>
+            
             <div class="mwsgeneric-base-html parbase section life-events-img" style="background-color:#272a37;">
                 <section class="gc-srvinfo container life-events">
                     <h2 class="mrgn-tp-lg">Life events</h2>
@@ -444,34 +361,9 @@
                                 <li><a href="https://retraite-retirement.service.canada.ca/en/home">Learn and plan for retirement</a></li>
                                 <li><a href="https://ircc.canada.ca/explore-programs/index.asp">Explore immigration</a></li>
                             </ul>
+                </section>
                     </div>
-                        <div class="container">
-                           
-                            </div>
-
-                    <!-- <div class="wb-eqht row wb-init small">
-
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://www.canada.ca/en/services/business/start.html">Starting a business</a></h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://retraite-retirement.service.canada.ca/en/home">Learn and plan for retirement</a></h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://ircc.canada.ca/explore-programs/index.asp">Explore immigration</a></h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://www.canada.ca/en/services/business/start.html">[Placeholder]</a></h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://retraite-retirement.service.canada.ca/en/home">[Placeholder]</a></h3>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h3><a href="https://ircc.canada.ca/explore-programs/index.asp">[Placeholder]</a></h3>
-                        </div> 
-                    </div>
-                </section> -->
-</div>
+                   
                 
             <div class="mwsgeneric-base-html parbase section">
                 <section class="home-your-gov well well-bold provisional well-sm brdr-0">
