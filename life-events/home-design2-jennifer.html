@@ -238,11 +238,11 @@
                                 position:relative;
                                 right: 36px;
 							}
-							@media (min-width: 768px) and (max-width : 2400px){
+							/* @media (min-width: 768px) and (max-width : 2400px){
 								.home .header-rwd {
                                     margin:1em 0em 1em 0em !important;
 								}
-							}
+							} */
 							@media (min-width: 320px) and (max-width : 768px){
 								.home .header-rwd {
 									margin:0em !important;
@@ -420,6 +420,9 @@
                     color: white;
                 }
 
+                .life-events ul li {
+                    font-weight: bold;
+                }
                 .life-events-img {
                     background-image: url("imgs/life-events-xl.jpg");
                     background-position: center;
@@ -433,10 +436,20 @@
                     }
                  }
             </style>
-            <div class="mwsgeneric-base-html parbase section life-events-img" style="background-color:#272a37; padding-bottom: 30px;">
+            <div class="mwsgeneric-base-html parbase section life-events-img" style="background-color:#272a37;">
                 <section class="gc-srvinfo container life-events">
                     <h2 class="mrgn-tp-lg">Life events</h2>
-                    <div class="wb-eqht row wb-init small">
+                            <ul class="wb-eqht list-unstyled lst-spcd-2 colcount-md-3 small mrgn-tp-md">
+                                <li><a href="https://www.canada.ca/en/services/business/start.html">Starting a business</a></li>
+                                <li><a href="https://retraite-retirement.service.canada.ca/en/home">Learn and plan for retirement</a></li>
+                                <li><a href="https://ircc.canada.ca/explore-programs/index.asp">Explore immigration</a></li>
+                            </ul>
+                    </div>
+                        <div class="container">
+                           
+                            </div>
+
+                    <!-- <div class="wb-eqht row wb-init small">
 
                         <div class="col-lg-4 col-md-6">
                             <h3><a href="https://www.canada.ca/en/services/business/start.html">Starting a business</a></h3>
@@ -455,9 +468,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <h3><a href="https://ircc.canada.ca/explore-programs/index.asp">[Placeholder]</a></h3>
-                        </div>
+                        </div> 
                     </div>
-                </section>
+                </section> -->
 </div>
                 
             <div class="mwsgeneric-base-html parbase section">
