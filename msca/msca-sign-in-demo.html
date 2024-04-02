@@ -563,17 +563,21 @@
 			</div>
 		</section>
 		<section>
-			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog" aria-hidden="true" tabindex="-1">
+			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog"
+				aria-hidden="true" tabindex="-1">
 				<div class="container">
-				<header>
-					<h2 class="modal-title">Need help? </h2>
-				</header>
-				<a class="btn btn-default btn-lg" href="">
-					<span class="fa-regular fa-comments fa-lg fa-pull-left" style="margin-top: 10px;"></span>
-					Chat with Canada.ca AI<span class="wb-inv">
-						open Canada.ca AI chat window</span>
-				</a>
-			</div>
+					<header>
+						<h2 class="modal-title">Need help? </h2>
+					</header>
+					<ul class="list-inline">
+						<li><a class="btn btn-default btn-lg" href="">
+								<span class="fa-regular fa-comments fa-lg fa-pull-left"
+									style="margin-top: 10px;"></span>
+								Chat with Canada.ca AI<span class="wb-inv">
+									open Canada.ca AI chat window</span>
+							</a></li>
+					</ul>
+				</div>
 			</section>
 		</section>
 		<div class="container">
@@ -581,7 +585,7 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
+			$(document).ready(function () {
 				$("#chat-button-bar").trigger("open.wb-overlay");
 			});
 		</script>
