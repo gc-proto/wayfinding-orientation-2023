@@ -579,7 +579,9 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script type="text/javascript">
-			("#chat-button-bar").trigger("open.wb-overlay");
+			$(document).ready(function() {
+				$("#chat-button-bar").trigger("open.wb-overlay");
+			});
 		</script>
 		<!---<script src="../src/list-inline-desktop.js"></script>-->
 		<!-- Write closure template -->
