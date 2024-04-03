@@ -3,7 +3,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
@@ -12,16 +11,14 @@
     <!-- Meta data -->
     <!-- Meta data-->
     <!-- Load closure template scripts -->
-		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
-		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
-
     </script>
 </head>
-
 <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
     <div id="def-top"> </div>
     <!-- Write closure template -->
@@ -41,10 +38,9 @@
             siteMenu: true,
             showPreContent: true
         });
-
     </script>
-    <main role="main" property="mainContentOfPage">
-        <section class="container">
+    <main role="main" property="mainContentOfPage" class="container">
+        <section>
             <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>My Service Canada Account
                         (MSCA)</span>:
                     <span>Sign in</span></span></h1>
@@ -54,7 +50,7 @@
                     benefits</a>. </p>
         </section>
         <section class="gc-most-requested bg-info mrgn-tp-md">
-            <div class="container mrgn-bttm-lg">
+            <div class="mrgn-bttm-lg">
                 <h2 class="wb-inv">Alerts</h2>
                 <div class="row mrgn-tp-md mrgn-bttm-md align-items-center">
                     <div class="col-md-1 col-xs-12 hidden-sm hidden-xs">
@@ -83,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section>
             <div class="well well-sm brdr-rds-0">
                 <div class="panel panel-default mrgn-bttm-0 brdr-rds-0">
                     <div class="panel-body">
@@ -139,7 +135,7 @@
             </div>
         </section>
         <div class="well brdr-0 brdr-rds-0 mrgn-tp-lg">
-            <section class="container gc-srvinfo">
+            <section class="gc-srvinfo">
                 <h2 id="help" class="mrgn-tp-0">Help with your account</h2>
                 <div class="row wb-eqht-grd">
                     <div class="col-sm-6 ">
@@ -505,7 +501,7 @@
                 </div>
             </section>
         </div>
-        <section class="container gc-srvinfo">
+        <section class="gc-srvinfo">
             <h2 id="other-accounts" class="mrgn-tp-0">Find another government account</h2>
             <div class="row wb-eqht-grd">
                 <div class="col-sm-6">
@@ -541,16 +537,14 @@
             </div>
         </section>
         <section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog" aria-hidden="true" tabindex="-1">
-            <div class="container">
-		<header>
-                    <h2 class="modal-title">Need help?</h2>
-                </header>
-		    <ul>
-                    <li><a class="btn btn-default btn-lg overlay-lnk mrgn-tp-md mrg-bttm-lg" href="#chat-panel" aria-controls="chat-panel">
-                            <span class="fa-regular fa-comments fa-lg mrgn-tp-md"></span> <span class="mrgn-lft-sm mrgn-tp-lg">Chat with Canada.ca AI</span><span class="wb-inv"> open Canada.ca AI chat window</span></a></li>
-                </ul>
-                <!-- close the panel if they click the button?-->
-            </div>
+            <header>
+                <h2 class="modal-title">Need help?</h2>
+            </header>
+            <ul>
+                <li><a class="btn btn-default btn-lg overlay-lnk mrgn-tp-md mrg-bttm-lg" href="#chat-panel" aria-controls="chat-panel">
+                        <span class="fa-regular fa-comments fa-lg mrgn-tp-md"></span> <span class="mrgn-lft-sm mrgn-tp-lg">Chat with Canada.ca AI</span><span class="wb-inv"> open Canada.ca AI chat window</span></a></li>
+            </ul>
+            <!-- close the panel if they click the button?-->
         </section>
         <!-- <section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog" aria-hidden="true" tabindex="-1">
             <div class="container">
@@ -564,15 +558,12 @@
                             open Canada.ca AI chat window</span>
                     </a>-->
         <!-- close the panel if they click the button?-->
-        <div class="container">
-            <div id="def-preFooter"> </div>
-        </div>
+        <div id="def-preFooter"> </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#chat-button-bar").trigger("open.wb-overlay");
             });
-
         </script>
         <!---<script src="../src/list-inline-desktop.js"></script>-->
         <!-- Write closure template -->
@@ -584,7 +575,6 @@
                 showFeedback: false,
                 showShare: false
             });
-
         </script>
     </main>
     <div id="def-footer"> </div>
@@ -595,13 +585,10 @@
             showFooter: true,
             showFeatures: true
         });
-
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
-
     </script>
 </body>
-
 </html>
