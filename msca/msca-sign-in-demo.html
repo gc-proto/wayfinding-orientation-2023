@@ -151,7 +151,7 @@
 									<div class="col-sm-10 col-sm-offset-1">
 										<a href="../sign-in/register-pattern.html"
 											class="btn btn-default btn-lg btn-block p-sm-3"><span class="h4"><span
-													class="fas fa-user-edit fa-lg mrgn-rght-sm fa-pull-left style="
+													class="fas fa-user-edit fa-lg mrgn-rght-sm fa-pull-left" style="
 													margin-top: 10px;"></span>Register
 												for an account</span></a>
 									</div>
@@ -562,52 +562,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="chat-panel" class="wb-overlay modal-content overlay-def wb-popup-mid">
-			<header class="modal-header">
-				<h2 class="modal-title">AI-powered Canada.ca Assistant</h2>
-			</header>
-			<div class="modal-body">
-				<p>AI Assistant is here to help with how to use or register for My Service Canada
-					Account.</p>
-				<p>Ask a question or use one of the example questions to get started. </p>
-				<p>Private details like your number or email address aren't accepted and will display as XXX.</p>
-				<ul>
-					<li><a href="">Where do I enter my Personal Access Code?</a></li>
-					<li><a href="">How should I register?</a></li>
-					<li>text field to ask the question..</li>
-					<li>link to after-chat survey</li>
-				</ul>
-
-			</div>
-		</section>
-			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog"
-				aria-hidden="true" tabindex="-1">
-				<div class="container">
-					<header>
-						<h2 class="modal-title"> Need help? </h2>
-					</header>
-					<div class="mrgn-tp-md mrgn-bttm-md">
-						<a class="btn btn-default btn-lg" href="#chat-panel" aria-controls="chat-panel"
-							class="overlay-lnk">
-							<span class="fa-regular fa-comments fa-lg fa-pull-left" style="margin-top: 10px;"></span>
-							Chat with Canada.ca AI<span class="wb-inv">
-								open Canada.ca AI chat window</span>
-						</a>
-<!-- close the panel if they click the button?-->
-					</div>
-				</div>
-			</section>
-
 
 		<div class="container">
 			<div id="def-preFooter"> </div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#chat-button-bar").trigger("open.wb-overlay");
-			});
-		</script>
 		<!---<script src="../src/list-inline-desktop.js"></script>-->
 		<!-- Write closure template -->
 		<script type="text/javascript">
@@ -621,14 +580,6 @@
 		</script>
 	</main>
 	<div id="def-footer"> </div>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		var defFooter = document.getElementById("def-footer");
-		defFooter.outerHTML = wet.builder.footer({
-			showFooter: true,
-			showFeatures: true
-		});
-	</script>
 	<!-- Write closure template -->
 	<script type="text/javascript">
 		document.write(wet.builder.refFooter({
