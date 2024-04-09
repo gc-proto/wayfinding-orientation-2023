@@ -80,6 +80,11 @@
 		background-color: #f2f2f2;
 		padding: .6em 1em .6em .6em;
 	}
+
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
 </style>
 
 <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
@@ -316,9 +321,11 @@
 										<ul>
 											<li>When asked if you’ve taken a language test in the past 2 years, select
 												<strong>Yes –
-													IELTS</strong>.</li>
+													IELTS</strong>.
+											</li>
 											<li>When asked if your test results were 6.0 or higher, select
-												<strong>Yes</strong>.</li>
+												<strong>Yes</strong>.
+											</li>
 										</ul>
 										<p>When you upload your supporting documents, upload your valid test results in
 											the field
@@ -769,7 +776,8 @@
 												page.</li>
 											<li>Use your current two-factor method.</li>
 											<li>On the <strong>Authentication success</strong> page, select
-												<strong>Change your two-factor authentication</strong>.</li>
+												<strong>Change your two-factor authentication</strong>.
+											</li>
 											<li>On the <strong>Two-factor authentication</strong> page, follow the
 												prompts to set up two-factor authentication again.</li>
 											<li>Save your new recovery codes somewhere safe. Your old codes will no
@@ -876,7 +884,8 @@
 									<ol>
 										<li>Select <strong>Canadian <i>Interac</i>® Sign-In Partner</strong>.</li>
 										<li>Select <strong>Switch My Sign-In Partner</strong> from the menu on the
-											<strong>Select a Sign-In Partner</strong> page.</li>
+											<strong>Select a Sign-In Partner</strong> page.
+										</li>
 										<li>Follow the steps to change your Sign-In Partner.</li>
 									</ol>
 								</details>
@@ -918,7 +927,8 @@
 									<p>The code <strong>won’t</strong> work if you created a profile in the account
 										<strong>before</strong> using the Come to Canada tool. You can still continue
 										your profile without the code, but you will need to enter your information
-										again.</p>
+										again.
+									</p>
 								</details>
 							</div>
 
@@ -1015,17 +1025,21 @@
 					</ul>
 				</div>
 			</section>
-			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog" aria-hidden="true" tabindex="-1">
+			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog"
+				aria-hidden="true" tabindex="-1">
 				<div class="container">
-					<ul class="list-inline"> 
-				<li><header><h2 class="modal-title">Need help?</h2></header></li>	
-						<li><a class="btn btn-default btn-lg overlay-lnk mrgn-tp-md mrg-bttm-lg" href="#chat-panel" aria-controls="chat-panel">
+					<ul class="list-inline">
+						<li>
+							<header>
+								<h2 class="modal-title">Need help?</h2>
+							</header>
+						</li>
+						<li><a class="btn btn-default btn-lg overlay-lnk mrgn-tp-md mrg-bttm-lg" href="#chat-panel"
+								aria-controls="chat-panel">
 								<!--<span class="fas fa-comments fa-lg mrgn-tp-md"></span> -->
-								<img src="icons/ai-bubble-solid.svg" class="icon">
-								<svg class="icon" viewBox="0 0 24 24">
-									<path d="icons/ai-bubble-solid.svg"/>
-								  </svg>
-								<span class="mrgn-lft-sm mrgn-tp-lg">Ask ChatGOV</span><span class="wb-inv"> open Canada.ca AI ChatGOV</span></a></li>
+								<span class="icon"><img src="icons/ai-bubble-solid.svg"></span>
+								<span class="mrgn-lft-sm mrgn-tp-lg">Ask ChatGOV</span><span class="wb-inv"> open
+									Canada.ca AI ChatGOV</span></a></li>
 					</ul>
 					<!-- close the panel if they click the button?-->
 				</div>
@@ -1036,7 +1050,7 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 			<!--<script src="../src/list-inline-desktop.js"></script>-->
 			<script type="text/javascript">
-				$(document).ready(function() {
+				$(document).ready(function () {
 					$("#chat-button-bar").trigger("open.wb-overlay");
 				});
 			</script>
