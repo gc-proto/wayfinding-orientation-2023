@@ -984,76 +984,81 @@
 				</section>
 			</div>
 
-			
-			const ChatButtonBar = ({ onOpen }) => {
-			  return (
-				<div className="chat-button-bar" role="dialog" aria-hidden="true">
-				  <div className="container">
-					<ul className="list-inline">
-					  <li>
-						<header>
-						  <h2 className="modal-title">Need help?</h2>
-						</header>
-					  </li>
-					  <li>
-						<button className="btn btn-default btn-lg overlay-lnk" onClick={onOpen} aria-controls="chat-panel">
-						  <img src="icons/ai-bubble-solid.svg" alt="Chat Icon" style={{ width: 24, height: 'auto' }} />
-						  <span className="mrgn-lft-sm mrgn-tp-sm">Ask ChatGov</span>
-						</button>
-					  </li>
-					</ul>
-					<button className="close-button" aria-label="Close" onClick={onOpen}>X</button>
-				  </div>
-				</div>
-			  );
-			};
-			
-			const ChatPanel = ({ onClose }) => {
-			  return (
-				<div className="chat-panel">
-				  <div className="chat-panel-header">
-					<button className="close-button" aria-label="Close" onClick={onClose}>X</button>
-				  </div>
-				  <div className="chat-panel-body">
-					<div className="chat-messages">
-					  {/* Chat messages would go here */}
-					</div>
-					<div className="chat-input">
-					  <input type="text" aria-label="Type your message" />
-					  <button className="send-button" aria-label="Send message">Send</button>
-					  <button className="copy-button" aria-label="Copy">Copy</button>
-					</div>
-				  </div>
-				</div>
-			  );
-			};
-			
-			const App = () => {
-			  const [isChatPanelOpen, setChatPanelOpen] = useState(false);
-			
-			  const handleOpenChat = () => setChatPanelOpen(true);
-			  const handleCloseChat = () => setChatPanelOpen(false);
-			
-			  return (
-				<div className="App">
-				  {!isChatPanelOpen && <ChatButtonBar onOpen={handleOpenChat} />}
-				  {isChatPanelOpen && <ChatPanel onClose={handleCloseChat} />}
-				</div>
-			  );
-			};
-			
-			export default App;
+<!--ADD CHAT BAR HERE-->
+  <div id="root"></div>
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+    // Your React code here
+const ChatButtonBar = ({ onOpen }) => {
+  return (
+    <div className="chat-button-bar" role="dialog" aria-hidden="true">
+      <div className="container">
+        <ul className="list-inline">
+          <li>
+            <header>
+              <h2 className="modal-title">Need help?</h2>
+            </header>
+          </li>
+          <li>
+            <button className="btn btn-default btn-lg overlay-lnk" onClick={onOpen} aria-controls="chat-panel">
+              <img src="icons/ai-bubble-solid.svg" alt="Chat Icon" style={{ width: 24, height: 'auto' }} />
+              <span className="mrgn-lft-sm mrgn-tp-sm">Ask ChatGov</span>
+            </button>
+          </li>
+        </ul>
+        <button className="close-button" aria-label="Close" onClick={onOpen}>X</button>
+      </div>
+    </div>
+  );
+};
+
+const ChatPanel = ({ onClose }) => {
+  return (
+    <div className="chat-panel">
+      <div className="chat-panel-header">
+        <button className="close-button" aria-label="Close" onClick={onClose}>X</button>
+      </div>
+      <div className="chat-panel-body">
+        <div className="chat-messages">
+          {/* Chat messages would go here */}
+        </div>
+        <div className="chat-input">
+          <input type="text" aria-label="Type your message" />
+          <button className="send-button" aria-label="Send message">Send</button>
+          <button className="copy-button" aria-label="Copy">Copy</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ChatHandler = () => {
+  const [isChatPanelOpen, setChatPanelOpen] = useState(false);
+
+  const handleOpenChat = () => setChatPanelOpen(true);
+  const handleCloseChat = () => setChatPanelOpen(false);
+
+  return (
+    <div className="ChatHandler">
+      {!isChatPanelOpen && <ChatButtonBar onOpen={handleOpenChat} />}
+      {isChatPanelOpen && <ChatPanel onClose={handleCloseChat} />}
+    </div>
+  );
+};
+
+export default ChatHandler;
+
+  </script>
+
+
 			
 			<div class="container">
 				<div id="def-preFooter"> </div>
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-			<!--<script src="../src/list-inline-desktop.js"></script>-->
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$("#chat-button-bar").trigger("open.wb-overlay");
-				});
-			</script>
+
 			<!-- Write closure template -->
 			<script type="text/javascript">
 				var defPreFooter = document.getElementById("def-preFooter");
