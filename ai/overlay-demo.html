@@ -1005,23 +1005,6 @@
 					</div>
 				</section>
 			</div>
-			<section id="chat-panel" class="wb-overlay modal-content overlay-def wb-panel-r" style="max-width:60%;">
-				<header class="modal-header">
-					<h2 class="modal-title">ChatGOV AI assistant</h2>
-				</header>
-				<div class="modal-body">
-					<p>ChatGOV is here to help.</p>
-					<p>Ask a detailed question or use one of the example questions to get started. </p>
-					<p>Any private numbers or addresses you enter are not accepted and will display as an X.</p>
-					<ul>
-						<li><a href="">Where do I enter my Personal Access Code?</a></li>
-						<li><a href="">How should I register?</a></li>
-						<li>text field to ask the question...</li>
-						<li>link to after-chat survey</li>
-					</ul>
-					<p>To do: this WET overlay panel won't work, I plan to make a React or JS one that sizes appropriately on mobile vs desktop. Bottom 'Need help' bar and button must disappear when this is open, reappear when this is closed. </p>
-				</div>
-			</section>
 			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog"
 				aria-hidden="true" tabindex="-1">
 				<div class="container">
@@ -1045,37 +1028,32 @@
 				<div id="def-preFooter"> </div>
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-			<!--<script src="../src/list-inline-desktop.js"></script>-->
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$("#chat-button-bar").trigger("open.wb-overlay");
-				});
-			</script>
+			<script src="../src/list-inline-desktop.js"></script>
 			<!-- Write closure template -->
 			<script type="text/javascript">
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					dateModified: "September 28, 2023",
+					dateModified: "May 21, 2024",
 					showPostContent: true,
 					showFeedback: false,
 					showShare: false
 				});
 			</script>
-	</main>
-	<div id="def-footer"> </div>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		var defFooter = document.getElementById("def-footer");
-		defFooter.outerHTML = wet.builder.footer({
-			showFooter: true,
-			showFeatures: true
-		});
-	</script>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		document.write(wet.builder.refFooter({
-		}));
-	</script>
-</body>
-
-</html>
+		</main>
+		<div id="def-footer"> </div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.footer({
+				showFooter: true,
+				showFeatures: true
+			});
+		</script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refFooter({
+			}));
+		</script>
+	</body>
+	
+	</html>
