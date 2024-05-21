@@ -1,4 +1,18 @@
-/* Chat button bar styles */
+/* Button style for chat button */
+.test-btn {
+	background-color: white;
+}
+
+.test-btn:hover {
+	background-color: #dae4f5;
+}
+
+.test-btn a:visited {
+	color: #26374a !important;
+}
+
+
+/* Chat button bar styles - not used yet */
 .chat-button-bar {
 	position: fixed;
 	bottom: 0;
