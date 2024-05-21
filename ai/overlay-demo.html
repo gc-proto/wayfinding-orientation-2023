@@ -1016,7 +1016,6 @@
 						</li>
 						<li><a class="btn btn-default btn-lg overlay-lnk mrgn-tp-sm mrg-bttm-sm" href="./answers.html"
 								aria-controls="chat-panel">
-								<!--<span class="fas fa-comments fa-lg mrgn-tp-md"></span> -->
 								<span><img src="icons/ai-bubble-solid.svg" style="width: 24px; height: auto;"></span>
 								<span class="mrgn-lft-sm mrgn-tp-sm">Ask Canada.ca AI</span><span class="wb-inv"> open
 									Canada.ca AI </span></a></li>
@@ -1029,6 +1028,11 @@
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 			<script src="../src/list-inline-desktop.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#chat-button-bar").trigger("open.wb-overlay");
+				});
+			</script>
 			<!-- Write closure template -->
 			<script type="text/javascript">
 				var defPreFooter = document.getElementById("def-preFooter");
