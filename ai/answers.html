@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	<title>AI Answers - Canada.ca</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<!-- Meta data -->
+	<!-- Meta data-->
+	<!-- Load closure template scripts -->
+	<script type="text/javascript"
+		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/soyutils.js"></script>
+	<script type="text/javascript"
+		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/wet-en.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<!--updated from banff to revelstoke by Lisa to try to remove left bar in mobile view-->
+	<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2024-09-kejimkujik.css">
+	<link rel="stylesheet" href="../../../css/split-h1.css">
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		document.write(wet.builder.refTop({
+		}));
+	</script>
+</head>
+<section class="alpha-top">
+	<h2 class="wb-inv">Experimental</h2>
+	<div class="container">
+		<small><label class="alpha-label">Beta</label>&nbsp;&nbsp; This is an experimental page for public
+			testing.</small>
+	</div>
+</section>
+<!-- design for:
+ - stick to top always
+ - stick to top only when scrolled
+ - stay in position under BC -->
+
+<style>
+	.alpha-top {
+		/* border-bottom: 1px solid black !important; */
+		padding-top: 2px !important;
+		padding-bottom: 2px !important;
+		/* position: sticky; */
+		/* turn this on if you want it to follow along and stick to the top */
+		top: 0;
+		background-color: #f2f2f2;
+		z-index: 100;
+	}
+
+	.alpha {
+		/* border-bottom: 1px solid black; */
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: white;
+		z-index: 100;
+	}
+
+
+	.alpha-label {
+
+		background-color: black;
+		border: none;
+		color: white;
+		font-weight: 700;
+		padding: 8px 8px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		border-radius: 0px;
+		font-size: 14px !important;
+
+
+	}
+
+	.alpha-fill {
+		background-color: #f2f2f2;
+		padding: .6em 1em .6em .6em;
+	}
+</style>
+
+<body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
+	<div id="def-top"> </div>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		var defTop = document.getElementById("def-top");
+		defTop.outerHTML = wet.builder.top({
+			lngLinks: [{
+				lang: "fr",
+				href: "https://test.canada.ca/wayfinding-orientation-2023/se-connecter/ircc-connecter-demo.html",
+				text: "Français"
+			}],
+			breadcrumbs: [{
+				title: "Sign in to an online account",
+				href: "../../../government/sign-in-online-account.html"
+			}],
+			search: true,
+			siteMenu: true,
+			showPreContent: true
+		});
+	</script>
+	<main property="mainContentOfPage">
+		<section class="container">
+			<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>Answers for Canada.ca</span>:
+					<span>AI</span></span></h1>
+			<p>Ask questions, get personalized answers. </p>
+
+			<div class="container">
+				<div id="def-preFooter"> </div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+			<!--<script src="../src/list-inline-desktop.js"></script>-->
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#chat-button-bar").trigger("open.wb-overlay");
+				});
+			</script>
+			<!-- Write closure template -->
+			<script type="text/javascript">
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					dateModified: "September 28, 2023",
+					showPostContent: true,
+					showFeedback: false,
+					showShare: false
+				});
+			</script>
+	</main>
+	<div id="def-footer"> </div>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		var defFooter = document.getElementById("def-footer");
+		defFooter.outerHTML = wet.builder.footer({
+			showFooter: true,
+			showFeatures: true
+		});
+	</script>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		document.write(wet.builder.refFooter({
+		}));
+	</script>
+</body>
+
+</html>
