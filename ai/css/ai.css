@@ -46,17 +46,6 @@
   
   /* Chat panel styles */
 
-
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
 .input-container {
     display: flex;
     align-items: center;
@@ -93,10 +82,10 @@
     background-color: #0056b3;
 }
 
-#send-button svg {
-    width: 24px;
-    height: 24px;
+#send-button i {
+    font-size: 24px;
 }
+
 
   .chat-panel {
 	position: fixed;
