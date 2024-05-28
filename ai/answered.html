@@ -111,18 +111,26 @@
 
 		</section>
 		<section> <!--answer will be streamed here, making fake space-->
-			<p class="mrgn-tp-lg"></p>
-			<p class="mrgn-tp-lg"></p>
-			<p class="mrgn-tp-lg"></p>
+			<div class="input-container">
+				<input type="text" id="chat-input" aria-label="enter your question" placeholder="I submitted my passport application a while ago. When will I get it?">
+				</div>
+			<p>I can help you with that. When did you apply?</p>
+			<div class="input-container">
+				<input type="text" id="chat-input" aria-label="enter your question" placeholder="I applied on April 3">
+				</div>
+			<p class="mrgn-tp-lg">Since you applied more than 10 days ago, you can check the status of your passport application online on the Passport application status checker page.    </p>
+			<p>It's easiest if you have the file number or reference number that's on the receipt you were given if you applied for the passport in person. If you mailed it in, you can use other details from your application.</p>
+			<p>Check your passport application status online at: <a href="https://etatpasseport-passportstatus.service.canada.ca/en/landing">https://etatpasseport-passportstatus.service.canada.ca/en/landing</a></p>
 		</section>
 		<section class="container">
 			<div class="row mrgn-tp-lg">
 				<div class="col-sm-10 ">
 					<div class="input-container">
-						<input type="text" id="chat-input" aria-label="enter your question" placeholder="Ask a Canada.ca question">
+						<input type="text" id="chat-input" aria-label="enter your question" placeholder="Ask another question">
 						<button id="send-button" aria-label="Send your question">
 							<i class="fa-solid fa-arrow-up"></i>
 						</button>
+						<p class="small">Always check your answer on the web page link."</p>
 					</div>
 				</div>
 			</div>
@@ -137,7 +145,7 @@
 		<script type="text/javascript">
 			var defPreFooter = document.getElementById("def-preFooter");
 			defPreFooter.outerHTML = wet.builder.preFooter({
-				dateModified: "May 28, 2024",
+				dateModified: "May 4, 2024",
 				showPostContent: true,
 				showFeedback: false,
 				showShare: false
