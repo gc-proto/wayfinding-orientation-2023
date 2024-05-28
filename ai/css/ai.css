@@ -47,6 +47,16 @@
   /* Chat panel styles */
 
 
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
 .input-container {
     display: flex;
     align-items: center;
@@ -70,14 +80,22 @@
     color: #fff;
     border: none;
     outline: none;
-    border-radius: 25px;
-    padding: 10px 20px;
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #send-button:hover {
     background-color: #0056b3;
+}
+
+#send-button svg {
+    width: 24px;
+    height: 24px;
 }
 
   .chat-panel {
