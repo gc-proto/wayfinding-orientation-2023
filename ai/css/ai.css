@@ -55,15 +55,7 @@
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.history-input-container {
-    display: flex;
-    align-items: right;
-    background-color: #bcb9b9;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+
 #chat-input {
     border: none;
     outline: none;
@@ -94,6 +86,31 @@
     font-size: 24px;
 }
 
+.history-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #bcb9b9;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+#history-chat-input {
+    border: none;
+    background-color: #bcb9b9;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+    color: black; /* Ensure the text color is black */
+    white-space: pre-wrap; /* Ensure text wraps properly */
+}
+
+#history-chat-input::placeholder {
+    color: black; /* Placeholder text color */
+    opacity: 1; /* Ensure the color is fully applied */
+}
 
   .chat-panel {
 	position: fixed;
