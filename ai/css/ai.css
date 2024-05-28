@@ -45,6 +45,41 @@
   }
   
   /* Chat panel styles */
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#chat-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
   .chat-panel {
 	position: fixed;
 	bottom: 0;
@@ -84,29 +119,7 @@
 	padding: 1rem;
   }
   
-  .chat-input {
-	display: flex;
-	padding: 0.5rem;
-	border-top: 1px solid #dee2e6;
-  }
+
   
-  .chat-input input {
-	flex: 1;
-	padding: 0.5rem;
-	margin-right: 0.5rem;
-  }
-  
-  .chat-input .send-button,
-  .chat-input .copy-button {
-	padding: 0.5rem 1rem;
-	background-color: #007bff;
-	border: none;
-	color: white;
-	cursor: pointer;
-  }
-  
-  .chat-input .send-button:hover,
-  .chat-input .copy-button:hover {
-	background-color: #0056b3;
-  }
+ 
   

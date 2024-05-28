@@ -16,10 +16,7 @@
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/soyutils.js"></script>
 	<script type="text/javascript"
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/wet-en.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<!--updated from banff to revelstoke by Lisa to try to remove left bar in mobile view-->
-	<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2024-09-kejimkujik.css">
-	<link rel="stylesheet" href="../css/split-h1.css">
+	<link rel="stylesheet" href="./css/ai.css">
 	<!-- Write closure template -->
 	<script type="text/javascript">
 		document.write(wet.builder.refTop({
@@ -106,26 +103,24 @@
 		<section class="container">
 			<h1 property="name" id="wb-cont" dir="ltr">AI Answers for Canada.ca</h1>
 			<p>Get answers to your Canada.ca questions. </p>
-			<p class="small">To protect your privacy, names, numbers and addresses aren't accepted and will display as an X.</p>
-			<p class="small">More 
+			<p class="small">To protect your privacy, names, numbers and addresses aren't accepted and will display as
+				an X.</p>
+			<p class="small">More
 				at: <a href="">About AI Answers</a>
 			</p>
 
 		</section>
 		<section> <!--answer will be streamed here, making fake space-->
-		<p class="mrgn-tp-lg"><p class="mrgn-tp-lg"><p class="mrgn-tp-lg"><p class="mrgn-tp-lg"><p class="mrgn-tp-lg"><p class="mrgn-tp-lg"></p><section>
+			<p class="mrgn-tp-lg"></p>
+			<p class="mrgn-tp-lg"></p>
+			<p class="mrgn-tp-lg"></p>
+		</section>
 		<section class="container">
 			<div class="row mrgn-tp-lg">
-				<div class="col-sm-10 col-sm-offset-1">
-					<div class="wb-frmvld">
-						<form action="#" method="get" id="validation-example">
-							<div class="form-group">
-								<label for="text1"><span class="field-name">Enter your question:
-									</span></label>
-
-								<input class="form-control" id="text1" name="text1" type="text" size="60" aria-describedby="Enter your detailed question">
-							</div>
-						</form>
+				<div class="col-sm-10 ">
+					<div class="input-container">
+						<input type="text" id="chat-input" placeholder="Ask a Canada.ca question">
+						<button id="send-button">Send</button>
 					</div>
 				</div>
 			</div>
@@ -144,6 +139,16 @@
 				showPostContent: true,
 				showFeedback: false,
 				showShare: false
+			});
+		</script>
+		<script type="text/javascript">
+			document.getElementById('send-button').addEventListener('click', function () {
+				const inputField = document.getElementById('chat-input');
+				const message = inputField.value;
+				if (message.trim() !== "") {
+					console.log("Message sent: " + message);
+					inputField.value = "";  // Clear the input field after sending the message
+				}
 			});
 		</script>
 	</main>
