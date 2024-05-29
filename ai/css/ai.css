@@ -54,6 +54,7 @@
     border-radius: 25px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	margin-right: 40px;
 }
 
 #chat-input {
@@ -94,7 +95,7 @@
     border-radius: 25px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-left: 20px; /* Adjust the left margin as needed */
+    margin-left: 40px; /* Adjust the left margin as needed */
 }
 
 #history-chat-input {
