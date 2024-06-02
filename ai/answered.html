@@ -166,20 +166,10 @@
 		<script type="text/javascript">
 			var defPreFooter = document.getElementById("def-preFooter");
 			defPreFooter.outerHTML = wet.builder.preFooter({
-				dateModified: "May 4, 2024",
+				dateModified: "June 1, 2024",
 				showPostContent: true,
 				showFeedback: false,
 				showShare: false
-			});
-		</script>
-		<script type="text/javascript">
-			document.getElementById('send-button').addEventListener('click', function () {
-				const inputField = document.getElementById('chat-input');
-				const message = inputField.value;
-				if (message.trim() !== "") {
-					console.log("Message sent: " + message);
-					inputField.value = "";  // Clear the input field after sending the message
-				}
 			});
 		</script>
 	</main>
