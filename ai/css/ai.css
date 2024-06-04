@@ -89,20 +89,21 @@
 
 
 .history-chat-input {
-  border: 2px solid #5c5858;
+  border: 2px solid #e1dcdc;
   border-radius: 10px;
   background-color: #e1dcdc;
   outline: none;
   padding: 10px;
   color: black;
+  margin-left: 10px;
   /* Ensure the text color is black */
 }
 
-.history-citation {
+.answer-citation {
   background-color: #fff;
   border: 2px solid #9c0909;
   border-radius: 25px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
