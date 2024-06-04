@@ -88,8 +88,6 @@
 }
 
 .history-input-container {
-  display: flex;
-  align-items: center;
   background-color: #bcb9b9;
   border: 1px solid #ccc;
   border-radius: 25px;
@@ -99,7 +97,7 @@
   /* Adjust the left margin as needed */
 }
 
-#history-chat-input {
+.history-chat-input {
   border: none;
   background-color: #bcb9b9;
   outline: none;
@@ -107,15 +105,6 @@
   padding: 10px;
   color: black;
   /* Ensure the text color is black */
-  white-space: pre-wrap;
-  /* Ensure text wraps properly */
-}
-
-#history-chat-input::placeholder {
-  color: black;
-  /* Placeholder text color */
-  opacity: 1;
-  /* Ensure the color is fully applied */
 }
 
 #history-citation {
