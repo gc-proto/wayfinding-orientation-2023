@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <!-- Icons Font Awesome (to access icons, import Font Awesome) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+        <!-- GC Design System -->
+        <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.22.0/dist/gcds/gcds.css">
+        <!-- GC Design System Utility -->
+        <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@latest/dist/gcds-utility.min.css">
+        <script type="module" src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.22.0/dist/gcds/gcds.esm.js"></script>
+        <script nomodule src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.22.0/dist/gcds/gcds.js"></script>
+        
+        <style>
+            :root {
+              --gcds-breadcrumbs-item-arrow-top: 1.4rem;
+              --gcds-breadcrumbs-item-arrow-left: 0.3rem;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <gcds-header lang-href="#" skip-to-href="#">
+            <gcds-search search-id="search" slot="search" placeholder="IRCC" action="/en/search" class="hydrated"></gcds-search>
+            
+            <gcds-topic-menu slot="menu">Menu</gcds-topic-menu>
+
+            <gcds-breadcrumbs class="hydrated" slot="breadcrumb">
+                <gcds-breadcrumbs-item class="gcds-breadcrumbs-item hydrated" href="#">Immigration and citizenship</gcds-breadcrumbs-item>
+                <gcds-breadcrumbs-item class="gcds-breadcrumbs-item hydrated" href="#">Immigrate to Canada</gcds-breadcrumbs-item>
+                <gcds-breadcrumbs-item class="gcds-breadcrumbs-item hydrated" href="#">Ukraine immigration measures</gcds-breadcrumbs-item>
+                <!--<gcds-breadcrumbs-item href="#">Information for Ukrainians coming to Canada</gcds-breadcrumbs-item>-->
+            </gcds-breadcrumbs>
+            
+        </gcds-header>
+
+        <div class="content-wrapper">
+            <main id="main" class="container-xl mx-auto xl:px-0 sm:px-500 px-300 general-layout">
+                <div class="content-wrapper">
+                    <gcds-heading tag="h1">
+                        Ukraine immigration measures: Financial assistance
+                    </gcds-heading>
+
+                    <p class="mb-400">We're giving financial assistance to help Ukrainian families who arrived in Canada under CUAET on or before March 31, 2024.</p>
+                    <p class="mb-400">The assistance is a one-time, non-taxable benefit designed to take care of your basic needs while you get settled in Canada.</p>
+                    <gcds-heading tag="h2">Who can apply</gcds-heading>
+                    <p>You can apply if</p>
+                    <ul class="list-disc mb-400">
+                        <li>you were approved under <gcds-link href="#">CUAET</gcds-link></li>
+                        <li>you arrived in Canada on or before March 31, 2024</li>
+                        <li>your temporary resident status document [IMM 1442] has a remark that you're here under CUAET
+                            <ul class="list-disc">
+                                <li>If it doesn't, follow the instructions below to <gcds-link href="#amounts">get the CUAET remark on your IMM 1442</gcds-link> before you apply for financial assistance.</li>
+                            </ul>
+                        </li>
+                        <li>you have a Canadian bank account</li>
+                    </ul>
+                    <gcds-container border padding="400" class="mb-400">
+                        <p><strong>Deadline to apply:</strong> June 30, 2024</p>
+                    </gcds-container>
+
+                    <gcds-heading tag="h2">How to apply</gcds-heading>
+                    <p class="mb-400">There are 2 steps to apply for financial assistance:</p>
+                    <ol class="list-disc mb-400">
+                        <li>Open a Canadian bank account.</li>
+                        <li>Submit your application.</li>
+                    </ol>
+                    <gcds-button class="mb-400">Apply online now <span class="gcds-icon fa fa-solid fa-external-link ml-100 size-text" role="img" aria-label=" (Opens destination in a new tab.)" aria-hidden="false"></span></gcds-button>
+
+                </div>
+            </main>
+        </div>
+        
+        <!-- FOOTER -->
+        <gcds-footer display="full" contextual-heading="Immigration and Citizenship" contextual-links='{ "Help Center": "#", "Contact us": "#" }'></gcds-footer>
+
+    </body>
+
+</html>
