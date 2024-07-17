@@ -65,6 +65,7 @@
 #gc-mnu li {
     line-height: 1.2em;
     padding-bottom: 8px;
+    font-weight: bold !important;
 }
 #gc-mnu h3 {
     margin-top: 10px;
