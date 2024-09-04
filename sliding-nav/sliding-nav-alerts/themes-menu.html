@@ -1,0 +1,1154 @@
+---
+auth:
+  type: contextual
+  label: "Sign in"
+  labelExtended: "Sign in"
+  wb-json: true
+contextualFooter:
+  title: Canada.ca
+  links: ""
+  wb-json: true
+lang: en
+script: themes-menu.js
+title: Themes menu
+---
+<div class="alpha">
+    <div class="hidden row toggle-nav-sm">
+        <div class="visible-xs visible-sm">
+            <button
+                type="button" 
+                class="btn btn-link btn-menu"
+                data-wb-doaction='[
+                    {
+                        "action": "removeClass",
+                        "source": ".toggle-nav-sm",
+                        "class": "visible-xs visible-sm"
+                    },
+                    {
+                        "action": "removeClass",
+                        "source": ".gc-contextual",
+                        "class": "visible-xs visible-sm"
+                    },
+                    {
+                        "action": "removeClass",
+                        "source": "#gc-menu",
+                        "class": "hidden-sm hidden-xs"    
+                    },
+                    {
+                        "action": "addClass",
+                        "source": "#gc-mnu-container",
+                        "class": "hidden-sm hidden-xs"
+                    }
+                ]'>
+                <span class="fas fa-arrow-left"></span> Menu
+            </button>
+        </div>
+    </div>
+    <div typeof="SiteNavigationElement">
+        <div class="gc-menu" data-gc-menu='{ "trigger": "[aria-expanded]" }'>
+            <div class="sidebar">
+                <ul id="gc-menu" class="list-unstyled" role="menu">
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/jobs.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/jobs"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Jobs</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/immigration.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/immigration"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Immigration and citizenship</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/travel.html #gc-mnu", 
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/travel"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Travel and tourism</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/business.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/business"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Business</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/benefits.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/benefits"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Benefits</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/health.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },{
+                                    "action": "patch",
+                                    "source": "#contact",
+                                    "patches": [
+                                        {
+                                            "op": "move",
+                                            "path": "/current",
+                                            "from": "/health"
+                                        }
+                                    ]
+                                }
+                            ]'
+                        >Health</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/taxes.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/taxes"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Taxes</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/environment.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/environment"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Environment and natural resources</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-9" 
+                            aria-expanded="false"
+                            arias-haspopup="true"
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/defence.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/defence"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >National security and defence</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-10"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/culture.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/culture"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Culture, history and sport</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-11"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/policing.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/policing"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Policing, justice and emergencies</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-12"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/transport.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/transport"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Transport and infrastructure</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-13"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/canada-world.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/world"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Canada and the world</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-14"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/money.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/money"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Money and finances</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-15"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/science.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches": [
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/science"
+                                    }
+                                ]
+                            }
+                        ]'
+                        >Science and innovation</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-controls="gc-menu-16"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/indigenous.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches":
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/indigenous"
+                                    }
+                            }
+                        ]'
+                        >Indigenous peoples</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/veterans.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches":
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/veterans"
+                                    }
+                            }
+                        ]'
+                        >Veterans and military</button>
+                    </li>
+                    <li role="presentation">
+                        <button
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            class="btn btn-link"
+                            aria-expanded="false" 
+                            arias-haspopup="true" 
+                            role="menuitem"
+                            tabindex="-1"
+                            type="button"
+                            data-wb-doaction='[
+                            {
+                                "action": "removeClass",
+                                "source": "#gc-mnu-container",
+                                "class": "hidden-sm hidden-xs"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": ".toggle-nav-sm",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "addlass",
+                                "source": ".gc-contextual",
+                                "class": "visible-xs visible-sm"
+                            },
+                            {
+                                "action": "removeClass",
+                                "source": ".gc-contextual",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "[data-display-none]",
+                                "class": "hidden"
+                            },
+                            {
+                                "action": "addClass",
+                                "source": "#gc-menu",
+                                "class": "hidden-xs hidden-sm"
+                            },
+                            {
+                                "action": "ajax",
+                                "url": "themes/youth.html #gc-mnu",
+                                "container": "#gc-mnu-container",
+                                "type": "replace"
+                            },
+                            {
+                                "action": "patch",
+                                "source": "#contact",
+                                "patches":
+                                    {
+                                        "op": "move",
+                                        "path": "/current",
+                                        "from": "/youth"
+                                    }
+                            }
+                        ]'
+                        >Youth</button>
+                    </li>
+                </ul>
+                <div id="gc-mnu-container">
+					<div id="target"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact" data-wb-jsonmanager='{
+	"url": "gc-contextual.json",
+	"name": "contextual",
+	"wait": true
+}'></div>
+<div data-wb-urlmapping='{
+    "example1a":
+    {
+        "action": "patch",
+        "source": "#gc-menu",
+        "patches":
+        {
+            "op": "add",
+            "path": "/city",
+            "value": "Gatineau"
+        }
+    }
+}'></div>
