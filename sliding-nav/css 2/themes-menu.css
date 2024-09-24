@@ -1,0 +1,150 @@
+
+/* tighten space for cont footer */
+        .pagedetails {
+            padding-bottom: 1.2em !important;
+            padding-top: 0.5em !important;
+        }
+
+        #wb-dtmd {
+            margin: 0.5em 0 0 !important;
+        }
+
+#wb-bc li:first-child a {
+    padding-left: 8px;
+    border-left: solid #26374a 5px;
+}
+
+#wb-bc li {
+    padding: 0px 0px !important;
+}
+
+#wb-bc li:before {
+    color: #333;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: .7em;
+    font-weight: 900;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 !important;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar > :first-child {
+    flex-grow: 1;
+}
+.sidebar > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 508px;
+}
+#gc-menu button {
+    line-height: 1.65em;
+    text-align: left;
+    width: 100%;
+}
+#gc-menu button:hover,
+#gc-menu button:focus,
+#gc-menu button:active {
+    background-color: #f5f5f5;
+    color: #295376;
+    text-decoration: none;
+}
+#gc-menu button[aria-expanded=true] {
+    background-color: #26374a;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+#gc-mnu li a {
+    font-size: 17px;
+}
+#gc-mnu li {
+    line-height: 1.2em;
+    padding-bottom: 8px;
+}
+#gc-mnu h3 {
+    margin-top: 10px;
+}
+#gc-mnu {
+    border-left: 5px solid #26374a;
+    border-top: 0;
+    padding: 0 0 10px 20px;
+    min-height: 871px;
+}
+#gc-mnu .well-sm {
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-left: 20px;
+}
+.btn-menu:focus,
+.btn-menu:hover {
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    #gc-menu button {
+        border-bottom: #f5f5f5 solid 1px;
+    }
+    #gc-menu button:after {
+        float: right;
+        content: "\203A";
+        font-size: 1.5em;
+    }
+    .toggle-nav-sm {
+        background-color: #26374a;
+    }
+    #gc-mnu h3 {
+        margin-top: 32px;
+    }
+    .toggle-nav-sm button {
+        color: #ffffff;
+    }
+    #gc-menu p {
+        font-size: 19px;
+    }
+    .sidebar> :last-child {
+        min-inline-size: 0;
+    }
+    .sidebar {
+        display: block;
+    }
+    #gc-mnu .well-sm {
+        overflow: hidden; /* JM: temporary fix for scrolling into well on mobile */
+    }
+}
+/* For debugging only 
+#gc-mnu-container * {
+    outline: 1px solid greenyellow;
+}*/
+
+ /* JM fixing the spacing above the FIP
+ body {
+     margin-top: 28px;
+ } */
+
+ /* JM fixing the BC alignment */
+ .breadcrumb {
+     position: relative;
+     top: -50px;
+ }
+
+ /* JM: positioning of sign in and breadcrumb */
+ #wb-bnr+hr {
+     border-top: 1px solid #ddd !important;
+     margin-bottom: 0;
+     margin-top: 5px;
+ }
+
+#wb-so .btn {
+    margin-top: 0px !important;
+    position: relative;
+    z-index: 999999 !important;
+}
+
+main {
+    margin-top: -30px;
+}
