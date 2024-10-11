@@ -52,12 +52,8 @@
 
             <p class="pagetag">Get quick, easy access to all Government of Canada services and information. </p> 
 
-            <input type="text" id="filterInput" placeholder="Search for a service...">
-
-
-        
+      
             
-<ul id="servicesList">
             <section class="well well-sm brdr-0 mrgn-bttm-0">
                 <div class="container row-no-gutters">
                   <div class="col-md-3">
@@ -474,28 +470,7 @@
                   </div>
                 </div>
               </section>
-            </ul>
-
-            <script>
-              // Get input element and service list
-              const filterInput = document.getElementById('filterInput');
-              const servicesList = document.getElementById('servicesList');
-              const services = servicesList.getElementsByClassName('service-item');
-      
-              // Display all services by default
-              Array.from(services).forEach(service => service.style.display = 'block');
-      
-              // Add event listener for input change
-              filterInput.addEventListener('keyup', function() {
-                  const filterValue = filterInput.value.toLowerCase();
-      
-                  Array.from(services).forEach(service => {
-                      const serviceName = service.textContent || service.innerText;
-                      service.style.display = serviceName.toLowerCase().includes(filterValue) ? 'block' : 'none';
-                  });
-              });
-          </script>
-       
+                   
             <!-- start footer -->
             <section class="pagedetails container row">
                 <h2 class="wb-inv">Page details</h2>
