@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Width Background Striping</title>
+  <style>
+    /* Container that holds the table, centered */
+    .table-container {
+      width: 100vw; /* Full viewport width */
+    }
+
+    /* Table styling */
+    table {
+      width: 100%; /* Table itself will be 100% width */
+      border-collapse: collapse;
+    }
+
+    /* Full-width row backgrounds using block display */
+    tr {
+      display: block;
+      width: 100vw; /* Make rows span the full viewport width */
+      margin-left: calc(-50vw + 50%); /* Center full-width rows */
+    }
+
+    /* Content container to constrain actual content within each row */
+    .content {
+      max-width: 1200px; /* Adjust the max width of content */
+      margin: 0 auto; /* Center the content within the row */
+      padding: 10px;
+    }
+
+    /* Alternating row background colors (striping) */
+    tr:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+
+    /* Optional cell styling */
+    td, th {
+      padding: 10px;
+      border: none; /* No border for clean look */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div class="content">
+              Header 1
+            </div>
+          </th>
+          <th>
+            <div class="content">
+              Header 2
+            </div>
+          </th>
+          <th>
+            <div class="content">
+              Header 3
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="content">
+              Row 1, Cell 1
+            </div>
+          </td>
+          <td>
+            <div class="content">
+              Row 1, Cell 2
+            </div>
+          </td>
+          <td>
+            <div class="content">
+              Row 1, Cell 3
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="content">
+              Row 2, Cell 1
+            </div>
+          </td>
+          <td>
+            <div class="content">
+              Row 2, Cell 2
+            </div>
+          </td>
+          <td>
+            <div class="content">
+              Row 2, Cell 3
+            </div>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
