@@ -1,113 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full-Width Background Striping</title>
-  <style>
-    /* Container that holds the table, centered */
-    .table-container {
-      width: 100vw; /* Full viewport width */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Width Table Background</title>
+    <style>
+        /* Full-width background for the table */
+        .table-wrapper {
+            width: 100vw; /* Full width of the viewport */
+            position: relative; /* Establish positioning context */
+            left: 50%; /* Move to the right edge of the viewport */
+            margin-left: -50vw; /* Pull back to the left to center */
+        }
 
-    /* Table styling */
-    table {
-      width: 100%; /* Table itself will be 100% width */
-      border-collapse: collapse;
-    }
+        /* Content container to limit the width of the table */
+        .content-container {
+            max-width: 1170px; /* Default max width */
+            margin: 0 auto; /* Centering */
+            padding: 0 15px; /* Optional: Padding */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
 
-    /* Full-width row backgrounds using block display */
-    tr {
-      display: block;
-      width: 100vw; /* Make rows span the full viewport width */
-      margin-left: calc(-50vw + 50%); /* Center full-width rows */
-    }
+        /* Table styling */
+        table {
+            width: 100%; /* Table takes full width of the content container */
+            border-collapse: collapse; /* Remove space between table cells */
+            margin: 0; /* Reset margin */
+            position: relative; /* Establish positioning context for rows */
+        }
 
-    /* Content container to constrain actual content within each row */
-    .content {
-      max-width: 1200px; /* Adjust the max width of content */
-      margin: 0 auto; /* Center the content within the row */
-      padding: 10px;
-    }
+        /* Styling for table rows */
+        tr {
+            position: relative; /* Required for pseudo-element positioning */
+            overflow: hidden; /* Ensure background color doesn't affect flow */
+        }
 
-    /* Alternating row background colors (striping) */
-    tr:nth-child(odd) {
-      background-color: #f0f0f0;
-    }
+        /* Full-width background for odd rows */
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: transparent; /* Make it transparent so the pseudo-element shows */
+        }
 
-    tr:nth-child(even) {
-      background-color: #e0e0e0;
-    }
+        /* Full-width background for even rows */
+        .table-striped > tbody > tr:nth-of-type(even) {
+            background-color: transparent; /* Make it transparent so the pseudo-element shows */
+        }
 
-    /* Optional cell styling */
-    td, th {
-      padding: 10px;
-      border: none; /* No border for clean look */
-    }
-  </style>
+        /* Pseudo-element for full-width background */
+        .table-striped > tbody > tr::before {
+            content: ''; /* Create a pseudo-element */
+            position: absolute; /* Position it absolutely within the <tr> */
+            left: calc(-50vw + 50%); /* Center it to the viewport */
+            right: calc(-50vw + 50%); /* Center it to the viewport */
+            top: 0; /* Align to the top */
+            bottom: 0; /* Align to the bottom */
+            background-color: #f5f5f5; /* Background color for odd rows */
+            z-index: -1; /* Place it behind the text */
+            opacity: 0.5; /* Optional: Adjust opacity if desired */
+        }
+
+        /* Styling for table cells */
+        th, td {
+            padding: 10px; /* Add some padding */
+            text-align: left; /* Keep text alignment */
+            position: relative; /* Required for positioning the text */
+            z-index: 1; /* Ensure text is above the background */
+        }
+
+        /* Specific color for odd and even rows */
+        .table-striped > tbody > tr:nth-of-type(odd)::before {
+            background-color: #f5f5f5; /* Color for odd rows */
+        }
+
+        .table-striped > tbody > tr:nth-of-type(even)::before {
+            background-color: #ffffff; /* Color for even rows */
+        }
+    </style>
 </head>
 <body>
 
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>
-            <div class="content">
-              Header 1
-            </div>
-          </th>
-          <th>
-            <div class="content">
-              Header 2
-            </div>
-          </th>
-          <th>
-            <div class="content">
-              Header 3
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div class="content">
-              Row 1, Cell 1
-            </div>
-          </td>
-          <td>
-            <div class="content">
-              Row 1, Cell 2
-            </div>
-          </td>
-          <td>
-            <div class="content">
-              Row 1, Cell 3
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="content">
-              Row 2, Cell 1
-            </div>
-          </td>
-          <td>
-            <div class="content">
-              Row 2, Cell 2
-            </div>
-          </td>
-          <td>
-            <div class="content">
-              Row 2, Cell 3
-            </div>
-          </td>
-        </tr>
-        <!-- Add more rows as needed -->
-      </tbody>
-    </table>
-  </div>
+<div class="table-wrapper">
+    <div class="content-container">
+        <table class="wb-tables table filterEmphasis provisional table-striped gc-table provisional">
+            <thead>
+                <tr>
+                    <th>[Themes placeholder]</th>
+                    <th>[Topics placeholder]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#" class="text-left"><b>Immigration and citizenship</b></a>
+                    </td>
+                    <td>
+                        <ul class="mrgn-tp-0 mrgn-bttm-md colcount-lg-2 li-mrgn-lft-0 mrgn-rght-lg text-left">
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html'>My application</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html'>Visit</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html'>Immigrate</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html'>Work</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html'>Study</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html'>Citizenship</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants.html'>New immigrants</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians.html'>Canadians</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html'>Refugees and asylum</a></li>
+                            <li><a href='https://www.canada.ca/en/services/immigration-citizenship/enforcement-violations.html'>Enforcement and violations</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="text-left"><b>Item two</b></a>
+                    </td>
+                    <td>
+                        <ul class="mrgn-tp-0 mrgn-bttm-md colcount-lg-2 li-mrgn-lft-0 mrgn-rght-lg text-left">
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html'>My application</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html'>Visit</a></li>
+                            <li><a href='https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html'>Immigrate</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>
