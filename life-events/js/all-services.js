@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const mostRequestedSection = createSection(
           "Most requested",
           topic.mostRequested,
-          "mrgn-tp-lg mrgn-bttm-0 well well-sm brdr-0",
+          "mrgn-tp-sm mrgn-bttm-0 well well-sm brdr-0",
           ""
         );
         detailsElement.appendChild(mostRequestedSection);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const moreTopicsSection = createSection(
           "More topics",
           topic.otherTopics,
-          "mrgn-tp-lg mrgn-bttm-0",
+          "mrgn-tp-sm mrgn-bttm-0",
           ""
         );
         detailsElement.appendChild(moreTopicsSection);
