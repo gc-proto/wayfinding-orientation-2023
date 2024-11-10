@@ -1,12 +1,28 @@
 [
-    {
-      "title": "First Topic Title",
-      "mostRequested": ["Item 1", "Item 2", "Item 3"],
-      "otherTopics": ["Item 4", "Item 5", "Item 6", "Item 7"]
-    },
-    {
-      "title": "Second Topic Title",
-      "mostRequested": ["Item 8", "Item 9"],
-      "otherTopics": ["Item 10", "Item 11", "Item 12"]
-    }
-  ]
+  {
+    "title": "First Topic Title",
+    "mostRequested": [
+      { "name": "Item 1", "url": "https://example.com/item1" },
+      { "name": "Item 2", "url": "https://example.com/item2" },
+      { "name": "Item 3", "url": "https://example.com/item3" }
+    ],
+    "otherTopics": [
+      { "name": "Item 4", "url": "https://example.com/item4" },
+      { "name": "Item 5", "url": "https://example.com/item5" },
+      { "name": "Item 6", "url": "https://example.com/item6" },
+      { "name": "Item 7", "url": "https://example.com/item7" }
+    ]
+  },
+  {
+    "title": "Second Topic Title",
+    "mostRequested": [
+      { "name": "Item 8", "url": "https://example.com/item8" },
+      { "name": "Item 9", "url": "https://example.com/item9" }
+    ],
+    "otherTopics": [
+      { "name": "Item 10", "url": "https://example.com/item10" },
+      { "name": "Item 11", "url": "https://example.com/item11" },
+      { "name": "Item 12", "url": "https://example.com/item12" }
+    ]
+  }
+]
