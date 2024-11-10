@@ -56,13 +56,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const ul = document.createElement('ul');
     ul.className = "mrgn-tp-0 mrgn-bttm-md colcount-md-2 li-mrgn-lft-0 mrgn-rght-lg small";
     ul.style.cssText = ulStyle;
+
     items.forEach(item => {
       const li = document.createElement('li');
-      li.textContent = item;
+      const link = document.createElement('a');
+      link.href = item.url;
+      link.textContent = item.name;
+      li.appendChild(link);
       ul.appendChild(li);
     });
-    colListDiv.appendChild(ul);
 
+    colListDiv.appendChild(ul);
     rowDiv.appendChild(colHeaderDiv);
     rowDiv.appendChild(colListDiv);
     containerDiv.appendChild(rowDiv);
