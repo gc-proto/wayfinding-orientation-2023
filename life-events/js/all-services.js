@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Most requested",
           topic.mostRequested,
           "mrgn-tp-lg mrgn-bttm-0 well well-sm brdr-0",
-          "font-family: lato; font-weight: 700;"
+          ""
         );
         detailsElement.appendChild(mostRequestedSection);
 
