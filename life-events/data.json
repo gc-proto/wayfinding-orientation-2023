@@ -1,5 +1,29 @@
 [
   {
+    "title": "Immigration and citizenship",
+    "mostRequested": [
+      { "name": "Sign in to your IRCC account", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/ircc-accounts.html" },
+      { "name": "How to check your application status", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-status.html" },
+      { "name": "Check application processing times", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html" },
+      { "name": "Find an application form", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides.html" },
+      { "name": "Pay your fees", "url": "https://ircc.canada.ca/english/information/fees/index.asp" },
+      { "name": "Find out if you need an eTA or a visa to visit Canada", "url": "https://ircc.canada.ca/english/visit/visas.asp" },
+      { "name": "Have questions? Find answers in the Help Centre", "url": "https://ircc.canada.ca/english/helpcentre/index-featured-can.asp" }
+    ],
+    "otherTopics": [
+      { "name": "My application", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html" },
+      { "name": "Visit", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" },
+      { "name": "Immigrate", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html" },
+      { "name": "Work", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html" },
+      { "name": "Study", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html" },
+      { "name": "Citizenship", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html" },
+      { "name": "New immigrants", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants.html" },
+      { "name": "Canadians", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians.html" },
+      { "name": "Refugees and asylum", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html" },
+      { "name": "Enforcement and violations", "url": "https://www.canada.ca/en/services/immigration-citizenship/enforcement-violations.html" }
+    ]
+  },
+  {
     "title": "Taxes",
     "mostRequested": [
       { "name": "My Account", "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html" },
@@ -213,8 +237,7 @@
   },
   {
     "title": "Indigenous peoples",
-    "mostRequested": [
-     
+    "mostRequested": [ 
     ],
     "otherTopics": [
       { "name": "Benefits and rights", "url": "https://www.canada.ca/en/services/indigenous-peoples/benefits-and-rights-for-indigenous-peoples.html" },
@@ -232,6 +255,129 @@
       { "name": "The North", "url": "https://www.rcaanc-cirnac.gc.ca/eng/1464271923135/1558619267020" },
       { "name": "Infrastructure", "url": "https://www.sac-isc.gc.ca/eng/1100100010567" },
       { "name": "Emergency management", "url": "https://www.sac-isc.gc.ca/eng/1309369889599" }
+    ]
+  },
+  {
+    "title": "Culture, history and sport",
+    "mostRequested": [
+      { "name": "Visit the Canadian Virtual War Memorial", "url": "https://www.veterans.gc.ca/eng/remembrance/memorials/canadian-virtual-war-memorial" },
+      { "name": "Anthems and symbols of Canada", "url": "https://www.canada.ca/en/services/culture/canadian-identity-society/anthems-symbols.html" },
+      { "name": "Find a CRTC decision", "url": "https://crtc.gc.ca/eng/8045/d2018.htm" },
+      { "name": "Research your family history", "url": "https://library-archives.canada.ca/eng/collection/research-help/genealogy-family-history/Pages/genealogy-family-history.aspx" },
+      { "name": "Search census records", "url": "https://library-archives.canada.ca/eng/collection/research-help/genealogy-family-history/censuses/Pages/censuses.aspx" },
+      { "name": "Landmarks and attractions in Canada's capital", "url": "https://www.canada.ca/en/services/culture/cultural-attractions/attractions-canada-capital.html" }
+    ],
+    "otherTopics": [
+      { "name": "Culture: home", "url": "https://www.canada.ca/en/services/culture.html" },
+      { "name": "Funding - Culture, history and sport", "url": "https://www.canada.ca/en/canadian-heritage/services/funding.html" },
+      { "name": "Events, celebrations and commemorations", "url": "https://www.canada.ca/en/services/culture/events-celebrations-commemorations.html" },
+      { "name": "Cultural landmarks and attractions", "url": "https://www.canada.ca/en/services/culture/cultural-attractions.html" },
+      { "name": "Canadian identity and society", "url": "https://www.canada.ca/en/services/culture/canadian-identity-society.html" },
+      { "name": "Sport", "url": "https://www.canada.ca/en/services/culture/sport.html" },
+      { "name": "History and heritage", "url": "https://www.canada.ca/en/services/culture/history-heritage.html" },
+      { "name": "Arts and media", "url": "https://www.canada.ca/en/services/culture/arts-media.html" },
+      { "name": "Cultural youth programs", "url": "https://www.canada.ca/en/services/culture/cultural-youth-programs.html" },
+      { "name": "Cultural trade and investment", "url": "https://www.canada.ca/en/services/culture/cultural-trade-investment.html" }
+    ]
+  },
+  {
+    "title": "National security and defence",
+    "mostRequested": [
+      { "name": "Jobs in the Canadian Armed Forces", "url": "https://forces.ca/en/careers/" },
+      { "name": "Military ranks", "url": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/insignia-flags/ranks/rank-appointment-insignia.html" },
+      { "name": "Defence equipment", "url": "https://www.canada.ca/en/services/defence/caf/equipment.html" },
+      { "name": "Current list of terrorist entities", "url": "https://www.publicsafety.gc.ca/cnt/ntnl-scrt/cntr-trrrsm/lstd-ntts/crrnt-lstd-ntts-en.aspx" },
+      { "name": "Join the Cadet Program", "url": "https://www.canada.ca/en/department-national-defence/services/cadets-junior-canadian-rangers/cadets/join-us.html" },
+      { "name": "Canada's Defence policy", "url": "http://dgpaapp.forces.gc.ca/en/canada-defence-policy/index.asp" }
+    ],
+    "otherTopics": [
+      { "name": "National security", "url": "https://www.canada.ca/en/services/defence/nationalsecurity.html" },
+      { "name": "Canadian Armed Forces", "url": "https://www.canada.ca/en/services/defence/caf.html" },
+      { "name": "Defence equipment purchases and upgrades", "url": "https://www.canada.ca/en/services/defence/defence-equipment-purchases-upgrades.html" },
+      { "name": "Transportation security", "url": "https://tc.canada.ca/en/corporate-services/transportation-security" },
+      { "name": "Securing the border", "url": "https://www.canada.ca/en/services/defence/securingborder.html" },
+      { "name": "Cyber security", "url": "https://www.canada.ca/en/services/defence/cybersecurity.html" },
+      { "name": "Jobs in national security and defence", "url": "https://www.canada.ca/en/services/defence/jobs.html" },
+      { "name": "Services and benefits for the military", "url": "https://www.canada.ca/en/government/publicservice/benefitsmilitary.html" }
+    ]
+  },
+  {
+    "title": "Veterans and military",
+    "mostRequested": [
+      { "name": "Find a job in the military", "url": "https://forces.ca/en/careers/" },
+      { "name": "Veteran’s Service Card", "url": "https://www.canada.ca/en/department-national-defence/services/benefits-military/transition/service-card.html" },
+      { "name": "My VAC Account", "url": "https://www.veterans.gc.ca/eng/e_services?utm_source=header&amp;utm_medium=button&amp;utm_campaign=MVA" },
+      { "name": "Military pay", "url": "https://www.canada.ca/en/department-national-defence/services/benefits-military/pay-pension-benefits/pay.html" },
+      { "name": "Military career transition", "url": "https://www.canada.ca/en/department-national-defence/services/benefits-military/transition.html" },
+      { "name": "Mental health and wellness for Veterans", "url": "https://www.veterans.gc.ca/en/health-programs-and-services/mental-health-and-wellness" }
+    ],
+    "otherTopics": [
+      { "name": "Veteran services and benefits", "url": "https://www.veterans.gc.ca/en" },
+      { "name": "Military services and benefits", "url": "https://www.canada.ca/en/government/publicservice/benefitsmilitary.html" },
+      { "name": "RCMP services and benefits", "url": "https://www.canada.ca/en/government/publicservice/benefitsrcmp.html" },
+      { "name": "Education and jobs for Veterans and military members", "url": "https://www.canada.ca/en/services/veterans-military/jobs-for-veterans-and-military-members.html" },
+      { "name": "Health and wellness for Veterans and military", "url": "https://www.canada.ca/en/services/veterans-military/health-and-wellness-for-veterans-and-military-members.html" },
+      { "name": "Canadian Armed Forces", "url": "https://www.canada.ca/en/services/defence/caf.html" }
+    ]
+  },
+
+  {
+    "title": "Transport and infrastructure",
+    "mostRequested": [
+      { "name": "Zero-emission vehicles", "url": "https://www.canada.ca/en/services/transport/zero-emission-vehicles.html" },
+      { "name": "Drone safety", "url": "https://tc.canada.ca/en/aviation/drone-safety" },
+      { "name": "What you can't bring on an airplane", "url": "https://tc.canada.ca/en/aviation/aviation-security/what-you-can-t-bring-plane" },
+      { "name": "Register your vessel", "url": "https://tc.canada.ca/en/marine-transportation/vessel-licensing-registration" },
+      { "name": "Child car seat safety", "url": "https://tc.canada.ca/en/road-transportation/child-car-seat-safety" },
+      { "name": "Transporting dangerous goods - Regulations", "url": "https://tc.canada.ca/en/dangerous-goods/table-contents" },
+      { "name": "Canadian Aviation Regulations", "url": "https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433" }
+    ],
+    "otherTopics": [
+      { "name": "Aviation", "url": "https://tc.canada.ca/en/aviation" },
+      { "name": "Marine transportation", "url": "https://tc.canada.ca/en/marine-transportation" },
+      { "name": "Road transportation", "url": "https://tc.canada.ca/en/road-transportation" },
+      { "name": "Rail transportation", "url": "https://tc.canada.ca/en/rail-transportation" },
+      { "name": "Dangerous goods", "url": "https://tc.canada.ca/en/dangerous-goods" },
+      { "name": "Infrastructure", "url": "https://tc.canada.ca/en/infrastructure" }
+    ]
+  },
+  {
+    "title": "Policing, justice and emergencies",
+    "mostRequested": [
+      { "name": "Apply/Renew a firearms licence", "url": "http://www.rcmp-grc.gc.ca/cfp-pcaf/online_en-ligne/index-eng.htm" },
+      { "name": "Get a criminal records check", "url": "http://www.rcmp-grc.gc.ca/en/criminal-record-checks" },
+      { "name": "Apply for a criminal record suspension", "url": "https://www.canada.ca/en/parole-board/services/record-suspensions/official-pbc-application-guide-and-forms.html" },
+      { "name": "What to do during an emergency", "url": "https://www.getprepared.gc.ca/cnt/hzd/drng-en.aspx" },
+      { "name": "Know the law on impaired driving", "url": "https://www.canada.ca/en/services/policing/police/community-safety-policing/impaired-driving.html" },
+      { "name": "Help solve a crime", "url": "https://www.canada.ca/en/services/policing/police/help-solve-crime.html" }
+    ],
+    "otherTopics": [
+      { "name": "Policing", "url": "https://www.canada.ca/en/services/policing/police/index.html" },
+      { "name": "Justice", "url": "https://www.canada.ca/en/services/policing/justice.html" },
+      { "name": "Emergencies", "url": "https://www.canada.ca/en/services/policing/emergencies.html" },
+      { "name": "Corrections", "url": "https://www.canada.ca/en/services/policing/corrections.html" },
+      { "name": "Parole, record suspension, expungement and clemency", "url": "https://www.canada.ca/en/services/policing/parole.html" },
+      { "name": "Victims of crime", "url": "https://www.canada.ca/en/services/policing/victims.html" }
+    ]
+  },
+  {
+    "title": "Science and innovation",
+    "mostRequested": [
+      { "name": "National building codes", "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications" },
+      { "name": "Official times across Canada", "url": "https://nrc.canada.ca/en/web-clock/" },
+      { "name": "Check sunrise and sunset times", "url": "https://nrc.canada.ca/en/research-development/products-services/software-applications/sun-calculator/" },
+      { "name": "Grants for technological innovation (IRAP)", "url": "https://nrc.canada.ca/en/support-technology-innovation/financial-support-technology-innovation-through-nrc-irap" },
+      { "name": "Federal Science Libraries Network", "url": "https://science-libraries.canada.ca/eng/home/" },
+      { "name": "Live view of northern lights cam", "url": "http://asc-csa.gc.ca/eng/astronomy/auroramax/hd-480.asp" }
+    ],
+    "otherTopics": [
+      { "name": "Research funding and awards", "url": "https://www.canada.ca/en/services/science/researchfunding.html" },
+      { "name": "Science subjects", "url": "https://www.canada.ca/en/services/science/sciencesubjects.html" },
+      { "name": "Open data, statistics and archives", "url": "https://www.canada.ca/en/services/science/open-data.html" },
+      { "name": "Research institutes and facilities", "url": "https://www.canada.ca/en/services/science/institutes.html" },
+      { "name": "R&D and innovation", "url": "https://www.canada.ca/en/services/science/innovation.html" },
+      { "name": "Intellectual property and copyright", "url": "https://www.canada.ca/en/services/business/ip.html" },
+      { "name": "Directory of scientists and research professionals", "url": "https://www.canada.ca/en/services/science/scientistsdirectory.html" }
     ]
   }
 ]
