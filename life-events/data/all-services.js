@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('data.json')
+    fetch('./data/data.json')
       .then(response => response.json())
       .then(data => {
         const container = document.querySelector('#dynamic-content'); // Add an ID or use an existing element for insertion.
