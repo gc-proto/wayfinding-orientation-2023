@@ -1,40 +1,237 @@
 [
   {
-    "title": "Immigration and citizenship",
-    "mostRequested": [
-      { "name": "Item 1", "url": "https://example.com/item1" },
-      { "name": "Item 2", "url": "https://example.com/item2" },
-      { "name": "Item 3", "url": "https://example.com/item3" }
-    ],
-    "otherTopics": [
-      { "name": "Item 4", "url": "https://example.com/item4" },
-      { "name": "Item 5", "url": "https://example.com/item5" },
-      { "name": "Item 6", "url": "https://example.com/item6" },
-      { "name": "Item 7", "url": "https://example.com/item7" }
-    ]
-  },
-  {
     "title": "Taxes",
     "mostRequested": [
-      { "name": "Item 8", "url": "https://example.com/item8" },
-      { "name": "Item 9", "url": "https://example.com/item9" }
+      { "name": "My Account", "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html" },
+      { "name": "My Business Account", "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account.html" },
+      { "name": "Represent a Client", "url": "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html" },
+      { "name": "File a return with GST/HST NETFILE", "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/gst-hst-netfile.html" },
+      { "name": "Find benefit payment dates", "url": "https://www.canada.ca/en/services/benefits/calendar.html" },
+      { "name": "Forms and publications", "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications.html" },
+      { "name": "Make a payment to the CRA", "url": "https://www.canada.ca/en/revenue-agency/services/payments-cra.html" }
     ],
     "otherTopics": [
-      { "name": "Item 10", "url": "https://example.com/item10" },
-      { "name": "Item 11", "url": "https://example.com/item11" },
-      { "name": "Item 12", "url": "https://example.com/item12" }
+      { "name": "Income tax", "url": "https://www.canada.ca/en/services/taxes/income-tax.html" },
+      { "name": "GST/HST", "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html" },
+      { "name": "Payroll", "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html" },
+      { "name": "Business number", "url": "https://www.canada.ca/en/services/taxes/business-number.html" },
+      { "name": "Savings and pension plans", "url": "https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html" },
+      { "name": "Tax credits and benefits for individuals", "url": "https://www.canada.ca/en/services/taxes/child-and-family-benefits.html" },
+      { "name": "Excise taxes, duties, and levies", "url": "https://www.canada.ca/en/services/taxes/excise-taxes-duties-and-levies.html" },
+      { "name": "Charities and giving", "url": "https://www.canada.ca/en/services/taxes/charities.html" }
     ]
   },
   {
     "title": "Jobs",
     "mostRequested": [
-      { "name": "Item 8", "url": "https://example.com/item8" },
-      { "name": "Item 9", "url": "https://example.com/item9" }
+      { "name": "Search jobs and apprenticeships - Job Bank", "url": "https://www.jobbank.gc.ca/home" },
+      { "name": "Work in Canada", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html" },
+      { "name": "Immigrate as a skilled worker", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html" },
+      { "name": "Hire a temporary foreign worker", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign.html" },
+      { "name": "View your records of employment", "url": "https://www.canada.ca/en/employment-social-development/services/my-account.html" },
+      { "name": "Submit a record of employment - employers", "url": "https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/access-roe.html" },
+      { "name": "Apply for a Social Insurance Number (SIN)", "url": "https://www.canada.ca/en/employment-social-development/services/sin.html" }
     ],
     "otherTopics": [
-      { "name": "Item 10", "url": "https://example.com/item10" },
-      { "name": "Item 11", "url": "https://example.com/item11" },
-      { "name": "Item 12", "url": "https://example.com/item12" }
+      { "name": "Find a job", "url": "https://www.canada.ca/en/services/jobs/opportunities.html" },
+      { "name": "Funding for jobs and training", "url": "https://www.canada.ca/en/employment-social-development/services/funding/programs.html" },
+      { "name": "Training", "url": "https://www.canada.ca/en/services/jobs/training.html" },
+      { "name": "Hiring and managing employees", "url": "https://www.canada.ca/en/services/business/hire/index.html" },
+      { "name": "Starting a business", "url": "https://www.canada.ca/en/services/business/start/index.html" },
+      { "name": "Workplace standards", "url": "https://www.canada.ca/en/services/jobs/workplace.html" },
+      { "name": "Employment Insurance benefits and leave", "url": "https://www.canada.ca/en/services/benefits/ei.html" },
+      { "name": "Pensions and retirement", "url": "https://www.canada.ca/en/services/finance/pensions.html" }
+    ]
+  },
+  {
+    "title": "Travel and tourism",
+    "mostRequested": [
+      { "name": "Emergency assistance abroad", "url": "https://www.canada.ca/assistance/emergency-assistance" },
+      { "name": "Find out if you need a visa to travel to Canada", "url": "https://www.cic.gc.ca/english/visit/visas.asp" },
+      { "name": "Apply for an eTA", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html" },
+      { "name": "Apply for NEXUS", "url": "https://www.cbsa-asfc.gc.ca/services/travel-voyage/prog/nexus/menu-eng.html" },
+      { "name": "Register as a Canadian abroad", "url": "https://travel.gc.ca/travelling/registration" },
+      { "name": "Travel insurance", "url": "https://travel.gc.ca/travelling/documents/travel-insurance" }
+    ],
+    "otherTopics": [
+      { "name": "Travel advice and advisories", "url": "https://travel.gc.ca/travelling/advisories" },
+      { "name": "COVID-19: Travel, testing and borders", "url": "https://travel.gc.ca/travel-covid" },
+      { "name": "Visit Canada", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html?outside" },
+      { "name": "Travel outside Canada", "url": "https://travel.gc.ca/travelling" },
+      { "name": "Air travel", "url": "https://travel.gc.ca/air" },
+      { "name": "Return to Canada", "url": "https://travel.gc.ca/returning" },
+      { "name": "Canadian passports and travel documents", "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html" },
+      { "name": "Canadian attractions, events and experiences", "url": "https://travel.gc.ca/canadian-tourism" },
+      { "name": "Assistance outside Canada", "url": "https://travel.gc.ca/assistance" },
+      { "name": "Stay connected", "url": "https://travel.gc.ca/stay-connected" }
+    ]
+  },
+  {
+    "title": "Benefits",
+    "mostRequested": [
+      { "name": "Apply for Employment Insurance", "url": "https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit.html" },
+      { "name": "Apply for student loans and grants", "url": "https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans.html" },
+      { "name": "Sign in to a Government of Canada online account", "url": "https://www.canada.ca/en/government/sign-in-online-account.html" },
+      { "name": "Set up or change direct deposit", "url": "https://www.canada.ca/en/public-services-procurement/services/payments-to-from-government/direct-deposit.html" },
+      { "name": "Submit your EI report", "url": "https://www.canada.ca/en/services/benefits/ei/ei-internet-reporting.html" },
+      { "name": "Child and family benefits calculators", "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html" }
+    ],
+    "otherTopics": [
+      { "name": "Employment Insurance benefits and leave", "url": "https://www.canada.ca/en/services/benefits/ei.html" },
+      { "name": "Dental coverage", "url": "https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html" },
+      { "name": "Family and caregiving benefits", "url": "https://www.canada.ca/en/services/benefits/family.html" },
+      { "name": "Public pensions", "url": "https://www.canada.ca/en/services/benefits/publicpensions.html" },
+      { "name": "Grants and funding opportunities", "url": "https://www.canada.ca/en/employment-social-development/services/funding/programs.html" },
+      { "name": "Student aid and education planning", "url": "https://www.canada.ca/en/services/benefits/education.html" },
+      { "name": "Housing benefits", "url": "https://www.canada.ca/en/services/benefits/housing.html" },
+      { "name": "Disability benefits", "url": "https://www.canada.ca/en/services/benefits/disability.html" },
+      { "name": "Benefits by audience", "url": "http://www.canada.ca/en/services/benefits/audience.html" },
+      { "name": "Benefits payment dates", "url": "https://www.canada.ca/en/services/benefits/calendar.html" },
+      { "name": "Benefits finder", "url": "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=en-CA" },
+      { "name": "What to do when someone dies", "url": "https://www.canada.ca/en/services/death.html" }
+    ]
+  },
+  {
+    "title": "Environment and natural resources",
+    "mostRequested": [
+      { "name": "Local weather forecast", "url": "https://weather.gc.ca/canada_e.html" },
+      { "name": "Fuel-efficient vehicles", "url": "https://www.nrcan.gc.ca/energy/efficiency/transportation/20996" },
+      { "name": "Home energy efficiency", "url": "https://www.nrcan.gc.ca/homes" },
+      { "name": "Species at risk", "url": "https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry.html" },
+      { "name": "Prepare for severe weather", "url": "https://www.canada.ca/en/environment-climate-change/services/seasonal-weather-hazards.html" }
+    ],
+    "otherTopics": [
+      { "name": "Weather, climate and hazards", "url": "https://www.canada.ca/en/services/environment/weather.html" },
+      { "name": "Energy", "url": "https://www.canada.ca/en/services/environment/energy.html" },
+      { "name": "Natural resources", "url": "https://www.canada.ca/en/services/environment/natural-resources.html" },
+      { "name": "Agriculture", "url": "https://agriculture.canada.ca/en" },
+      { "name": "Fisheries", "url": "https://www.canada.ca/en/services/environment/fisheries.html" },
+      { "name": "Wildlife, plants and species", "url": "https://www.canada.ca/en/services/environment/wildlife-plants-species.html" },
+      { "name": "Pollution and waste management", "url": "https://www.canada.ca/en/services/environment/pollution-waste-management.html" },
+      { "name": "Environmental conservation and protection", "url": "https://www.canada.ca/en/services/environment/conservation.html" }
+    ]
+  },
+  {
+    "title": "Business and industry",
+    "mostRequested": [
+      { "name": "Find a corporation", "url": "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html?locale=en_CA" },
+      { "name": "Report your imported goods", "url": "https://www.cbsa-asfc.gc.ca/prog/manif/portal-portail-eng.html" },
+      { "name": "Search for trademarks", "url": "https://ised-isde.canada.ca/cipo/trademark-search/srch?null=&lang=eng" },
+      { "name": "Review custom tariffs for importing goods", "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2018/html/tblmod-1-eng.html" },
+      { "name": "Find a patent", "url": "http://www.ic.gc.ca/opic-cipo/cpd/eng/introduction.html" },
+      { "name": "Import and export from Canada", "url": "https://www.cbsa-asfc.gc.ca/comm-eng.html" },
+      { "name": "Name a business", "url": "https://ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs03922.html" },
+      { "name": "Make changes to your corporation (Online Filing Centre)", "url": "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/hm.html?locale=en_CA" }
+    ],
+    "otherTopics": [
+      { "name": "Starting a business", "url": "https://www.canada.ca/en/services/business/start.html" },
+      { "name": "Business grants and financing", "url": "https://www.canada.ca/en/services/business/grants.html" },
+      { "name": "Business taxes", "url": "https://www.canada.ca/en/services/business/taxes.html" },
+      { "name": "Federal corporations", "url": "https://www.canada.ca/en/services/business/federal-corporations.html" },
+      { "name": "Hiring and managing employees", "url": "https://www.canada.ca/en/services/business/hire.html" },
+      { "name": "International trade and investment", "url": "https://international.canada.ca/en/services/business/trade" },
+      { "name": "Permits, licences and regulations", "url": "https://www.canada.ca/en/services/business/permits.html" },
+      { "name": "Doing business with government", "url": "https://www.canada.ca/en/services/business/doing-business.html" },
+      { "name": "R&D and innovation", "url": "https://www.canada.ca/en/services/science/innovation.html" },
+      { "name": "Research and business intelligence", "url": "https://www.canada.ca/en/services/business/research.html" },
+      { "name": "Intellectual property and copyright", "url": "https://www.canada.ca/en/services/business/ip.html" },
+      { "name": "Maintaining your business", "url": "https://www.canada.ca/en/services/business/maintaingrowimprovebusiness.html" },
+      { "name": "Protecting your business", "url": "https://www.canada.ca/en/services/business/protecting.html" },
+      { "name": "Insolvency for business", "url": "https://www.canada.ca/en/services/business/bankruptcy.html" }
+    ]
+  },
+  {
+    "title": "Health",
+    "mostRequested": [
+      { "name": "Canada's food guide", "url": "https://food-guide.canada.ca/en/" },
+      { "name": "Recalls and safety alerts", "url": "http://recalls-rappels.canada.ca/en" },
+      { "name": "Mental health support: Get help", "url": "http://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html" },
+      { "name": "Measles", "url": "https://www.canada.ca/en/public-health/services/diseases/measles.html" }
+    ],
+    "otherTopics": [
+      { "name": "Food and nutrition", "url": "https://www.canada.ca/en/services/health/food-nutrition.html" },
+      { "name": "Diseases and conditions", "url": "https://www.canada.ca/en/public-health/services/diseases.html" },
+      { "name": "Vaccines and immunization", "url": "https://www.canada.ca/en/public-health/topics/immunization-vaccines.html" },
+      { "name": "Drug and health products", "url": "https://www.canada.ca/en/services/health/drug-health-products.html" },
+      { "name": "Product safety", "url": "https://www.canada.ca/en/services/health/product-safety.html" },
+      { "name": "Health risks and safety", "url": "https://www.canada.ca/en/services/health/health-risks-safety.html" },
+      { "name": "Healthy living", "url": "https://www.canada.ca/en/services/health/healthy-living.html" },
+      { "name": "Indigenous health", "url": "https://www.canada.ca/en/services/health/aboriginal-health.html" },
+      { "name": "Health system and services", "url": "https://www.canada.ca/en/services/health/health-system-services.html" },
+      { "name": "Science, research and data", "url": "https://www.canada.ca/en/services/health/science-research-data.html" }
+    ]
+  },
+  {
+    "title": "Money and finances",
+    "mostRequested": [
+      { "name": "Find a bankruptcy or insolvency record", "url": "https://www.ic.gc.ca/app/scr/bsf-osb/ins/login.html?lang=eng" },
+      { "name": "Student loans", "url": "https://www.canada.ca/en/services/jobs/education/student-financial-aid/student-loan.html" },
+      { "name": "Set up or change direct deposit", "url": "https://www.canada.ca/en/public-services-procurement/services/payments-to-from-government/direct-deposit.html" },
+      { "name": "Mortgages", "url": "https://www.canada.ca/en/financial-consumer-agency/services/mortgages.html" },
+      { "name": "Credit report and scores", "url": "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score.html" },
+      { "name": "Make a budget", "url": "https://itools-ioutils.fcac-acfc.gc.ca/BP-PB/budget-planner" },
+      { "name": "Rates and contribution limits", "url": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" }
+    ],
+    "otherTopics": [
+      { "name": "Managing your money", "url": "https://www.canada.ca/en/services/finance/manage.html" },
+      { "name": "Debt and borrowing", "url": "https://www.canada.ca/en/services/finance/debt.html" },
+      { "name": "Savings and investments", "url": "https://www.canada.ca/en/services/finance/savings.html" },
+      { "name": "Education funding", "url": "https://www.canada.ca/en/services/finance/educationfunding.html" },
+      { "name": "Pensions and retirement", "url": "https://www.canada.ca/en/services/finance/pensions.html" },
+      { "name": "Protection from frauds and scams", "url": "https://www.canada.ca/en/services/finance/fraud.html" },
+      { "name": "Financial tools and calculators", "url": "https://www.canada.ca/en/services/finance/tools.html" },
+      { "name": "Financial literacy programs", "url": "https://www.canada.ca/en/financial-consumer-agency/services/financial-literacy-programs.html" },
+      { "name": "Consumer affairs", "url": "https://www.canada.ca/en/services/finance/consumer-affairs.html" },
+      { "name": "Insolvency", "url": "https://www.canada.ca/en/services/finance/bankruptcy.html" },
+      { "name": "Taxes", "url": "https://www.canada.ca/en/services/taxes.html" },
+      { "name": "Government finances", "url": "https://www.canada.ca/en/government/system/finances.html" },
+      { "name": "Business grants and financing", "url": "https://www.canada.ca/en/services/business/grants.html" }
+    ]
+  },
+  {
+    "title": "Youth",
+    "mostRequested": [
+      { "name": "Search for a job", "url": "https://www.jobbank.gc.ca/findajob" },
+      { "name": "Find a summer job", "url": "https://www.jobbank.gc.ca/youth" },
+      { "name": "Volunteer or serve and build your skills", "url": "https://www.canada.ca/en/services/youth/canada-service-corps.html" },
+      { "name": "Explore career options based on employment trends", "url": "https://www.jobbank.gc.ca/trend-analysis" },
+      { "name": "Explore your career options by degree or diploma", "url": "https://www.jobbank.gc.ca/career-planning/search-field-of-study" }
+    ],
+    "otherTopics": [
+      { "name": "Prime Minister's Youth Council", "url": "https://www.canada.ca/en/campaign/prime-ministers-youth-council.html" },
+      { "name": "Jobs", "url": "https://www.canada.ca/en/services/jobs/opportunities/student.html" },
+      { "name": "Student aid and education planning", "url": "https://www.canada.ca/en/services/jobs/education.html" },
+      { "name": "Job training", "url": "https://www.canada.ca/en/services/jobs/training.html" },
+      { "name": "Travel the world", "url": "http://international.gc.ca/world-monde/study_work_travel-etude_travail_voyage/index.aspx?lang=eng" },
+      { "name": "Leadership and cultural programs", "url": "https://www.canada.ca/en/services/culture/cultural-youth-programs.html" },
+      { "name": "Contribute to your community", "url": "https://www.canada.ca/en/services/youth/contribute.html" },
+      { "name": "Managing your money", "url": "https://www.canada.ca/en/services/finance/manage.html" },
+      { "name": "Health", "url": "https://www.canada.ca/en/services/health/youth-health.html" },
+      { "name": "Youth justice", "url": "https://www.canada.ca/en/services/policing/justice/youth/index.html" },
+      { "name": "Volunteer or serve and build your skills", "url": "https://www.canada.ca/en/services/youth/canada-service-corps.html" }
+    ]
+  },
+  {
+    "title": "Indigenous peoples",
+    "mostRequested": [
+     
+    ],
+    "otherTopics": [
+      { "name": "Benefits and rights", "url": "https://www.canada.ca/en/services/indigenous-peoples/benefits-and-rights-for-indigenous-peoples.html" },
+      { "name": "Funding", "url": "https://www.canada.ca/en/services/indigenous-peoples/funding-for-indigenous-peoples.html" },
+      { "name": "Education, training and jobs", "url": "https://www.canada.ca/en/services/indigenous-peoples/education-training-jobs.html" },
+      { "name": "Indian status", "url": "https://www.sac-isc.gc.ca/eng/1100100032374" },
+      { "name": "About Indigenous peoples and communities", "url": "https://www.canada.ca/en/services/indigenous-peoples/about-indigenous-peoples-and-communities.html" },
+      { "name": "Housing", "url": "https://www.canada.ca/en/services/indigenous-peoples/housing-for-indigenous-peoples.html" },
+      { "name": "Health services and social programs", "url": "https://www.canada.ca/en/services/indigenous-peoples/health-services-and-social-programs-indigenous-peoples.html" },
+      { "name": "Treaties, claims and agreements", "url": "https://www.rcaanc-cirnac.gc.ca/eng/1100100028568/1529354090684" },
+      { "name": "Business and economic development", "url": "https://www.canada.ca/en/services/indigenous-peoples/business-and-economic-development-indigenous-peoples.html" },
+      { "name": "Indigenous justice and policing", "url": "https://www.canada.ca/en/services/indigenous-peoples/indigenous-justice-and-policing.html" },
+      { "name": "Reconciliation", "url": "https://www.rcaanc-cirnac.gc.ca/eng/1400782178444/1529183710887" },
+      { "name": "Environment and natural resources", "url": "https://www.canada.ca/en/services/indigenous-peoples/environment-and-natural-resources-for-indigenous-peoples.html" },
+      { "name": "The North", "url": "https://www.rcaanc-cirnac.gc.ca/eng/1464271923135/1558619267020" },
+      { "name": "Infrastructure", "url": "https://www.sac-isc.gc.ca/eng/1100100010567" },
+      { "name": "Emergency management", "url": "https://www.sac-isc.gc.ca/eng/1309369889599" }
     ]
   }
 ]
