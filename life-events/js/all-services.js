@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const mostRequestedSection = createSection(
           "Most requested",
           topic.mostRequested,
-          "mrgn-tp-sm mrgn-bttm-0 well well-sm brdr-0",
+          "mrgn-tp-sm mrgn-bttm-0 well well-sm brdr-0 row",
           ""
         );
         detailsElement.appendChild(mostRequestedSection);
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function createSection(headerText, items, sectionClass, ulStyle) {
     const section = document.createElement('section');
     section.className = sectionClass;
-    section.style.padding = "20px 0 0";
 
     const containerDiv = document.createElement('div');
     containerDiv.className = "container";
