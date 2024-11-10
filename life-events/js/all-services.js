@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const moreTopicsSection = createSection(
           "More topics",
           topic.otherTopics,
-          "mrgn-tp-sm mrgn-bttm-0",
+          "mrgn-tp-md mrgn-bttm-0",
           ""
         );
         detailsElement.appendChild(moreTopicsSection);
