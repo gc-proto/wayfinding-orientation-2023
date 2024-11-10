@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function createSection(headerText, items, sectionClass, ulStyle) {
     const section = document.createElement('section');
     section.className = sectionClass;
-    section.style.padding = "5px 13px 0";
 
     const containerDiv = document.createElement('div');
     containerDiv.className = "container";
