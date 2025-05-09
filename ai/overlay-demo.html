@@ -215,8 +215,112 @@
 					</ul>
 				</div>
 			</section>
-			<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-md-9 col-lg-9 mrgn-tp-xl mrgn-bttm-0">
+					<div class="wb-disable-allow wb-init wb-data-ajax-replace-inited" data-ajax-replace="/etc/designs/canada/wet-boew/assets/feedback/page-feedback-en.html" id="wb-auto-8"><div id="gc-pft" class="row wb-disable-allow wb-init wb-jsonmanager-inited" data-wb-jsonmanager="{
+			&quot;name&quot;: &quot;gc-pft&quot;,
+			&quot;extractor&quot;: [
+				{ &quot;selector&quot;: &quot;title&quot;, &quot;path&quot;: &quot;pageData/pageTitle&quot; },
+				{ &quot;selector&quot;: &quot;html&quot;, &quot;attr&quot;: &quot;lang&quot;, &quot;path&quot;: &quot;pageData/language&quot; },
+				{ &quot;interface&quot;: &quot;locationHref&quot;, &quot;path&quot;: &quot;pageData/submissionPage&quot; },
+				{ &quot;selector&quot;: &quot;#wb-lng ul li:first-child a[lang]&quot;, &quot;attr&quot;: &quot;href&quot;, &quot;path&quot;: &quot;pageData/oppositelang&quot; },
+				{ &quot;selector&quot;: &quot;[data-feedback-theme]&quot;, &quot;attr&quot;: &quot;data-feedback-theme&quot;, &quot;path&quot;: &quot;pageData/themeopt&quot; },
+				{ &quot;selector&quot;: &quot;[data-feedback-section]&quot;, &quot;attr&quot;: &quot;data-feedback-section&quot;, &quot;path&quot;: &quot;pageData/sectionopt&quot; },
+				{ &quot;selector&quot;: &quot;meta[name=\&quot;dcterms.creator\&quot;]&quot;, &quot;attr&quot;: &quot;content&quot;, &quot;path&quot;: &quot;pageData/institutionopt&quot; },
+				{ &quot;selector&quot;: &quot;[data-feedback-link]&quot;, &quot;attr&quot;: &quot;data-feedback-link&quot;, &quot;path&quot;: &quot;contact/link&quot; },
+				{ &quot;selector&quot;: &quot;[data-feedback-url]&quot;, &quot;attr&quot;: &quot;data-feedback-url&quot;, &quot;path&quot;: &quot;contact/url&quot; }
+			]
+		}">
+			<div class="col-sm-10 col-md-9 col-lg-8">
+				<section class="well mrgn-bttm-0">
+					<h3 class="wb-inv">Give feedback about this page</h3>
+					<form action="https://feedback-retroaction.canada.ca/api/QueueProblemForm" method="post" class="wb-postback wb-disable-allow wb-init wb-postback-inited" data-wb-postback="{&quot;success&quot;:&quot;.gc-pft-thnk&quot;}" id="wb-auto-11">
+						<div class="wb-disable-allow wb-init wb-data-json-inited" data-wb-json="{
+							&quot;url&quot;: &quot;#[gc-pft]/pageData&quot;,
+							&quot;mapping&quot;: [
+								{ &quot;selector&quot;: &quot;input&quot;, &quot;attr&quot;: &quot;name&quot;, &quot;value&quot;: &quot;/@id&quot; },
+								{ &quot;selector&quot;: &quot;input&quot;, &quot;attr&quot;: &quot;value&quot;, &quot;value&quot;: &quot;/@value&quot; }
+							]
+						}" id="wb-auto-12">
+							<template class="wb-init wb-template-inited" id="wb-auto-13">
+								<input type="hidden" name="" value="">
+							</template>
+						
+								<input type="hidden" name="pageTitle" value="Canada Revenue Agency (CRA) - Canada.ca">
+							
+								<input type="hidden" name="language" value="en">
+							
+								<input type="hidden" name="submissionPage" value="https://www.canada.ca/en/revenue-agency.html">
+							
+								<input type="hidden" name="oppositelang" value="/fr/agence-revenu.html">
+							
+								<input type="hidden" name="themeopt" value="">
+							
+								<input type="hidden" name="sectionopt" value="">
+							
+								<input type="hidden" name="institutionopt" value="Canada Revenue Agency">
+							</div>
+						<fieldset class="gc-pft-btns chkbxrdio-grp row row-no-gutters d-sm-flex flex-sm-wrap align-items-sm-center">
+							<legend class="col-xs-12 col-sm-7 nojs-col-sm-12 col-md-9 col-lg-8 text-center text-sm-left nojs-text-left mrgn-tp-sm pr-sm-3"><span class="field-name">Did you find what you were looking for?</span></legend>
+							<div class="col-xs-12 nojs-show">
+								<button name="helpful" value="Yes-Oui" class="btn btn-primary" aria-describedby="gc-pft-why">Yes</button>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4 text-center text-sm-right nojs-hide">
+								<button name="helpful" value="Yes-Oui" class="btn btn-primary">Yes</button>
+								<button class="btn btn-primary mrgn-lft-sm" data-wb-doaction="[
+									{&quot;action&quot;:&quot;removeClass&quot;,&quot;source&quot;:&quot;.gc-pft-no&quot;,&quot;class&quot;:&quot;nojs-show&quot;},
+									{&quot;action&quot;:&quot;addClass&quot;,&quot;source&quot;:&quot;.gc-pft-btns&quot;,&quot;class&quot;:&quot;hide&quot;}
+								]">No</button>
+							</div>
+						</fieldset>
+						<div class="gc-pft-no nojs-show">
+							<p id="gc-pft-why" class="nojs-show mrgn-tp-lg mrgn-bttm-md">If not, tell us why below:</p>
+							<p class="nojs-hide wb-inv" aria-live="polite">Tell us why below:</p>
+							<div class="wb-disable-allow wb-init wb-data-json-inited" data-wb-json="{
+								&quot;url&quot;: &quot;#[gc-pft]/contact&quot;,
+								&quot;streamline&quot;: &quot;true&quot;,
+								&quot;mapping&quot;: [
+									{
+										&quot;template&quot;: &quot;[data-contact-template]&quot;,
+										&quot;test&quot;: &quot;fn:isLiteral&quot;,
+										&quot;assess&quot;: &quot;/url&quot;,
+										&quot;mapping&quot;: [
+											{ &quot;selector&quot;: &quot;a&quot;, &quot;type&quot;: &quot;attr&quot;, &quot;attr&quot;: &quot;href&quot;, &quot;value&quot;: &quot;/url&quot;  },
+											{ &quot;selector&quot;: &quot;a&quot;, &quot;value&quot;: &quot;/link&quot;  }
+										]
+									}
+								]
+							}" id="wb-auto-14">
+								<template data-contact-template="" class="wb-init wb-template-inited" id="wb-auto-15">
+									<details>
+										<summary>Need urgent help with a problem? Contact us</summary>
+										<p class="mrgn-bttm-0 mrgn-tp-md fnt-nrml">
+											<a href="#"></a>
+										</p>
+									</details>
+								</template>
+							</div>
+							<div class="form-group">
+								<label id="gc-pft-prblm-label" for="gc-pft-prblm" class="mrgn-bttm-0"><span class="field-name">Please provide more details</span></label>
+								<p id="gc-pft-prblm-note" class="mrgn-bttm-sm"><small>You will not receive a reply. Don't include personal information (telephone, email, SIN, financial, medical, or work details).</small></p>
+								<p id="gc-pft-prblm-instruction" class="fnt-nrml small">Maximum 300 characters</p>
+								<textarea id="gc-pft-prblm" aria-describedby="gc-pft-prblm-note gc-pft-prblm-instruction" name="details" class="form-control full-width" maxlength="300"></textarea>
+							</div>
+							<button name="helpful" value="No-Non" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+					<div class="gc-pft-thnk hide">
+						<p class="mrgn-tp-sm mrgn-bttm-0" role="status"><span class="glyphicon glyphicon-ok text-success mrgn-rght-sm" aria-hidden="true"></span> Thank you for your feedback.</p>
+					</div>
+				</section>
+			</div>
+		</div></div>
+				</div>
+			</div>
+			<div class="container row mrgn-bttm-md">
+				
 				<div id="def-preFooter"> </div>
+				
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 			<!--<script src="../src/list-inline-desktop.js"></script>-->
@@ -235,6 +339,7 @@
 					showShare: false
 				});
 			</script>
+			
 	</main>
 	<div id="def-footer"> </div>
 	<!-- Write closure template -->
