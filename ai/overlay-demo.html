@@ -198,20 +198,25 @@
 				</div>
 			</div>
 
-			<section id="chat-button-bar" class="wb-overlay modal-content overlay-def wb-bar-b" role="dialog">
+			<section id="chat-button-bar" 
+				class="wb-overlay modal-content overlay-def wb-bar-b" 
+				role="dialog"
+				aria-labelledby="chat-title"
+				aria-modal="true">
 				<div class="container">
 					<ul class="list-inline">
 						<li>
 							<header>
-								<h2 class="modal-title">Need help?</h2>
+								<h2 id="chat-title" class="modal-title">Need help?</h2>
 							</header>
 						</li>
-						<li><a class="btn btn-default btn-lg" href="https://react-answers.vercel.app/en?ref=
-							https%3A%2F%2Fwww.canada.ca%2Fen%2Fimmigration-refugees-citizenship%2Fservices%2Fcanadian-passports%2Frenew-adult-passport.html">
-								<!-- <span><img src="./icons/ai-bubble-solid.svg" style="width: 24px; height: auto;"></span> -->
-								<span class="mrgn-lft-sm mrgn-tp-sm">Use AI Answers</span><span class="wb-inv">
-									open
-									Canada.ca AI Answers application</span></a></li>
+						<li>
+							<a class="btn btn-default btn-lg" 
+								href="https://react-answers.vercel.app/en?ref=https%3A%2F%2Fwww.canada.ca%2Fen%2Fimmigration-refugees-citizenship%2Fservices%2Fcanadian-passports%2Frenew-adult-passport.html"
+								aria-label="Use AI Answers">
+								<span class="mrgn-lft-sm mrgn-tp-sm">Use AI Answers</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</section>
