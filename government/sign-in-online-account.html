@@ -305,6 +305,34 @@
                 </div>
             </section>
 
+    <section id="chat-button-bar" 
+    class="wb-overlay modal-content overlay-def wb-popup-mid" 
+    role="dialog"
+    aria-labelledby="chat-title"
+    aria-modal="true"
+    style="max-width: 600px; margin: 0 auto;">
+    <header class="modal-header">
+        <h2 id="chat-title" class="modal-title">AI Answers - you're invited to try our new service</h2>
+    </header>
+    <div class="modal-body" style="padding-bottom: 0;">
+        <p>We want to learn how a custom AI service can help visitors get answers to their questions about Government of Canada services. 
+            Choosing "Yes, I'll try it' will open a new window to AI Answers. You can return to this page when you're done.
+        </p>
+        <div class="text-center" style="margin-bottom: 15px;">
+            <a class="btn btn-primary btn-lg" 
+                href="https://react-answers.vercel.app/en?/?ref=https%3A%2F%2Fwww.canada.ca%2Fen%2Fgovernment%2Fsign-in-online-account.html"
+                target="_blank"
+                aria-label="Yes I'll try AI Answers">
+                <span class="mrgn-lft-sm mrgn-tp-sm">Yes, I'll try it</span>
+            </a>
+            <button class="btn btn-link btn-lg" 
+                onclick="document.getElementById('chat-button-bar').style.display='none'"
+                aria-label="No thanks">
+                <span class="mrgn-lft-sm mrgn-tp-sm">No thanks</span>
+            </button>
+        </div>
+    </div>
+</section>
 
 
             <section>
@@ -425,7 +453,7 @@
                             <td><a
                                     href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/partners-service-providers/employer-portal.html">Employer
                                     Portal: International Mobility Program</a></td>
-                            <td>For employers hiring temporary workers who don’t need a Labour Market Impact Assessment
+                            <td>For employers hiring temporary workers who don't need a Labour Market Impact Assessment
                                 (LMIA)</td>
                             <td>Immigration, Refugees and Citizenship Canada (IRCC)</td>
                         </tr>
@@ -509,7 +537,7 @@
                             <td><a
                                     href="https://www.canada.ca/en/employment-social-development/services/health-safety/workplace-safety/submit-employer-hazardous-report.html">Labour
                                     Electronic Access Form (LEAF)</a></td>
-                            <td>Federally regulated businesses can create and submit mandatory Employer’s Annual
+                            <td>Federally regulated businesses can create and submit mandatory Employer's Annual
                                 Hazardous Occurrence Reports</td>
                             <td>Department of Employment and Social Development (ESDC)</td>
                         </tr>
@@ -583,7 +611,7 @@
                         <tr>
                             <td><a href="https://mva-mda.vac-acc.gc.ca/pub/mva_7_24_1?v=2017.2.0.v9">My VAC account</a>
                             </td>
-                            <td>Veterans&#x27; benefits, apply online, track status, direct deposit</td>
+                            <td>Veterans' benefits, apply online, track status, direct deposit</td>
                             <td>Veterans Affairs Canada (VAC)</td>
                         </tr>
                         <tr>
@@ -622,7 +650,7 @@
                         <tr>
                             <td><a href="https://reservation.pc.gc.ca/">Parks Canada Reservation Service</a></td>
                             <td>Make, view, change or cancel a reservation for frontcounty camping, Parks Canada
-                                accommodations, backcountry camping, West Coast Trails, guided hikes, the Lake O’Hara
+                                accommodations, backcountry camping, West Coast Trails, guided hikes, the Lake O'Hara
                                 bus, the Georgian Bay Islands ferry and parking at the Bruce Peninsula Grotto.</td>
                             <td>Parks Canada (PC)</td>
                         </tr>
@@ -631,7 +659,7 @@
                                     href="https://auth.id.canada.ca/oxauth/authorize.htm?ui_locales=en-US&amp;scope=openid&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.wd-deo.ca%2Fsignin-SICPE&amp;state=OpenIdConnect.AuthenticationProperties%3DrSl_GMaWdCOOzpriQqUd3zydT9fbs_qXsjq2RrttrdWOFbsYJlEAPaZADf0SNCNng3-4V8AzvDAp2_iUTQU2XkjkZp7TVcXZYl_7pzzvG8NnRGeM-UVQH9Tn_KuC0WJZ8d0v6aciyLdhLmZ-dbDG94_SEP1YtLLQ1f2Ry9M0o9POtZXrzOxOPCaD9ttso_nFVVKkgkPOnO9Ut6yFm271jvY1bQLuNMJ8JGLn5q3r5d8lRRVw2D2EJQcQbA_ehZ-KHvwgI0ie31oSNajyAYS4tkKa2EnogZj1Wn1P900H-7Gij0v14Mi_oS2mLvSAWCp0Ne2-0pvyLVFZ87lmCIQrrw&amp;nonce=637992974796961958.MDBlNTk2YzQtMGVlNS00NmViLTg1MGItMjA5MGI3YTI2N2U3YTBhZDY5ODAtMDhlMC00NTdjLWE3M2MtZjkyZDQ0OTAyMWUx&amp;client_id=8503de15-1511-43c7-8f23-ede1662fa7af">PrairiesCan
                                     and PacifiCan Portal</a></td>
                             <td>Sign in to submit or manage your PrairiesCan, PacifiCan and Western Economic
-                                Diversification Canada’s application.</td>
+                                Diversification Canada's application.</td>
                             <td>Prairies Economic Development Canada (PrairiesCan and PacifiCan)</td>
                         </tr>
                         <tr>
@@ -909,6 +937,13 @@
     <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/ep-pp.min.js"></script>
     <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
     <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#chat-button-bar").trigger("open.wb-overlay");
+            }, 3000);
+        });
+    </script>
 </body>
 
 </html>
